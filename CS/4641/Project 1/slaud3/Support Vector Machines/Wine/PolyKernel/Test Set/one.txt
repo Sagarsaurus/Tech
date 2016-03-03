@@ -1,0 +1,379 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0"
+Relation:     winequality-red-weka.filters.unsupervised.instance.RemovePercentage-P34.0
+Instances:    1055
+Attributes:   12
+              fixed_acidity
+              volatile_acidity
+              citric_acid
+              residual_sugar
+              chlorides
+              free_sulfur_dioxide
+              total_sulfur_dioxide
+              density
+              pH
+              sulphates
+              alcohol
+              class
+Test mode:user supplied test set: size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 3, 4
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.1007 * (normalized) fixed_acidity
+ +      -0.2952 * (normalized) volatile_acidity
+ +       0.0307 * (normalized) citric_acid
+ +      -0.1123 * (normalized) residual_sugar
+ +      -0.606  * (normalized) chlorides
+ +      -0.0108 * (normalized) free_sulfur_dioxide
+ +       0.0648 * (normalized) total_sulfur_dioxide
+ +      -0.0603 * (normalized) density
+ +      -0.08   * (normalized) pH
+ +      -0.0769 * (normalized) sulphates
+ +       0.2677 * (normalized) alcohol
+ +       1.2341
+
+Number of kernel evaluations: 300 (80.732% cached)
+
+Classifier for classes: 3, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0715 * (normalized) fixed_acidity
+ +      -0.1152 * (normalized) volatile_acidity
+ +       0.0308 * (normalized) citric_acid
+ +      -0.0137 * (normalized) residual_sugar
+ +      -0.0402 * (normalized) chlorides
+ +      -0.0613 * (normalized) free_sulfur_dioxide
+ +       0.128  * (normalized) total_sulfur_dioxide
+ +      -0.0108 * (normalized) density
+ +      -0.0716 * (normalized) pH
+ +      -0.0566 * (normalized) sulphates
+ +       0.0296 * (normalized) alcohol
+ +       1.1281
+
+Number of kernel evaluations: 3362 (76.117% cached)
+
+Classifier for classes: 3, 6
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.1006 * (normalized) fixed_acidity
+ +      -0.5986 * (normalized) volatile_acidity
+ +       0.2126 * (normalized) citric_acid
+ +      -0.1009 * (normalized) residual_sugar
+ +      -0.1237 * (normalized) chlorides
+ +      -0.0185 * (normalized) free_sulfur_dioxide
+ +       0.1283 * (normalized) total_sulfur_dioxide
+ +      -0.0453 * (normalized) density
+ +      -0.012  * (normalized) pH
+ +      -0.0612 * (normalized) sulphates
+ +       0.1564 * (normalized) alcohol
+ +       1.3256
+
+Number of kernel evaluations: 2351 (70.138% cached)
+
+Classifier for classes: 3, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.1484 * (normalized) fixed_acidity
+ +      -1.6783 * (normalized) volatile_acidity
+ +       0.0143 * (normalized) citric_acid
+ +       0.2259 * (normalized) residual_sugar
+ +      -0.6043 * (normalized) chlorides
+ +      -0.0833 * (normalized) free_sulfur_dioxide
+ +      -0.06   * (normalized) total_sulfur_dioxide
+ +      -0.279  * (normalized) density
+ +      -0.2655 * (normalized) pH
+ +       0.4223 * (normalized) sulphates
+ +       0.5189 * (normalized) alcohol
+ +       1.8472
+
+Number of kernel evaluations: 580 (67.269% cached)
+
+Classifier for classes: 3, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0961 * (normalized) fixed_acidity
+ +      -1.3597 * (normalized) volatile_acidity
+ +       1.1302 * (normalized) citric_acid
+ +      -0.2308 * (normalized) residual_sugar
+ +      -0.7499 * (normalized) chlorides
+ +       0.0477 * (normalized) free_sulfur_dioxide
+ +      -0.0167 * (normalized) total_sulfur_dioxide
+ +      -0.9313 * (normalized) density
+ +      -0.3964 * (normalized) pH
+ +       0.8169 * (normalized) sulphates
+ +       1.2871 * (normalized) alcohol
+ +       0.2332
+
+Number of kernel evaluations: 97 (67.34% cached)
+
+Classifier for classes: 4, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0053 * (normalized) fixed_acidity
+ +      -0.0002 * (normalized) volatile_acidity
+ +      -0.0001 * (normalized) citric_acid
+ +      -0.0048 * (normalized) residual_sugar
+ +       0.0001 * (normalized) chlorides
+ +       0.006  * (normalized) free_sulfur_dioxide
+ +      -0.003  * (normalized) total_sulfur_dioxide
+ +       0.0061 * (normalized) density
+ +      -0.0046 * (normalized) pH
+ +       0.0004 * (normalized) sulphates
+ +       0.0043 * (normalized) alcohol
+ +       0.9995
+
+Number of kernel evaluations: 21297 (67.413% cached)
+
+Classifier for classes: 4, 6
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.007  * (normalized) fixed_acidity
+ +      -0.0006 * (normalized) volatile_acidity
+ +       0.0007 * (normalized) citric_acid
+ +      -0.0049 * (normalized) residual_sugar
+ +      -0.0013 * (normalized) chlorides
+ +       0.0038 * (normalized) free_sulfur_dioxide
+ +      -0.0022 * (normalized) total_sulfur_dioxide
+ +       0.0056 * (normalized) density
+ +      -0.0053 * (normalized) pH
+ +       0.0031 * (normalized) sulphates
+ +       0.0042 * (normalized) alcohol
+ +       1.0002
+
+Number of kernel evaluations: 13799 (80.553% cached)
+
+Classifier for classes: 4, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0418 * (normalized) fixed_acidity
+ +      -3.0144 * (normalized) volatile_acidity
+ +       0.535  * (normalized) citric_acid
+ +      -0.06   * (normalized) residual_sugar
+ +      -0.0935 * (normalized) chlorides
+ +       0.8588 * (normalized) free_sulfur_dioxide
+ +      -0.6537 * (normalized) total_sulfur_dioxide
+ +      -1.0036 * (normalized) density
+ +      -0.7847 * (normalized) pH
+ +       2.0201 * (normalized) sulphates
+ +       2.0794 * (normalized) alcohol
+ +       0.5868
+
+Number of kernel evaluations: 1478 (71.729% cached)
+
+Classifier for classes: 4, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.3539 * (normalized) fixed_acidity
+ +      -0.5073 * (normalized) volatile_acidity
+ +       0.736  * (normalized) citric_acid
+ +      -0.8011 * (normalized) residual_sugar
+ +      -0.3302 * (normalized) chlorides
+ +       0.6022 * (normalized) free_sulfur_dioxide
+ +       0.1204 * (normalized) total_sulfur_dioxide
+ +      -1.5835 * (normalized) density
+ +      -0.5647 * (normalized) pH
+ +       1.1567 * (normalized) sulphates
+ +       2.0849 * (normalized) alcohol
+ -       0.8814
+
+Number of kernel evaluations: 249 (79.163% cached)
+
+Classifier for classes: 5, 6
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.5161 * (normalized) fixed_acidity
+ +      -2.0014 * (normalized) volatile_acidity
+ +      -0.2484 * (normalized) citric_acid
+ +       1.3466 * (normalized) residual_sugar
+ +      -1.244  * (normalized) chlorides
+ +       0.4706 * (normalized) free_sulfur_dioxide
+ +      -1.4091 * (normalized) total_sulfur_dioxide
+ +      -1.225  * (normalized) density
+ +      -0.27   * (normalized) pH
+ +       3.0983 * (normalized) sulphates
+ +       4.5712 * (normalized) alcohol
+ -       0.6621
+
+Number of kernel evaluations: 42088 (68.031% cached)
+
+Classifier for classes: 5, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.5259 * (normalized) fixed_acidity
+ +      -2.6347 * (normalized) volatile_acidity
+ +       0.9366 * (normalized) citric_acid
+ +       0.9924 * (normalized) residual_sugar
+ +      -1.2561 * (normalized) chlorides
+ +       0.4437 * (normalized) free_sulfur_dioxide
+ +      -1.4907 * (normalized) total_sulfur_dioxide
+ +      -2.7915 * (normalized) density
+ +      -0.6081 * (normalized) pH
+ +       2.2788 * (normalized) sulphates
+ +       3.9385 * (normalized) alcohol
+ -       0.6512
+
+Number of kernel evaluations: 8684 (69.077% cached)
+
+Classifier for classes: 5, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.2004 * (normalized) fixed_acidity
+ +      -0.1004 * (normalized) volatile_acidity
+ +       0.2456 * (normalized) citric_acid
+ +      -0.3604 * (normalized) residual_sugar
+ +      -0.032  * (normalized) chlorides
+ +       0.0782 * (normalized) free_sulfur_dioxide
+ +      -0.2422 * (normalized) total_sulfur_dioxide
+ +      -0.3768 * (normalized) density
+ +      -0.081  * (normalized) pH
+ +       0.2329 * (normalized) sulphates
+ +       0.3969 * (normalized) alcohol
+ -       1.0781
+
+Number of kernel evaluations: 3539 (65.823% cached)
+
+Classifier for classes: 6, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.4154 * (normalized) fixed_acidity
+ +      -0.4698 * (normalized) volatile_acidity
+ +      -0.1315 * (normalized) citric_acid
+ +       0.4624 * (normalized) residual_sugar
+ +      -0.183  * (normalized) chlorides
+ +      -0.1521 * (normalized) free_sulfur_dioxide
+ +      -0.1072 * (normalized) total_sulfur_dioxide
+ +      -0.3798 * (normalized) density
+ +       0.103  * (normalized) pH
+ +       0.4614 * (normalized) sulphates
+ +       0.2381 * (normalized) alcohol
+ -       1.1035
+
+Number of kernel evaluations: 12777 (75.214% cached)
+
+Classifier for classes: 6, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0026 * (normalized) fixed_acidity
+ +       0.0025 * (normalized) volatile_acidity
+ +       0.0019 * (normalized) citric_acid
+ +      -0.0116 * (normalized) residual_sugar
+ +      -0.005  * (normalized) chlorides
+ +       0.0003 * (normalized) free_sulfur_dioxide
+ +      -0.0063 * (normalized) total_sulfur_dioxide
+ +       0.0002 * (normalized) density
+ +      -0.0023 * (normalized) pH
+ +       0.0033 * (normalized) sulphates
+ +       0.0057 * (normalized) alcohol
+ -       1.0017
+
+Number of kernel evaluations: 11177 (77.889% cached)
+
+Classifier for classes: 7, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0014 * (normalized) fixed_acidity
+ +       0.0195 * (normalized) volatile_acidity
+ +       0.0084 * (normalized) citric_acid
+ +      -0.0145 * (normalized) residual_sugar
+ +      -0.0052 * (normalized) chlorides
+ +       0.0064 * (normalized) free_sulfur_dioxide
+ +      -0.0086 * (normalized) total_sulfur_dioxide
+ +      -0.0188 * (normalized) density
+ +      -0.0065 * (normalized) pH
+ +       0.0081 * (normalized) sulphates
+ +      -0.0005 * (normalized) alcohol
+ -       1.0003
+
+Number of kernel evaluations: 3050 (86.62% cached)
+
+
+
+Time taken to build model: 0.1 seconds
+
+=== Evaluation on test set ===
+=== Summary ===
+
+Correctly Classified Instances         306               56.25   %
+Incorrectly Classified Instances       238               43.75   %
+Kappa statistic                          0.2326
+Mean absolute error                      0.2356
+Root mean squared error                  0.3311
+Relative absolute error                109.9539 %
+Root relative squared error            101.6862 %
+Total Number of Instances              544     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.73     3
+                 0         0          0         0         0          0.628    4
+                 0.816     0.426      0.628     0.816     0.71       0.708    5
+                 0.488     0.335      0.46      0.488     0.473      0.576    6
+                 0         0          0         0         0          0.81     7
+                 0         0          0         0         0          0.84     8
+Weighted Avg.    0.563     0.323      0.465     0.563     0.508      0.67 
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+   0   0   2   0   0   0 |   a = 3
+   0   0  13   3   0   0 |   b = 4
+   0   0 208  47   0   0 |   c = 5
+   0   0 103  98   0   0 |   d = 6
+   0   0   5  57   0   0 |   e = 7
+   0   0   0   8   0   0 |   f = 8
+

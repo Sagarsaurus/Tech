@@ -1,0 +1,89 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     vote-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingWithUserConstant-Afirst-last-R2-Fyyyy-MM-dd'T'HH:mm:ss
+Instances:    435
+Attributes:   17
+              handicapped-infants
+              water-project-cost-sharing
+              adoption-of-the-budget-resolution
+              physician-fee-freeze
+              el-salvador-aid
+              religious-groups-in-schools
+              anti-satellite-test-ban
+              aid-to-nicaraguan-contras
+              mx-missile
+              immigration
+              synfuels-corporation-cutback
+              education-spending
+              superfund-right-to-sue
+              crime
+              duty-free-exports
+              export-administration-act-south-africa
+Ignored:
+              Class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 7
+Within cluster sum of squared errors: 410.22452134869536
+
+Initial starting points (random):
+
+Cluster 0: 0,0,1,1,1,1,0,0,1,0,0,0,1,1,1,2
+Cluster 1: 0,0,1,0,1,0,1,1,1,0,0,0,0,1,2,1
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                      Cluster#
+Attribute                                 Full Data          0          1
+                                            (435.0)    (208.0)    (227.0)
+=========================================================================
+handicapped-infants                          0.4851     0.2548      0.696
+water-project-cost-sharing                    0.669     0.7356     0.6079
+adoption-of-the-budget-resolution            0.6322     0.2885     0.9471
+physician-fee-freeze                         0.4575     0.8846     0.0661
+el-salvador-aid                              0.5563     1.0337     0.1189
+religious-groups-in-schools                  0.6759     0.9663     0.4097
+anti-satellite-test-ban                      0.6138     0.2692     0.9295
+aid-to-nicaraguan-contras                    0.6253       0.25     0.9692
+mx-missile                                    0.577     0.1442     0.9736
+immigration                                  0.5287     0.5385     0.5198
+synfuels-corporation-cutback                 0.4414     0.4038     0.4758
+education-spending                           0.5356     0.9231     0.1806
+superfund-right-to-sue                       0.5954     0.9567     0.2643
+crime                                        0.6483     1.0144     0.3128
+duty-free-exports                            0.5287     0.2644     0.7709
+export-administration-act-south-africa       1.0966     0.8606     1.3128
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      208 ( 48%)
+1      227 ( 52%)
+
+
+Class attribute: Class
+Classes to Clusters:
+
+   0   1  <-- assigned to cluster
+  49 218 | democrat
+ 159   9 | republican
+
+Cluster 0 <-- republican
+Cluster 1 <-- democrat
+
+Incorrectly clustered instances :	58.0	 13.3333 %
+

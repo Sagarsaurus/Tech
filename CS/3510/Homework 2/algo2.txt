@@ -1,0 +1,116 @@
+Sagar Laud
+Homework 2
+Collaboraters: Patrick Connor, Peter Aquila, Tim Kerr, Rahul Singh, Piero Cappelleti
+
+
+1)
+	a) If we do this with groups of three, we end up with the first term obviously being T(n/3) and the last term being O(n).  However, we must find the remaining term which is the second term.  For this term we can follow the same procedure that we followed in class.  We can now eliminate one of the "groups" that we learned how to find in class.  In the worst case, this group has 2 rows and n/6 columns.  Therefore it represents 2n/6 or n/3 elements.  We can eliminate this which results in T(2n/3).  Therefore the recurrence is T(n/3) + T(2n/3) + O(n).  We can now solve this recurrence using the method of a recurrence tree.  At the first level, we have a cost of cn.  At the second level, we have a cost of cn/3 + 2cn/3 = cn.  Extrapolating this, the cost at every level will sum to cn.  This tree will then have log n levels.  Therefore, this algorithm will work out to O(n log n).  
+
+	Now let us do this with groups of seven.  We end up with the first term being T(n/7) and the last term being O(n).  However, we must find the remaining term which is the second one.  For this term we can follow the same procedure that we follwed in class.  We can now eliminate one of the groups that we learned how to find in class.  In the worst case, this group has 4 rows and n/14 columns.  Therefore it represents 4n/14 or 2n/7 elements.  We can eliminate this which results in T(5n/7).  Therefore the recurrence is T(n/7) + T(5n/7) + O(n).  Using a recurrence tree to solve this, we find that the cost at the first level cn. The cost at the second level is 6n/7 * cn.  The cost at the third level (6n/7)^2 * cn.  Therefore, the total cost can be estimated as the summation from k = 0 to k = infinity of (6n/7)^k * n.  This converges to 7n.  Therefore, we have a cost of less than or equal to 7n which is O(n).
+
+	b)	Selection(A, start, end, index):
+			if start == end:
+				return A[start]
+				medianIndex = MedianIndex(A, start, end)
+				temp = A[medianIndex]
+				A[medianIndex] = A[end]
+				A[end] = temp
+
+				Partition(A, start, end)
+
+				midpoint = (end - start + 1)/2
+
+				//conditions to recurse
+				if index > midpoint:
+					return Selection(A, midpoint+1, end, index - midpoint)
+				else if index < midpoint:
+					return Selection(A, 1, midpoint-1, index)
+				else:
+					return A[midpoint]
+
+
+	c) So for this let us assume that we have an input array A, along with a numQuantiles value that tells us how many quantiles we want to find and finally an output array B to represent the quantiles.  B in this case will have a length of k-1. Now, let us write the algorithm that will accomplish this.
+
+		QuantileFinder(A, start, end, k, B):
+			if k == 1:
+				return //base case
+			else:
+				midpoint = k/2
+				temp = (midpoint * k) / 2
+				selection = Select(A, start, end, temp)
+				AddToList(Q, selection)
+				QuantileFinder(A, start, temp, k/2, Q)
+				QuantileFinder(A, temp+1, end, k/2, Q)
+			return Q
+	d) 	Let us start by using SELECT to find the median of the array.  Once we do this, let us move the median to the end of the array (to avoid interference by it) and subtract the median from every element in the array.  This allows us to have the "distance" from the median.  We then use the SELECT algorithm again to find element k.  The way that this algorithm is written, it will also partition the array such that every element that is less than k is in the first k spots of the resulting array.  So, these elements (in addition to the median itself if necessary) are returned as the result.  As the first pass is O(n) and the second pass is O(n), this algorithm results in an O(n) solution.
+
+
+
+
+2) FindMedian(X, Y, startX, endX, startY, endY):
+		medianOfX = MedianIndex(X, startX, endX)
+		medianOfY = MedianIndex(Y, startY, endY)
+		
+		//swap values
+		temp = X[medianOfX]
+		X[MedianOfX] = X[endX]
+		X[endX] = temp
+
+		//swap values
+		temp = Y[medianOfY]
+		Y[MedianOfY] = Y[endY]
+		Y[endY] = temp	
+
+		/partition based on values
+		Partition(X, startX, endX)
+		Partition(Y, startY, endY)
+		
+		//determine condition and recurse
+		if X[medianOfX] > Y[medianOfY]
+			return FindMedian(X, startX, medianOfX-1, Y, medianOfY+1, endY)
+		else if X[medianOfX] < Y[medianOfY]:
+			return FindMedian(X, medianOfX+1, endX, Y, startY, medianOfY-1)
+		else X[medianOfX]==Y[medianOfY]
+			return X[medianOfX]
+
+
+
+3) 
+	a) Solving this using the greedy approach involves choosing the point value where the Pi/Ti = maximized.  However, this breaks down quite quickly.  Specifically, it will break down if we choose a pair where T is greater than the actual time allowed but seems to be valid.  Let us assume that we have a maximum time of T = 5.  If we have P = [10, 5, 6, 8] and T = [1, 2, 3, 4].  However, this breaks down if we choose the first term.
+
+	b) Use the following recurrence.  M(j, t) = {0 if j = 0 and t = 0}, {M(j-1, t) if tj > t}, {max{M(j-1, t), M(j-1, t-tj)+pj}}
+		The first case is simply a base case.  The second case is to show that that solution takes too much time and therefore is unusable, so we use the previous solution we had.  Otherwise, we check to see if the previous solution is the best or if we can remove the previous solution and add in this solution for a better solution and take the best of these two scenarios.
+
+	c) So let us analyze an algorithm that uses the previous recurrence and some dynamic programming.  Let us think of this as an array of arrays (or a two dimensional array) of length n (representing the points) each with an array of length t. Let us also assume that every element contains a few things: a pointer that points to the previous area in the table that the value was derived from and the current "point value" using the recurrence we have derived.  Now let us explain all of the cases.  If the first case is satisfied then it represents the base case.  We will iterate using a few nested loops in order to sufficiently access all elements of the array.  If the second case is the one that applies, then it is merely a stepping stone to the third case.  Once the third case applies, we know that we are maximizing the point value for this set of values.  Therefore, we set the value and then set the previous pointer to point to the location that the new value was derived from.  In this way, we continue till the entire table is filled.  Then, starting at the last element we touched, we go backwards via the previous pointers appending all values that we encounter till we reach a location where the previous pointer is null (signifying the beginning) so that we can find the total set of values that represent a solution.  This list is then returned.  In terms of runtime, there are n elements in the initial array and the total number of operations performed per element is t.  Therefore, the runtime is O(n * t).  As the amount of space taken is n rows * t elements per row, the space complexity is also O(n * t).
+
+4)	LongestIncreasingSubsequence(A, n):
+
+		LengthArray = []
+		PreviousArray = []
+		ReturnArray = []
+		LengthArray[0] = 1
+		PreviousArray[0] = -1
+		currentEnd = 0
+		maximumLength = 1
+
+		for i = 0 to n:
+			LengthArray[i] = 1
+			PreviousArray[0] = -1
+
+			for j = i - 1 to 0:
+				if A[j] < A[i] and LengthArray[j]+1 > LengthArray[i]:
+					PreviousArray[i] = j
+					LengthArray[i] = LengthArray + 1
+			if LengthArray[i] > maximumLength:
+				maximumLength = LengthArray[i]
+				currentEnd = LengthArray[i]
+
+
+		//now we can use this PreviousArray to help us return our values
+		while(currentEnd != -1):
+			AddToFront(ReturnArray, A[PreviousArray[currentEnd]])
+			currentEnd = PreviousArray[currentEnd]
+
+		return ReturnArray
+
+		This will work properly as our PreviousArray contains "pointers" to the previous element that belonged to the sequence.  This will work by computing the length of the longest increasing subsequence and utilizing this information to determine the "previous pointers."  Upon doing this it will just trace the pointers backwards appending to the front of ReturnList in order to generate the solution.  The runtime is rather simple to compute.  We iterate through n elements, n times.  So this represents n^2 operations.  Now the loop that we use can represent at max n operations (assuming the array itself is in ascending order and represents the longest increasing subarray).  So, this can represent at most n operations.  So, we end up with n^2 + n operations.  This is O(n^2)

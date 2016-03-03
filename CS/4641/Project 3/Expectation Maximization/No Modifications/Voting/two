@@ -1,0 +1,131 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N 2 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     vote-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingWithUserConstant-Afirst-last-R2-Fyyyy-MM-dd'T'HH:mm:ss
+Instances:    435
+Attributes:   17
+              handicapped-infants
+              water-project-cost-sharing
+              adoption-of-the-budget-resolution
+              physician-fee-freeze
+              el-salvador-aid
+              religious-groups-in-schools
+              anti-satellite-test-ban
+              aid-to-nicaraguan-contras
+              mx-missile
+              immigration
+              synfuels-corporation-cutback
+              education-spending
+              superfund-right-to-sue
+              crime
+              duty-free-exports
+              export-administration-act-south-africa
+Ignored:
+              Class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters: 2
+Number of iterations performed: 2
+
+
+                                         Cluster
+Attribute                                      0       1
+                                           (0.5)   (0.5)
+=========================================================
+handicapped-infants
+  mean                                     0.2939   0.678
+  std. dev.                                0.5123  0.5232
+
+water-project-cost-sharing
+  mean                                     0.7195   0.618
+  std. dev.                                0.6494  0.6764
+
+adoption-of-the-budget-resolution
+  mean                                     0.3173  0.9502
+  std. dev.                                0.5468  0.2566
+
+physician-fee-freeze
+  mean                                     0.8801  0.0307
+  std. dev.                                0.4541  0.1725
+
+el-salvador-aid
+  mean                                     0.9996  0.1087
+  std. dev.                                0.2739  0.4002
+
+religious-groups-in-schools
+  mean                                     0.9619   0.387
+  std. dev.                                 0.287   0.541
+
+anti-satellite-test-ban
+  mean                                     0.2959  0.9348
+  std. dev.                                0.5404  0.3254
+
+aid-to-nicaraguan-contras
+  mean                                     0.2543  0.9999
+  std. dev.                                0.5639  0.0956
+
+mx-missile
+  mean                                     0.1899   0.968
+  std. dev.                                0.4768  0.4001
+
+immigration
+  mean                                     0.5238  0.5337
+  std. dev.                                0.5348  0.5259
+
+synfuels-corporation-cutback
+  mean                                     0.3936  0.4897
+  std. dev.                                0.5981   0.569
+
+education-spending
+  mean                                     0.8688  0.1992
+  std. dev.                                 0.528  0.5287
+
+superfund-right-to-sue
+  mean                                     0.9398  0.2477
+  std. dev.                                0.4403  0.5279
+
+crime
+  mean                                     0.9945  0.2986
+  std. dev.                                0.3114  0.5236
+
+duty-free-exports
+  mean                                     0.2788  0.7811
+  std. dev.                                0.5895  0.5309
+
+export-administration-act-south-africa
+  mean                                     0.8914  1.3037
+  std. dev.                                0.6607  0.4711
+
+
+
+Time taken to build model (full training data) : 0.04 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      224 ( 51%)
+1      211 ( 49%)
+
+
+Log likelihood: -10.11654
+
+
+Class attribute: Class
+Classes to Clusters:
+
+   0   1  <-- assigned to cluster
+  60 207 | democrat
+ 164   4 | republican
+
+Cluster 0 <-- republican
+Cluster 1 <-- democrat
+
+Incorrectly clustered instances :	64.0	 14.7126 %
+

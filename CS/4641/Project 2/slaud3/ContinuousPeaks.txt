@@ -1,0 +1,299 @@
+Trial: 0 Iterations: 500
+RHC: 100.0 time taken to find solution: 0.012676165 seconds
+SA: 73.0 time taken to find solution: 0.001151718 seconds
+GA: 78.0 time taken to find solution: 0.126528739 seconds
+MIMIC: 103.0 time taken to find solution: 3.566967502 seconds
+
+Trial: 1 Iterations: 500
+RHC: 79.0 time taken to find solution: 3.88883E-4 seconds
+SA: 74.0 time taken to find solution: 5.67066E-4 seconds
+GA: 87.0 time taken to find solution: 0.049884955 seconds
+MIMIC: 95.0 time taken to find solution: 3.317838496 seconds
+
+Trial: 2 Iterations: 500
+RHC: 88.0 time taken to find solution: 3.93057E-4 seconds
+SA: 72.0 time taken to find solution: 5.59358E-4 seconds
+GA: 83.0 time taken to find solution: 0.046781678 seconds
+MIMIC: 99.0 time taken to find solution: 2.097186327 seconds
+
+Trial: 3 Iterations: 500
+RHC: 79.0 time taken to find solution: 4.07642E-4 seconds
+SA: 70.0 time taken to find solution: 5.13889E-4 seconds
+GA: 81.0 time taken to find solution: 0.045272042 seconds
+MIMIC: 98.0 time taken to find solution: 2.619437582 seconds
+
+Trial: 4 Iterations: 500
+RHC: 82.0 time taken to find solution: 0.001518868 seconds
+SA: 70.0 time taken to find solution: 0.002134507 seconds
+GA: 82.0 time taken to find solution: 0.118928117 seconds
+MIMIC: 103.0 time taken to find solution: 3.875825095 seconds
+
+Trial: 0 Iterations: 1000
+RHC: 82.0 time taken to find solution: 8.15086E-4 seconds
+SA: 81.0 time taken to find solution: 0.001103447 seconds
+GA: 89.0 time taken to find solution: 0.095467304 seconds
+MIMIC: 109.0 time taken to find solution: 5.573247984 seconds
+
+Trial: 1 Iterations: 1000
+RHC: 78.0 time taken to find solution: 7.38795E-4 seconds
+SA: 88.0 time taken to find solution: 0.001006743 seconds
+GA: 85.0 time taken to find solution: 0.090186767 seconds
+MIMIC: 100.0 time taken to find solution: 6.668399469 seconds
+
+Trial: 2 Iterations: 1000
+RHC: 87.0 time taken to find solution: 0.002854844 seconds
+SA: 81.0 time taken to find solution: 0.003995718 seconds
+GA: 78.0 time taken to find solution: 0.120876699 seconds
+MIMIC: 87.0 time taken to find solution: 4.979912827 seconds
+
+Trial: 3 Iterations: 1000
+RHC: 82.0 time taken to find solution: 5.32291E-4 seconds
+SA: 89.0 time taken to find solution: 8.07155E-4 seconds
+GA: 81.0 time taken to find solution: 0.089159325 seconds
+MIMIC: 107.0 time taken to find solution: 7.032750632 seconds
+
+Trial: 4 Iterations: 1000
+RHC: 89.0 time taken to find solution: 0.001836693 seconds
+SA: 85.0 time taken to find solution: 0.001577181 seconds
+GA: 89.0 time taken to find solution: 0.089717577 seconds
+MIMIC: 112.0 time taken to find solution: 5.699279538 seconds
+
+Trial: 0 Iterations: 1500
+RHC: 89.0 time taken to find solution: 7.03885E-4 seconds
+SA: 99.0 time taken to find solution: 0.001126398 seconds
+GA: 103.0 time taken to find solution: 0.255775165 seconds
+MIMIC: 103.0 time taken to find solution: 8.889690373 seconds
+
+Trial: 1 Iterations: 1500
+RHC: 91.0 time taken to find solution: 0.001809217 seconds
+SA: 84.0 time taken to find solution: 0.001339087 seconds
+GA: 103.0 time taken to find solution: 0.143175484 seconds
+MIMIC: 98.0 time taken to find solution: 9.180316837 seconds
+
+Trial: 2 Iterations: 1500
+RHC: 95.0 time taken to find solution: 7.16688E-4 seconds
+SA: 91.0 time taken to find solution: 0.001165552 seconds
+GA: 94.0 time taken to find solution: 0.299441514 seconds
+MIMIC: 105.0 time taken to find solution: 7.300843959 seconds
+
+Trial: 3 Iterations: 1500
+RHC: 100.0 time taken to find solution: 7.25694E-4 seconds
+SA: 93.0 time taken to find solution: 0.00110942 seconds
+GA: 87.0 time taken to find solution: 0.128519922 seconds
+MIMIC: 104.0 time taken to find solution: 9.765914407 seconds
+
+Trial: 4 Iterations: 1500
+RHC: 82.0 time taken to find solution: 6.80292E-4 seconds
+SA: 102.0 time taken to find solution: 0.001137438 seconds
+GA: 102.0 time taken to find solution: 0.321996943 seconds
+MIMIC: 107.0 time taken to find solution: 8.470143023 seconds
+
+Trial: 0 Iterations: 2000
+RHC: 99.0 time taken to find solution: 0.001174133 seconds
+SA: 101.0 time taken to find solution: 0.001946399 seconds
+GA: 89.0 time taken to find solution: 0.415613137 seconds
+MIMIC: 105.0 time taken to find solution: 13.908502259 seconds
+
+Trial: 1 Iterations: 2000
+RHC: 102.0 time taken to find solution: 9.96014E-4 seconds
+SA: 98.0 time taken to find solution: 0.001545695 seconds
+GA: 84.0 time taken to find solution: 0.178090186 seconds
+MIMIC: 92.0 time taken to find solution: 9.249859657 seconds
+
+Trial: 2 Iterations: 2000
+RHC: 92.0 time taken to find solution: 7.98954E-4 seconds
+SA: 104.0 time taken to find solution: 0.001508933 seconds
+GA: 100.0 time taken to find solution: 0.182087179 seconds
+MIMIC: 103.0 time taken to find solution: 14.038206936 seconds
+
+Trial: 3 Iterations: 2000
+RHC: 86.0 time taken to find solution: 7.5168E-4 seconds
+SA: 84.0 time taken to find solution: 0.001498377 seconds
+GA: 103.0 time taken to find solution: 0.260383878 seconds
+MIMIC: 111.0 time taken to find solution: 14.633863444 seconds
+
+Trial: 4 Iterations: 2000
+RHC: 81.0 time taken to find solution: 7.69139E-4 seconds
+SA: 101.0 time taken to find solution: 0.001542963 seconds
+GA: 93.0 time taken to find solution: 0.173684352 seconds
+MIMIC: 104.0 time taken to find solution: 11.870811413 seconds
+
+Trial: 0 Iterations: 2500
+RHC: 79.0 time taken to find solution: 9.40747E-4 seconds
+SA: 112.0 time taken to find solution: 0.001857894 seconds
+GA: 105.0 time taken to find solution: 0.223583574 seconds
+MIMIC: 99.0 time taken to find solution: 13.312059226 seconds
+
+Trial: 1 Iterations: 2500
+RHC: 85.0 time taken to find solution: 9.90328E-4 seconds
+SA: 90.0 time taken to find solution: 0.001863277 seconds
+GA: 89.0 time taken to find solution: 0.223510713 seconds
+MIMIC: 100.0 time taken to find solution: 14.995776249 seconds
+
+Trial: 2 Iterations: 2500
+RHC: 95.0 time taken to find solution: 0.001145532 seconds
+SA: 108.0 time taken to find solution: 0.002426995 seconds
+GA: 92.0 time taken to find solution: 0.233982793 seconds
+MIMIC: 110.0 time taken to find solution: 12.07924028 seconds
+
+Trial: 3 Iterations: 2500
+RHC: 93.0 time taken to find solution: 9.41643E-4 seconds
+SA: 93.0 time taken to find solution: 0.003009222 seconds
+GA: 98.0 time taken to find solution: 0.217963775 seconds
+MIMIC: 94.0 time taken to find solution: 14.962950383 seconds
+
+Trial: 4 Iterations: 2500
+RHC: 81.0 time taken to find solution: 0.001167826 seconds
+SA: 104.0 time taken to find solution: 0.001973443 seconds
+GA: 90.0 time taken to find solution: 0.216895111 seconds
+MIMIC: 105.0 time taken to find solution: 13.452759045 seconds
+
+Trial: 0 Iterations: 3000
+RHC: 81.0 time taken to find solution: 0.004293182 seconds
+SA: 93.0 time taken to find solution: 0.01361005 seconds
+GA: 89.0 time taken to find solution: 0.597847819 seconds
+MIMIC: 109.0 time taken to find solution: 14.655189925 seconds
+
+Trial: 1 Iterations: 3000
+RHC: 88.0 time taken to find solution: 0.004342672 seconds
+SA: 105.0 time taken to find solution: 0.006295921 seconds
+GA: 93.0 time taken to find solution: 0.575443144 seconds
+MIMIC: 112.0 time taken to find solution: 16.752059357 seconds
+
+Trial: 2 Iterations: 3000
+RHC: 82.0 time taken to find solution: 0.00195386 seconds
+SA: 112.0 time taken to find solution: 0.002462751 seconds
+GA: 106.0 time taken to find solution: 0.38601254 seconds
+MIMIC: 112.0 time taken to find solution: 15.322096938 seconds
+
+Trial: 3 Iterations: 3000
+RHC: 83.0 time taken to find solution: 0.005492309 seconds
+SA: 108.0 time taken to find solution: 0.004764672 seconds
+GA: 94.0 time taken to find solution: 0.421553554 seconds
+MIMIC: 102.0 time taken to find solution: 16.861136158 seconds
+
+Trial: 4 Iterations: 3000
+RHC: 83.0 time taken to find solution: 0.001129323 seconds
+SA: 104.0 time taken to find solution: 0.001612545 seconds
+GA: 99.0 time taken to find solution: 0.286484106 seconds
+MIMIC: 112.0 time taken to find solution: 15.219799605 seconds
+
+Trial: 0 Iterations: 3500
+RHC: 89.0 time taken to find solution: 0.001313774 seconds
+SA: 112.0 time taken to find solution: 0.001875758 seconds
+GA: 101.0 time taken to find solution: 0.496397284 seconds
+MIMIC: 112.0 time taken to find solution: 19.808262714 seconds
+
+Trial: 1 Iterations: 3500
+RHC: 77.0 time taken to find solution: 0.004994924 seconds
+SA: 108.0 time taken to find solution: 0.00745975 seconds
+GA: 95.0 time taken to find solution: 1.082081144 seconds
+MIMIC: 102.0 time taken to find solution: 15.500456148 seconds
+
+Trial: 2 Iterations: 3500
+RHC: 90.0 time taken to find solution: 0.001741783 seconds
+SA: 112.0 time taken to find solution: 0.002007425 seconds
+GA: 96.0 time taken to find solution: 0.490859969 seconds
+MIMIC: 94.0 time taken to find solution: 15.594238712 seconds
+
+Trial: 3 Iterations: 3500
+RHC: 81.0 time taken to find solution: 0.005087363 seconds
+SA: 109.0 time taken to find solution: 0.007423086 seconds
+GA: 88.0 time taken to find solution: 0.824572146 seconds
+MIMIC: 104.0 time taken to find solution: 17.151333485 seconds
+
+Trial: 4 Iterations: 3500
+RHC: 78.0 time taken to find solution: 0.001392451 seconds
+SA: 95.0 time taken to find solution: 0.002319204 seconds
+GA: 98.0 time taken to find solution: 0.637628438 seconds
+MIMIC: 93.0 time taken to find solution: 21.732133808 seconds
+
+Trial: 0 Iterations: 4000
+RHC: 82.0 time taken to find solution: 0.002547715 seconds
+SA: 112.0 time taken to find solution: 0.00272578 seconds
+GA: 97.0 time taken to find solution: 0.347594223 seconds
+MIMIC: 110.0 time taken to find solution: 24.767176787 seconds
+
+Trial: 1 Iterations: 4000
+RHC: 95.0 time taken to find solution: 0.001523396 seconds
+SA: 108.0 time taken to find solution: 0.002912715 seconds
+GA: 95.0 time taken to find solution: 1.072340294 seconds
+MIMIC: 111.0 time taken to find solution: 20.268688779 seconds
+
+Trial: 2 Iterations: 4000
+RHC: 83.0 time taken to find solution: 0.001492436 seconds
+SA: 109.0 time taken to find solution: 0.002074454 seconds
+GA: 104.0 time taken to find solution: 0.645191238 seconds
+MIMIC: 103.0 time taken to find solution: 26.193501965 seconds
+
+Trial: 3 Iterations: 4000
+RHC: 86.0 time taken to find solution: 0.00963863 seconds
+SA: 105.0 time taken to find solution: 0.003413146 seconds
+GA: 108.0 time taken to find solution: 1.183131491 seconds
+MIMIC: 108.0 time taken to find solution: 18.807884508 seconds
+
+Trial: 4 Iterations: 4000
+RHC: 72.0 time taken to find solution: 0.001496019 seconds
+SA: 110.0 time taken to find solution: 0.002081914 seconds
+GA: 106.0 time taken to find solution: 0.610292438 seconds
+MIMIC: 112.0 time taken to find solution: 21.616886531 seconds
+
+Trial: 0 Iterations: 4500
+RHC: 94.0 time taken to find solution: 0.001814116 seconds
+SA: 112.0 time taken to find solution: 0.002329463 seconds
+GA: 93.0 time taken to find solution: 0.39868849 seconds
+MIMIC: 109.0 time taken to find solution: 21.41362461 seconds
+
+Trial: 1 Iterations: 4500
+RHC: 80.0 time taken to find solution: 0.002621919 seconds
+SA: 112.0 time taken to find solution: 0.002426178 seconds
+GA: 110.0 time taken to find solution: 0.717136764 seconds
+MIMIC: 102.0 time taken to find solution: 24.664941158 seconds
+
+Trial: 2 Iterations: 4500
+RHC: 104.0 time taken to find solution: 0.006683506 seconds
+SA: 110.0 time taken to find solution: 0.010209499 seconds
+GA: 109.0 time taken to find solution: 0.842216291 seconds
+MIMIC: 112.0 time taken to find solution: 19.476849359 seconds
+
+Trial: 3 Iterations: 4500
+RHC: 75.0 time taken to find solution: 0.007459233 seconds
+SA: 112.0 time taken to find solution: 0.00931288 seconds
+GA: 110.0 time taken to find solution: 0.511559142 seconds
+MIMIC: 104.0 time taken to find solution: 21.479793418 seconds
+
+Trial: 4 Iterations: 4500
+RHC: 91.0 time taken to find solution: 0.002120637 seconds
+SA: 112.0 time taken to find solution: 0.002589589 seconds
+GA: 111.0 time taken to find solution: 0.399011959 seconds
+MIMIC: 108.0 time taken to find solution: 22.888455837 seconds
+
+Trial: 0 Iterations: 5000
+RHC: 91.0 time taken to find solution: 0.00187435 seconds
+SA: 110.0 time taken to find solution: 0.002573066 seconds
+GA: 107.0 time taken to find solution: 0.416885438 seconds
+MIMIC: 112.0 time taken to find solution: 24.40344635 seconds
+
+Trial: 1 Iterations: 5000
+RHC: 76.0 time taken to find solution: 0.001836473 seconds
+SA: 112.0 time taken to find solution: 0.00261293 seconds
+GA: 92.0 time taken to find solution: 0.418567626 seconds
+MIMIC: 106.0 time taken to find solution: 30.684859335 seconds
+
+Trial: 2 Iterations: 5000
+RHC: 81.0 time taken to find solution: 0.005429099 seconds
+SA: 103.0 time taken to find solution: 0.009878738 seconds
+GA: 97.0 time taken to find solution: 0.784617015 seconds
+MIMIC: 112.0 time taken to find solution: 27.661643294 seconds
+
+Trial: 3 Iterations: 5000
+RHC: 104.0 time taken to find solution: 0.003348877 seconds
+SA: 112.0 time taken to find solution: 0.003242728 seconds
+GA: 99.0 time taken to find solution: 0.417014407 seconds
+MIMIC: 91.0 time taken to find solution: 26.695773148 seconds
+
+Trial: 4 Iterations: 5000
+RHC: 76.0 time taken to find solution: 0.00230446 seconds
+SA: 107.0 time taken to find solution: 0.003401079 seconds
+GA: 102.0 time taken to find solution: 0.779862162 seconds
+MIMIC: 103.0 time taken to find solution: 30.151003496 seconds

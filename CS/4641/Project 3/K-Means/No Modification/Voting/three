@@ -1,0 +1,92 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     vote-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingWithUserConstant-Afirst-last-R2-Fyyyy-MM-dd'T'HH:mm:ss
+Instances:    435
+Attributes:   17
+              handicapped-infants
+              water-project-cost-sharing
+              adoption-of-the-budget-resolution
+              physician-fee-freeze
+              el-salvador-aid
+              religious-groups-in-schools
+              anti-satellite-test-ban
+              aid-to-nicaraguan-contras
+              mx-missile
+              immigration
+              synfuels-corporation-cutback
+              education-spending
+              superfund-right-to-sue
+              crime
+              duty-free-exports
+              export-administration-act-south-africa
+Ignored:
+              Class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 14
+Within cluster sum of squared errors: 373.0275800612642
+
+Initial starting points (random):
+
+Cluster 0: 0,0,1,1,1,1,0,0,1,0,0,0,1,1,1,2
+Cluster 1: 0,0,1,0,1,0,1,1,1,0,0,0,0,1,2,1
+Cluster 2: 0,1,1,0,1,1,1,1,0,0,1,0,1,0,1,1
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                      Cluster#
+Attribute                                 Full Data          0          1          2
+                                            (435.0)    (171.0)    (189.0)     (75.0)
+====================================================================================
+handicapped-infants                          0.4851     0.2105     0.6772     0.6267
+water-project-cost-sharing                    0.669     0.6842     0.5714       0.88
+adoption-of-the-budget-resolution            0.6322     0.1696     0.9365       0.92
+physician-fee-freeze                         0.4575     0.8772     0.0317     0.5733
+el-salvador-aid                              0.5563     1.0117      0.037     0.8267
+religious-groups-in-schools                  0.6759     0.9474      0.291     1.0267
+anti-satellite-test-ban                      0.6138     0.1404     0.9524       0.84
+aid-to-nicaraguan-contras                    0.6253     0.0585     0.9841     1.0133
+mx-missile                                    0.577     0.0702          1     0.6667
+immigration                                  0.5287     0.4854     0.5185     0.6533
+synfuels-corporation-cutback                 0.4414     0.3041     0.4286     0.7867
+education-spending                           0.5356     0.9181     0.1534     0.6267
+superfund-right-to-sue                       0.5954     0.9298     0.1376     0.9867
+crime                                        0.6483     0.9883     0.2169       0.96
+duty-free-exports                            0.5287     0.1228     0.8042       0.76
+export-administration-act-south-africa       1.0966     0.7427     1.2698     1.4667
+
+
+
+
+Time taken to build model (full training data) : 0.02 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      171 ( 39%)
+1      189 ( 43%)
+2       75 ( 17%)
+
+
+Class attribute: Class
+Classes to Clusters:
+
+   0   1   2  <-- assigned to cluster
+  33 183  51 | democrat
+ 138   6  24 | republican
+
+Cluster 0 <-- republican
+Cluster 1 <-- democrat
+Cluster 2 <-- No class
+
+Incorrectly clustered instances :	114.0	 26.2069 %
+

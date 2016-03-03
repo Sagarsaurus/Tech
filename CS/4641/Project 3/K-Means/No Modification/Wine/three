@@ -1,0 +1,86 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     winequality-red-weka.filters.unsupervised.instance.RemovePercentage-P34.0-V
+Instances:    1599
+Attributes:   12
+              fixed_acidity
+              volatile_acidity
+              citric_acid
+              residual_sugar
+              chlorides
+              free_sulfur_dioxide
+              total_sulfur_dioxide
+              density
+              pH
+              sulphates
+              alcohol
+Ignored:
+              class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 21
+Within cluster sum of squared errors: 209.3225337554401
+
+Initial starting points (random):
+
+Cluster 0: 7.7,0.49,0.26,1.9,0.062,9,31,0.9966,3.39,0.64,9.6
+Cluster 1: 5.4,0.74,0,1.2,0.041,16,46,0.99258,4.01,0.59,12.5
+Cluster 2: 5,1.02,0.04,1.4,0.045,41,85,0.9938,3.75,0.48,10.5
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                    Cluster#
+Attribute               Full Data          0          1          2
+                         (1599.0)    (471.0)    (334.0)    (794.0)
+==================================================================
+fixed_acidity              8.3196    10.2809     7.1853     7.6334
+volatile_acidity           0.5278      0.423     0.4578     0.6194
+citric_acid                 0.271     0.4918     0.2441     0.1513
+residual_sugar             2.5388     2.8237     2.3522     2.4483
+chlorides                  0.0875     0.1028     0.0699     0.0858
+free_sulfur_dioxide       15.8749     13.552    17.3787    16.6203
+total_sulfur_dioxide      46.4678    39.7877    41.9042    52.3501
+density                    0.9967     0.9982     0.9945     0.9968
+pH                         3.3111     3.1892     3.4039     3.3444
+sulphates                  0.6581     0.7395     0.6762     0.6023
+alcohol                    10.423    10.4118    11.8119     9.8454
+
+
+
+
+Time taken to build model (full training data) : 0.03 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       471 ( 29%)
+1       334 ( 21%)
+2       794 ( 50%)
+
+
+Class attribute: class
+Classes to Clusters:
+
+   0   1   2  <-- assigned to cluster
+   3   0   7 | 3
+   8   7  38 | 4
+ 161  47 473 | 5
+ 204 181 253 | 6
+  87  89  23 | 7
+   8  10   0 | 8
+
+Cluster 0 <-- 6
+Cluster 1 <-- 7
+Cluster 2 <-- 5
+
+Incorrectly clustered instances :	833.0	 52.0951 %
+

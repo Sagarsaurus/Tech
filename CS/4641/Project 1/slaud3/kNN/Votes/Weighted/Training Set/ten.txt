@@ -1,0 +1,58 @@
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 10 -W 0 -I -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     vote
+Instances:    291
+Attributes:   17
+              handicapped-infants
+              water-project-cost-sharing
+              adoption-of-the-budget-resolution
+              physician-fee-freeze
+              el-salvador-aid
+              religious-groups-in-schools
+              anti-satellite-test-ban
+              aid-to-nicaraguan-contras
+              mx-missile
+              immigration
+              synfuels-corporation-cutback
+              education-spending
+              superfund-right-to-sue
+              crime
+              duty-free-exports
+              export-administration-act-south-africa
+              Class
+Test mode:evaluate on training data
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 10 inverse-distance-weighted nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+=== Summary ===
+
+Correctly Classified Instances         282               96.9072 %
+Incorrectly Classified Instances         9                3.0928 %
+Kappa statistic                          0.9352
+Mean absolute error                      0.0343
+Root mean squared error                  0.1259
+Relative absolute error                  7.2653 %
+Root relative squared error             25.9224 %
+Total Number of Instances              291     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.956     0.009      0.994     0.956     0.975      0.999    democrat
+                 0.991     0.044      0.932     0.991     0.961      0.999    republican
+Weighted Avg.    0.969     0.023      0.971     0.969     0.969      0.999
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 172   8 |   a = democrat
+   1 110 |   b = republican
+

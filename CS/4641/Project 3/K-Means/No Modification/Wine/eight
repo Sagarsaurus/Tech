@@ -1,0 +1,101 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 8 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     winequality-red-weka.filters.unsupervised.instance.RemovePercentage-P34.0-V
+Instances:    1599
+Attributes:   12
+              fixed_acidity
+              volatile_acidity
+              citric_acid
+              residual_sugar
+              chlorides
+              free_sulfur_dioxide
+              total_sulfur_dioxide
+              density
+              pH
+              sulphates
+              alcohol
+Ignored:
+              class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 34
+Within cluster sum of squared errors: 148.27726411033538
+
+Initial starting points (random):
+
+Cluster 0: 7.7,0.49,0.26,1.9,0.062,9,31,0.9966,3.39,0.64,9.6
+Cluster 1: 5.4,0.74,0,1.2,0.041,16,46,0.99258,4.01,0.59,12.5
+Cluster 2: 5,1.02,0.04,1.4,0.045,41,85,0.9938,3.75,0.48,10.5
+Cluster 3: 7.6,0.51,0.15,2.8,0.11,33,73,0.9955,3.17,0.63,10.2
+Cluster 4: 9.8,0.34,0.39,1.4,0.066,3,7,0.9947,3.19,0.55,11.4
+Cluster 5: 7,0.56,0.13,1.6,0.077,25,42,0.99629,3.34,0.59,9.2
+Cluster 6: 8.2,0.39,0.38,1.5,0.058,10,29,0.9962,3.26,0.74,9.8
+Cluster 7: 7.5,0.6,0.03,1.8,0.095,25,99,0.995,3.35,0.54,10.1
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                    Cluster#
+Attribute               Full Data          0          1          2          3          4          5          6          7
+                         (1599.0)    (277.0)     (87.0)    (156.0)    (187.0)    (215.0)    (271.0)    (250.0)    (156.0)
+=========================================================================================================================
+fixed_acidity              8.3196     8.3625     5.9943     7.0474     8.6465     8.4363     7.4277    11.2152     7.1692
+volatile_acidity           0.5278     0.5357     0.5855     0.7071     0.5522     0.3454     0.6466     0.4132     0.5019
+citric_acid                 0.271     0.2863     0.0922     0.0704     0.3386     0.4159     0.0693     0.5442     0.1755
+residual_sugar             2.5388     2.1892      2.092     2.5128     3.7952     2.4284     2.2138     2.8316     2.1763
+chlorides                  0.0875     0.0949     0.0605     0.0833     0.0951     0.0738     0.0841     0.1086     0.0753
+free_sulfur_dioxide       15.8749    11.1191    16.8506    11.0096    29.3743     12.893    12.2804     10.752    31.0224
+total_sulfur_dioxide      46.4678    46.1552     44.954     24.609   101.6364    30.0744    36.7011      31.62    66.9487
+density                    0.9967     0.9972     0.9933     0.9957     0.9981     0.9952     0.9969     0.9988     0.9958
+pH                         3.3111     3.2599     3.5574     3.4395     3.2575     3.2814     3.3797     3.1488     3.3824
+sulphates                  0.6581     0.6404     0.6303     0.5903     0.6862     0.7089     0.5975     0.7489     0.6296
+alcohol                    10.423     9.7206    12.4163    10.8869     9.7683     11.726     9.6621    10.4515    10.3597
+
+
+
+
+Time taken to build model (full training data) : 0.09 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       277 ( 17%)
+1        87 (  5%)
+2       156 ( 10%)
+3       187 ( 12%)
+4       215 ( 13%)
+5       271 ( 17%)
+6       250 ( 16%)
+7       156 ( 10%)
+
+
+Class attribute: class
+Classes to Clusters:
+
+   0   1   2   3   4   5   6   7  <-- assigned to cluster
+   0   0   5   1   0   2   2   0 | 3
+  10   1  18   3   3  12   4   2 | 4
+ 154  22  47 132  15 165  79  67 | 5
+ 106  42  71  42 101  84 112  80 | 6
+   6  18  15   9  87   8  49   7 | 7
+   1   4   0   0   9   0   4   0 | 8
+
+Cluster 0 <-- No class
+Cluster 1 <-- 8
+Cluster 2 <-- 4
+Cluster 3 <-- 3
+Cluster 4 <-- 7
+Cluster 5 <-- 5
+Cluster 6 <-- 6
+Cluster 7 <-- No class
+
+Incorrectly clustered instances :	1212.0	 75.7974 %
+

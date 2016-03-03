@@ -1,0 +1,122 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N 8 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 100 -num-slots 1 -S 100
+Relation:     winequality-red-weka.filters.unsupervised.instance.RemovePercentage-P34.0-V
+Instances:    1599
+Attributes:   12
+              fixed_acidity
+              volatile_acidity
+              citric_acid
+              residual_sugar
+              chlorides
+              free_sulfur_dioxide
+              total_sulfur_dioxide
+              density
+              pH
+              sulphates
+              alcohol
+Ignored:
+              class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters: 8
+Number of iterations performed: 54
+
+
+                       Cluster
+Attribute                    0       1       2       3       4       5       6       7
+                        (0.21)  (0.05)  (0.11)  (0.08)   (0.2)  (0.13)  (0.06)  (0.17)
+=======================================================================================
+fixed_acidity
+  mean                   7.6355  8.5271  6.4082  8.4425  8.1906  8.2721  7.0665 10.9351
+  std. dev.              0.8162    1.02   0.802  1.9004  1.0029  1.0149  0.5751  1.4963
+
+volatile_acidity
+  mean                   0.6091  0.5484  0.5958   0.523  0.5598  0.3426  0.7494  0.4069
+  std. dev.              0.1381  0.1621  0.1472  0.1913  0.1444  0.0861  0.1939  0.1164
+
+citric_acid
+  mean                   0.1267  0.3932  0.0795  0.3538  0.2521  0.3876  0.0409  0.5162
+  std. dev.              0.1026  0.1985  0.0803  0.1766  0.1272  0.0809  0.0418  0.1034
+
+residual_sugar
+  mean                   2.0544  2.0105  2.0314  5.2114  2.4058  2.1002  2.8086  2.7765
+  std. dev.              0.3613  0.3952   0.358  3.3162  0.5472  0.4028  1.3288   1.088
+
+chlorides
+  mean                   0.0808  0.2263  0.0662  0.0978  0.0838  0.0699  0.0872  0.0846
+  std. dev.              0.0119  0.1364  0.0147   0.043  0.0097   0.013  0.0291   0.018
+
+free_sulfur_dioxide
+  mean                   11.046 14.0713 21.0526  29.167  21.829 15.4024  7.6973  9.1033
+  std. dev.              4.7122  8.8647  10.303 14.6617  8.2472 10.0576  3.7032  5.1846
+
+total_sulfur_dioxide
+  mean                   31.132 59.2545 46.0055 87.8794 78.4755 33.6089 16.8012 26.1521
+  std. dev.             11.9395 38.3363 23.9656 42.9677  28.628 19.1054  6.3388 12.8754
+
+density
+  mean                   0.9967  0.9973  0.9944  0.9977  0.9973  0.9954   0.996  0.9984
+  std. dev.               0.001  0.0009  0.0014  0.0028  0.0012  0.0012  0.0011  0.0016
+
+pH
+  mean                   3.3515  3.1431  3.4943  3.2858  3.2993  3.3102  3.4356  3.1693
+  std. dev.              0.1234   0.139  0.1414  0.1396  0.1149  0.0931   0.081   0.112
+
+sulphates
+  mean                   0.6017   1.011  0.6446  0.6975  0.5734  0.7225  0.5607  0.7051
+  std. dev.              0.1079  0.3693  0.1215  0.1615  0.0662   0.126  0.0743  0.1447
+
+alcohol
+  mean                   9.8545  9.5406 11.5313 10.5604  9.6296 11.4155 10.6263  10.665
+  std. dev.              0.5313   0.451  1.0907  1.1556  0.3717  0.8419  0.7828  0.9983
+
+
+
+Time taken to build model (full training data) : 6.93 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       351 ( 22%)
+1        72 (  5%)
+2       175 ( 11%)
+3       116 (  7%)
+4       313 ( 20%)
+5       204 ( 13%)
+6        94 (  6%)
+7       274 ( 17%)
+
+
+Log likelihood: -2.06167
+
+
+Class attribute: class
+Classes to Clusters:
+
+   0   1   2   3   4   5   6   7  <-- assigned to cluster
+   1   2   0   1   0   0   5   1 | 3
+  12   3   5   5   7   2  15   4 | 4
+ 193  41  47  57 214  21  35  73 | 5
+ 132  25  97  36  88 105  30 125 | 6
+  13   1  22  16   4  70   9  64 | 7
+   0   0   4   1   0   6   0   7 | 8
+
+Cluster 0 <-- 6
+Cluster 1 <-- 3
+Cluster 2 <-- No class
+Cluster 3 <-- No class
+Cluster 4 <-- 5
+Cluster 5 <-- 7
+Cluster 6 <-- 4
+Cluster 7 <-- 8
+
+Incorrectly clustered instances :	1159.0	 72.4828 %
+

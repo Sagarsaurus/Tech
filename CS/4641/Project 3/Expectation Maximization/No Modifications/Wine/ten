@@ -1,0 +1,126 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N 10 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 100 -num-slots 1 -S 100
+Relation:     winequality-red-weka.filters.unsupervised.instance.RemovePercentage-P34.0-V
+Instances:    1599
+Attributes:   12
+              fixed_acidity
+              volatile_acidity
+              citric_acid
+              residual_sugar
+              chlorides
+              free_sulfur_dioxide
+              total_sulfur_dioxide
+              density
+              pH
+              sulphates
+              alcohol
+Ignored:
+              class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters: 10
+Number of iterations performed: 67
+
+
+                       Cluster
+Attribute                    0       1       2       3       4       5       6       7       8       9
+                        (0.12)  (0.09)  (0.09)  (0.09)  (0.04)  (0.08)  (0.19)  (0.07)  (0.12)  (0.11)
+=======================================================================================================
+fixed_acidity
+  mean                   8.6382 11.6115 10.1532  7.0102  8.3366  6.2122  7.2336  8.2281  8.4333  8.1858
+  std. dev.              0.9556  1.4267  1.1244  0.5593  0.9128  0.7844  0.4526  1.8229  0.7192  1.0072
+
+volatile_acidity
+  mean                    0.583  0.4219  0.3895  0.7134  0.5547   0.594  0.5532  0.5306  0.6019  0.3402
+  std. dev.              0.1561  0.1161  0.1096  0.1827  0.1624  0.1548   0.116  0.1932  0.1737  0.0858
+
+citric_acid
+  mean                   0.2851  0.5351  0.5013  0.0386  0.3701  0.0796  0.1495  0.3337  0.2002  0.3858
+  std. dev.              0.1399  0.1024  0.0893  0.0401  0.2094  0.0797  0.1115   0.177  0.1268  0.0789
+
+residual_sugar
+  mean                   2.5669  2.6648  2.8758  2.5593  1.9852  2.0203  2.0474  5.3865  2.1305  2.1268
+  std. dev.              0.5633  0.8158  1.3502  1.1714  0.4084  0.3726  0.3193  3.3672  0.4044  0.4386
+
+chlorides
+  mean                   0.0876  0.0845  0.0913  0.0844  0.2433  0.0639  0.0778  0.0966  0.0834  0.0692
+  std. dev.              0.0109  0.0148  0.0355  0.0251  0.1435  0.0156  0.0076  0.0427  0.0138  0.0124
+
+free_sulfur_dioxide
+  mean                   22.392 12.5682  5.4151   8.237 14.6569 19.4117 18.9066 29.8507  9.2053 16.2243
+  std. dev.              7.8916  6.3409  1.4356  3.8785  8.7366 10.0624  8.5732 14.6205  3.9179 10.0139
+
+total_sulfur_dioxide
+  mean                  86.3164 35.1891 15.6497 19.0018 61.9835 44.1368 51.9636 90.1599 29.6408 34.8232
+  std. dev.             30.5188 13.5999  4.7471  7.3574 36.6069 24.1678 23.8691 41.9991 12.1572  18.773
+
+density
+  mean                   0.9977  0.9991  0.9975  0.9962  0.9971  0.9939  0.9964  0.9977  0.9971  0.9952
+  std. dev.              0.0012  0.0015  0.0014  0.0012  0.0008  0.0012  0.0008  0.0029   0.001  0.0011
+
+pH
+  mean                   3.2554  3.1421  3.2001  3.4484  3.1338  3.5177  3.3877  3.3005  3.2713  3.3154
+  std. dev.              0.0961  0.1227  0.0835  0.1049  0.1471  0.1468   0.097  0.1434  0.0953  0.0942
+
+sulphates
+  mean                   0.5799  0.7104  0.7149  0.5876  1.0756  0.6425  0.5917  0.6949  0.6012  0.7275
+  std. dev.              0.0686  0.1388  0.1585  0.1097  0.3693  0.1301  0.0785  0.1618  0.1167  0.1237
+
+alcohol
+  mean                   9.5903 10.4646  10.985 10.3867   9.564  11.853  9.8886 10.5183  9.8617 11.5081
+  std. dev.              0.3387  0.9362   1.025  0.7921  0.4306  1.0223  0.5623  1.1747  0.5392  0.7932
+
+
+
+Time taken to build model (full training data) : 10.23 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+ 0       194 ( 12%)
+ 1       148 (  9%)
+ 2       138 (  9%)
+ 3       146 (  9%)
+ 4        57 (  4%)
+ 5       128 (  8%)
+ 6       305 ( 19%)
+ 7       110 (  7%)
+ 8       187 ( 12%)
+ 9       186 ( 12%)
+
+
+Log likelihood: -1.73636
+
+
+Class attribute: class
+Classes to Clusters:
+
+   0   1   2   3   4   5   6   7   8   9  <-- assigned to cluster
+   0   1   1   5   1   0   1   1   0   0 | 3
+   3   3   1  20   3   2   5   5  10   1 | 4
+ 144  40  29  67  32  27 175  54  97  16 | 5
+  44  74  63  43  20  74 114  36  76  94 | 6
+   3  29  39  11   1  21  10  13   4  68 | 7
+   0   1   5   0   0   4   0   1   0   7 | 8
+
+Cluster  0 <-- 5
+Cluster  1 <-- No class
+Cluster  2 <-- 8
+Cluster  3 <-- 4
+Cluster  4 <-- No class
+Cluster  5 <-- No class
+Cluster  6 <-- 6
+Cluster  7 <-- 3
+Cluster  8 <-- No class
+Cluster  9 <-- 7
+
+Incorrectly clustered instances :	1247.0	 77.9862 %
+

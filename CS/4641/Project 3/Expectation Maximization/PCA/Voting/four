@@ -1,0 +1,125 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N 4 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     vote-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingWithUserConstant-Afirst-last-R2-Fyyyy-MM-dd'T'HH:mm:ss_principal components-weka.filters.unsupervised.attribute.PrincipalComponents-R0.95-A5-M-1
+Instances:    435
+Attributes:   15
+              -0.329el-salvador-aid+0.318mx-missile-0.315physician-fee-freeze+0.311aid-to-nicaraguan-contras+0.298anti-satellite-test-ban...
+              0.423synfuels-corporation-cutback+0.353water-project-cost-sharing+0.314religious-groups-in-schools+0.309export-administration-act-south-africa+0.3  superfund-right-to-sue...
+              -0.631immigration+0.571water-project-cost-sharing-0.244anti-satellite-test-ban-0.22crime+0.213handicapped-infants...
+              0.566immigration-0.554duty-free-exports+0.454handicapped-infants-0.201education-spending+0.172water-project-cost-sharing...
+              -0.787synfuels-corporation-cutback+0.329export-administration-act-south-africa+0.28 water-project-cost-sharing+0.205physician-fee-freeze+0.189superfund-right-to-sue...
+              -0.624handicapped-infants-0.435education-spending+0.319water-project-cost-sharing+0.308immigration+0.253religious-groups-in-schools...
+              -0.691export-administration-act-south-africa+0.383water-project-cost-sharing+0.285duty-free-exports-0.249religious-groups-in-schools+0.23 superfund-right-to-sue...
+              -0.567superfund-right-to-sue+0.333education-spending+0.309duty-free-exports-0.293adoption-of-the-budget-resolution-0.292mx-missile...
+              0.541duty-free-exports-0.534education-spending+0.332handicapped-infants-0.266mx-missile-0.229water-project-cost-sharing...
+              0.571religious-groups-in-schools-0.359export-administration-act-south-africa-0.323synfuels-corporation-cutback-0.316superfund-right-to-sue+0.294anti-satellite-test-ban...
+              0.487adoption-of-the-budget-resolution-0.462anti-satellite-test-ban-0.426crime+0.383education-spending-0.225water-project-cost-sharing...
+              0.588physician-fee-freeze-0.392mx-missile+0.368aid-to-nicaraguan-contras+0.29 adoption-of-the-budget-resolution+0.271anti-satellite-test-ban...
+              0.498crime-0.451superfund-right-to-sue+0.393adoption-of-the-budget-resolution+0.374mx-missile-0.242anti-satellite-test-ban...
+              0.478el-salvador-aid+0.458anti-satellite-test-ban-0.44aid-to-nicaraguan-contras-0.379religious-groups-in-schools+0.266superfund-right-to-sue...
+Ignored:
+              Class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters: 4
+Number of iterations performed: 51
+
+
+                                                                                                                                                                                Cluster
+Attribute                                                                                                                                                                             0       1       2       3
+                                                                                                                                                                                 (0.56)  (0.12)  (0.16)  (0.16)
+================================================================================================================================================================================================================
+-0.329el-salvador-aid+0.318mx-missile-0.315physician-fee-freeze+0.311aid-to-nicaraguan-contras+0.298anti-satellite-test-ban...
+  mean                                                                                                                                                                            0.1051  -0.006  2.8899 -3.2006
+  std. dev.                                                                                                                                                                       2.0837  1.4266   0.271  0.2374
+
+0.423synfuels-corporation-cutback+0.353water-project-cost-sharing+0.314religious-groups-in-schools+0.309export-administration-act-south-africa+0.3  superfund-right-to-sue...
+  mean                                                                                                                                                                            0.0147  2.0593 -0.8627 -0.6788
+  std. dev.                                                                                                                                                                       0.8249  2.2099   0.582  0.5831
+
+-0.631immigration+0.571water-project-cost-sharing-0.244anti-satellite-test-ban-0.22crime+0.213handicapped-infants...
+  mean                                                                                                                                                                            -0.134 -0.0752  0.4166  0.1138
+  std. dev.                                                                                                                                                                       1.1076  1.3321  0.9842  0.7682
+
+0.566immigration-0.554duty-free-exports+0.454handicapped-infants-0.201education-spending+0.172water-project-cost-sharing...
+  mean                                                                                                                                                                            0.1088 -0.4097 -0.0345 -0.0537
+  std. dev.                                                                                                                                                                       0.9446  1.4429  0.7244  0.5907
+
+-0.787synfuels-corporation-cutback+0.329export-administration-act-south-africa+0.28 water-project-cost-sharing+0.205physician-fee-freeze+0.189superfund-right-to-sue...
+  mean                                                                                                                                                                           -0.1197  0.1146  0.1613  0.1787
+  std. dev.                                                                                                                                                                       0.9783  1.1564  0.8167  0.6339
+
+-0.624handicapped-infants-0.435education-spending+0.319water-project-cost-sharing+0.308immigration+0.253religious-groups-in-schools...
+  mean                                                                                                                                                                            0.1271 -0.5103 -0.2027  0.1195
+  std. dev.                                                                                                                                                                       0.9388  1.2116  0.5267  0.5338
+
+-0.691export-administration-act-south-africa+0.383water-project-cost-sharing+0.285duty-free-exports-0.249religious-groups-in-schools+0.23 superfund-right-to-sue...
+  mean                                                                                                                                                                           -0.1059  0.1659  0.0823  0.1711
+  std. dev.                                                                                                                                                                       0.8715   1.017  0.6194  0.8486
+
+-0.567superfund-right-to-sue+0.333education-spending+0.309duty-free-exports-0.293adoption-of-the-budget-resolution-0.292mx-missile...
+  mean                                                                                                                                                                           -0.0382 -0.0269  0.1189  0.0362
+  std. dev.                                                                                                                                                                       0.7854  1.3701  0.3663  0.4346
+
+0.541duty-free-exports-0.534education-spending+0.332handicapped-infants-0.266mx-missile-0.229water-project-cost-sharing...
+  mean                                                                                                                                                                            0.0272  0.1209  0.0329  -0.214
+  std. dev.                                                                                                                                                                       0.7962  1.1756  0.4432  0.3041
+
+0.571religious-groups-in-schools-0.359export-administration-act-south-africa-0.323synfuels-corporation-cutback-0.316superfund-right-to-sue+0.294anti-satellite-test-ban...
+  mean                                                                                                                                                                           -0.0032  0.1637 -0.0738 -0.0334
+  std. dev.                                                                                                                                                                       0.7494  1.1931  0.3464  0.4318
+
+0.487adoption-of-the-budget-resolution-0.462anti-satellite-test-ban-0.426crime+0.383education-spending-0.225water-project-cost-sharing...
+  mean                                                                                                                                                                           -0.0669  0.1457  0.0843  0.0473
+  std. dev.                                                                                                                                                                       0.7168  1.1869  0.3226  0.3186
+
+0.588physician-fee-freeze-0.392mx-missile+0.368aid-to-nicaraguan-contras+0.29 adoption-of-the-budget-resolution+0.271anti-satellite-test-ban...
+  mean                                                                                                                                                                           -0.0432 -0.0235  0.1966 -0.0251
+  std. dev.                                                                                                                                                                       0.6252  1.3023  0.2401   0.166
+
+0.498crime-0.451superfund-right-to-sue+0.393adoption-of-the-budget-resolution+0.374mx-missile-0.242anti-satellite-test-ban...
+  mean                                                                                                                                                                           -0.0308  0.1372  0.0186 -0.0087
+  std. dev.                                                                                                                                                                       0.6969  0.8943  0.1892  0.1631
+
+0.478el-salvador-aid+0.458anti-satellite-test-ban-0.44aid-to-nicaraguan-contras-0.379religious-groups-in-schools+0.266superfund-right-to-sue...
+  mean                                                                                                                                                                           -0.0222  0.0106  0.1228 -0.0505
+  std. dev.                                                                                                                                                                       0.6619  0.8703   0.174   0.069
+
+
+
+Time taken to build model (full training data) : 0.2 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      251 ( 58%)
+1       45 ( 10%)
+2       68 ( 16%)
+3       71 ( 16%)
+
+
+Log likelihood: -15.87449
+
+
+Class attribute: Class
+Classes to Clusters:
+
+   0   1   2   3  <-- assigned to cluster
+ 168  30  68   1 | democrat
+  83  15   0  70 | republican
+
+Cluster 0 <-- democrat
+Cluster 1 <-- No class
+Cluster 2 <-- No class
+Cluster 3 <-- republican
+
+Incorrectly clustered instances :	197.0	 45.2874 %
+

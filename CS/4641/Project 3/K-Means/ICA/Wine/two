@@ -1,0 +1,83 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     winequality-red-weka.filters.unsupervised.instance.RemovePercentage-P34.0-V_ICA-weka.filters.unsupervised.attribute.IndependentComponents-W-A12-N200-T1.0E-4
+Instances:    1599
+Attributes:   12
+              Source_0
+              Source_1
+              Source_2
+              Source_3
+              Source_4
+              Source_5
+              Source_6
+              Source_7
+              Source_8
+              Source_9
+              Source_10
+Ignored:
+              class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 13
+Within cluster sum of squared errors: 185.631888175516
+
+Initial starting points (random):
+
+Cluster 0: 0.065294,-0.028598,-0.011291,0.155007,0.019012,-0.05658,0.026932,-0.062939,-0.137822,-0.08388,0.072611
+Cluster 1: 0.106507,-0.04134,-0.07015,0.224258,-0.088748,-0.101276,0.02045,-0.03486,-0.163993,-0.163328,0.082168
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                         Cluster#
+Attribute    Full Data          0          1
+              (1599.0)   (1064.0)    (535.0)
+============================================
+Source_0        0.0561      0.048     0.0723
+Source_1       -0.0207    -0.0192    -0.0238
+Source_2       -0.0085    -0.0121    -0.0015
+Source_3        0.1767     0.1661     0.1976
+Source_4        0.0193      0.027     0.0039
+Source_5       -0.0504     -0.045    -0.0611
+Source_6        0.0323     0.0267     0.0435
+Source_7       -0.0576    -0.0588    -0.0553
+Source_8       -0.1537    -0.1464    -0.1682
+Source_9       -0.1152    -0.1065    -0.1325
+Source_10       0.0783     0.0731     0.0888
+
+
+
+
+Time taken to build model (full training data) : 0.02 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      1064 ( 67%)
+1       535 ( 33%)
+
+
+Class attribute: class
+Classes to Clusters:
+
+   0   1  <-- assigned to cluster
+   7   3 | 3
+  33  20 | 4
+ 587  94 | 5
+ 371 267 | 6
+  62 137 | 7
+   4  14 | 8
+
+Cluster 0 <-- 5
+Cluster 1 <-- 6
+
+Incorrectly clustered instances :	745.0	 46.5916 %
+

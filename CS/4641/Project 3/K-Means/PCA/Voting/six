@@ -1,0 +1,97 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 6 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     vote-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingWithUserConstant-Afirst-last-R2-Fyyyy-MM-dd'T'HH:mm:ss_principal components-weka.filters.unsupervised.attribute.PrincipalComponents-R0.95-A5-M-1
+Instances:    435
+Attributes:   15
+              -0.329el-salvador-aid+0.318mx-missile-0.315physician-fee-freeze+0.311aid-to-nicaraguan-contras+0.298anti-satellite-test-ban...
+              0.423synfuels-corporation-cutback+0.353water-project-cost-sharing+0.314religious-groups-in-schools+0.309export-administration-act-south-africa+0.3  superfund-right-to-sue...
+              -0.631immigration+0.571water-project-cost-sharing-0.244anti-satellite-test-ban-0.22crime+0.213handicapped-infants...
+              0.566immigration-0.554duty-free-exports+0.454handicapped-infants-0.201education-spending+0.172water-project-cost-sharing...
+              -0.787synfuels-corporation-cutback+0.329export-administration-act-south-africa+0.28 water-project-cost-sharing+0.205physician-fee-freeze+0.189superfund-right-to-sue...
+              -0.624handicapped-infants-0.435education-spending+0.319water-project-cost-sharing+0.308immigration+0.253religious-groups-in-schools...
+              -0.691export-administration-act-south-africa+0.383water-project-cost-sharing+0.285duty-free-exports-0.249religious-groups-in-schools+0.23 superfund-right-to-sue...
+              -0.567superfund-right-to-sue+0.333education-spending+0.309duty-free-exports-0.293adoption-of-the-budget-resolution-0.292mx-missile...
+              0.541duty-free-exports-0.534education-spending+0.332handicapped-infants-0.266mx-missile-0.229water-project-cost-sharing...
+              0.571religious-groups-in-schools-0.359export-administration-act-south-africa-0.323synfuels-corporation-cutback-0.316superfund-right-to-sue+0.294anti-satellite-test-ban...
+              0.487adoption-of-the-budget-resolution-0.462anti-satellite-test-ban-0.426crime+0.383education-spending-0.225water-project-cost-sharing...
+              0.588physician-fee-freeze-0.392mx-missile+0.368aid-to-nicaraguan-contras+0.29 adoption-of-the-budget-resolution+0.271anti-satellite-test-ban...
+              0.498crime-0.451superfund-right-to-sue+0.393adoption-of-the-budget-resolution+0.374mx-missile-0.242anti-satellite-test-ban...
+              0.478el-salvador-aid+0.458anti-satellite-test-ban-0.44aid-to-nicaraguan-contras-0.379religious-groups-in-schools+0.266superfund-right-to-sue...
+Ignored:
+              Class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 12
+Within cluster sum of squared errors: 106.56666524935085
+
+Initial starting points (random):
+
+Cluster 0: -0.844001,0.014218,0.036132,-1.252882,0.761089,0.827682,-1.515163,-1.039541,1.270527,-0.304663,1.382804,-0.117865,1.054258,0.359912
+Cluster 1: 1.822809,-0.744742,-0.673806,-2.339423,0.2505,0.160121,-0.021285,0.171728,1.539118,0.541867,-0.186146,-0.091349,1.247192,0.770518
+Cluster 2: 0.524837,0.679504,1.146019,-0.978406,-1.061225,1.206564,0.038221,-0.468144,0.400937,0.762606,-0.150857,0.966989,-1.143369,0.827382
+Cluster 3: 2.920943,-1.144371,-0.996685,0.616953,0.242816,-0.223838,0.44973,0.299065,0.621752,0.116563,0.370315,-0.012375,-0.230667,-0.109706
+Cluster 4: -0.161727,2.030378,-0.836599,0.491695,-0.221436,0.984641,-2.330531,-0.04046,-0.018126,0.316522,-1.797011,-0.125664,2.16327,1.060152
+Cluster 5: 2.431079,-0.431947,-0.155964,1.471075,-0.735198,-0.202297,-1.384257,0.768836,0.012894,-1.197808,0.066371,1.067435,-0.855308,-0.086713
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                                                                                                                                                             Cluster#
+Attribute                                                                                                                                                                        Full Data          0          1          2          3          4          5
+                                                                                                                                                                                   (435.0)     (82.0)     (40.0)     (70.0)    (134.0)     (37.0)     (72.0)
+============================================================================================================================================================================================================================================================
+-0.329el-salvador-aid+0.318mx-missile-0.315physician-fee-freeze+0.311aid-to-nicaraguan-contras+0.298anti-satellite-test-ban...                                                           0    -2.5836    -0.2477    -3.0642     2.6268    -0.3126     1.3311
+0.423synfuels-corporation-cutback+0.353water-project-cost-sharing+0.314religious-groups-in-schools+0.309export-administration-act-south-africa+0.3  superfund-right-to-sue...            0    -0.1093      1.399     -0.469     -0.462     0.4164     0.4492
+-0.631immigration+0.571water-project-cost-sharing-0.244anti-satellite-test-ban-0.22crime+0.213handicapped-infants...                                                                     0     0.0816    -1.0134     0.1809     0.2387      0.209    -0.2574
+0.566immigration-0.554duty-free-exports+0.454handicapped-infants-0.201education-spending+0.172water-project-cost-sharing...                                                              0    -0.0282    -0.8348     0.1812      0.092     0.4832    -0.0997
+-0.787synfuels-corporation-cutback+0.329export-administration-act-south-africa+0.28 water-project-cost-sharing+0.205physician-fee-freeze+0.189superfund-right-to-sue...                  0     0.1795     0.6536    -0.1947     0.1126     -0.052     -0.561
+-0.624handicapped-infants-0.435education-spending+0.319water-project-cost-sharing+0.308immigration+0.253religious-groups-in-schools...                                                   0      0.093    -0.2772    -0.2266    -0.2199     0.0223     0.6661
+-0.691export-administration-act-south-africa+0.383water-project-cost-sharing+0.285duty-free-exports-0.249religious-groups-in-schools+0.23 superfund-right-to-sue...                      0     -0.629     0.3677      0.817     0.2602    -1.0802    -0.2115
+-0.567superfund-right-to-sue+0.333education-spending+0.309duty-free-exports-0.293adoption-of-the-budget-resolution-0.292mx-missile...                                                    0     0.2704    -0.0655    -0.0656     0.1544    -0.4313    -0.2733
+0.541duty-free-exports-0.534education-spending+0.332handicapped-infants-0.266mx-missile-0.229water-project-cost-sharing...                                                               0    -0.1185     0.5417    -0.0163    -0.0309     0.5205    -0.3601
+0.571religious-groups-in-schools-0.359export-administration-act-south-africa-0.323synfuels-corporation-cutback-0.316superfund-right-to-sue+0.294anti-satellite-test-ban...               0    -0.3364    -0.1004     0.1866    -0.2902     0.4895      0.546
+0.487adoption-of-the-budget-resolution-0.462anti-satellite-test-ban-0.426crime+0.383education-spending-0.225water-project-cost-sharing...                                                0     0.1803    -0.2494    -0.0975     0.0924     -0.059    -0.1138
+0.588physician-fee-freeze-0.392mx-missile+0.368aid-to-nicaraguan-contras+0.29 adoption-of-the-budget-resolution+0.271anti-satellite-test-ban...                                          0    -0.0875     0.4629     -0.029     0.0624    -0.2051      -0.14
+0.498crime-0.451superfund-right-to-sue+0.393adoption-of-the-budget-resolution+0.374mx-missile-0.242anti-satellite-test-ban...                                                            0    -0.0831     0.1928    -0.0132     0.0254      0.403     -0.254
+0.478el-salvador-aid+0.458anti-satellite-test-ban-0.44aid-to-nicaraguan-contras-0.379religious-groups-in-schools+0.266superfund-right-to-sue...                                          0    -0.0541    -0.1234    -0.0128     0.1115      0.757    -0.4538
+
+
+
+
+Time taken to build model (full training data) : 0.02 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       82 ( 19%)
+1       40 (  9%)
+2       70 ( 16%)
+3      134 ( 31%)
+4       37 (  9%)
+5       72 ( 17%)
+
+
+Class attribute: Class
+Classes to Clusters:
+
+   0   1   2   3   4   5  <-- assigned to cluster
+  13  11  10 131  30  72 | democrat
+  69  29  60   3   7   0 | republican
+
+Cluster 0 <-- republican
+Cluster 1 <-- No class
+Cluster 2 <-- No class
+Cluster 3 <-- democrat
+Cluster 4 <-- No class
+Cluster 5 <-- No class
+
+Incorrectly clustered instances :	235.0	 54.023  %
+

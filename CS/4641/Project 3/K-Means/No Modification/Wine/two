@@ -1,0 +1,83 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     winequality-red-weka.filters.unsupervised.instance.RemovePercentage-P34.0-V
+Instances:    1599
+Attributes:   12
+              fixed_acidity
+              volatile_acidity
+              citric_acid
+              residual_sugar
+              chlorides
+              free_sulfur_dioxide
+              total_sulfur_dioxide
+              density
+              pH
+              sulphates
+              alcohol
+Ignored:
+              class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 14
+Within cluster sum of squared errors: 239.183110387642
+
+Initial starting points (random):
+
+Cluster 0: 7.7,0.49,0.26,1.9,0.062,9,31,0.9966,3.39,0.64,9.6
+Cluster 1: 5.4,0.74,0,1.2,0.041,16,46,0.99258,4.01,0.59,12.5
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                    Cluster#
+Attribute               Full Data          0          1
+                         (1599.0)    (660.0)    (939.0)
+=======================================================
+fixed_acidity              8.3196      9.718     7.3367
+volatile_acidity           0.5278     0.4122     0.6091
+citric_acid                 0.271     0.4595     0.1385
+residual_sugar             2.5388     2.7361     2.4002
+chlorides                  0.0875     0.0957     0.0817
+free_sulfur_dioxide       15.8749     14.553     16.804
+total_sulfur_dioxide      46.4678    43.0379    48.8786
+density                    0.9967     0.9975     0.9962
+pH                         3.3111      3.219     3.3759
+sulphates                  0.6581      0.733     0.6055
+alcohol                    10.423    10.6415    10.2694
+
+
+
+
+Time taken to build model (full training data) : 0.02 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       660 ( 41%)
+1       939 ( 59%)
+
+
+Class attribute: class
+Classes to Clusters:
+
+   0   1  <-- assigned to cluster
+   3   7 | 3
+  11  42 | 4
+ 211 470 | 5
+ 279 359 | 6
+ 144  55 | 7
+  12   6 | 8
+
+Cluster 0 <-- 6
+Cluster 1 <-- 5
+
+Incorrectly clustered instances :	850.0	 53.1582 %
+

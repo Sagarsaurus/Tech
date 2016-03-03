@@ -1,0 +1,31 @@
+Sagar Laud
+
+Collaborators: John Dugan, Peter Aquila, Stanley Ayzenberg, Tim Kerr
+
+1) For both successful and unsuccessful searches, the running time will not change at all.  Both of these will still take O(k) where k is the length of the list at that point.  Insertion however will increase from O(1) to O(k) as it will need to be inserted into the proper position.  Removal will remain O(k) because the fact that the list is sorted does not change the speed at which we find it in this case.
+
+2)
+	a)	When quicksort runs, it will choose a pivot.  Let this first pivot represent the root of the tree.  Now, the array will be partitioned around this pivot and it will call quicksort recursively on the left and right halves of the array.  In doing so, it will choose two pivots.  One will definitely be larger than the root and the other will definitely be smaller.  These are children of the root.  These in turn will call quicksort on the left and right halves and this can easily be represented as a tree.  With a proper choice of pivots, we will end up with a balanced BST (ideally).  However, if we somehow choose terrible pivots, we may effectively end up with a Linked List.  Partitioning allows the nodes to be able to find valid children very quickly.  But choosing inefficient pivots will cause issues.
+
+	b)	The number of charges will be equal to the depth of the node.  Let the height of the tree be h.  Then, the number of comparisons will be O(n*h).
+
+	c)	When we choose an initial pivot, we partition the elements of the array into two distinct arrays.  However, choosing nodes in a random order vs using randomized quicksort can in effect yield the same result and perform in the same way as the elements always have the same probability of being chosen.  Choosing an element from a subarray is logically equivalent to choosing an element from an array in which all elements but the pivot exist.  They have the same probability of happening.
+
+	d)	In part c, we just discovered that randomized quicksort creates the same tree as uniformally random pivots.  We now know that the we are adding n elements and from part b we know that the running time is O(n*h).  In this case, the height is log n and therefore the running time is O(n log n).
+
+3)	Let us start by building a radix tree.  The length of the string is n so this will take O(k*n) operations where k is the maximum number of left/right operations that we do in order to insert. Therefore, insertion is big-Theta(n).  However, every time that we add an element, let us go ahead and mark the node as containing an element.  Within it, let us store the encoded key and set a boolean flag that signifies that an element has been added.  Now, we simply run a preorder traversal such that only the nodes that have the flag set will actually output a value.  In doing so, the values will indeed be output in the proper order and this will take big-Theta(n) time.  As insertion and traversing both took big-Theta(n) time, the overall time complexity remains big-Theta(n).
+
+4) 	
+	a)	This attribute should contain the sum of the left subtree and the sum of the right subtree, separately as a tuple or list with a constant number of two values (the right subtree helps with part c).
+
+	b)	SumLessThan(T, x):
+			if T == null:
+				return 0
+			if x >= T.data: //value stored in T
+				return T.data + T.leftSum + SumLessThan(T.right, x)
+			else:
+				return SumLessThan(T.left, x)
+
+		this is clearly O(log n) because returning the sum is O(1) and there will be at most log n operations performed for the recursive calls.  Essentially, it will be T(n) = T(n/2) + O(1) which is O(log n) by the master theorem.
+	
+	c)	In terms of insertion or rotation, these are rather simple to maintain.  Whenever a value is inserted, if the value is less than the data of the node, simply add it to the left sum.  If it is greater, add it to the right sum.  This will be O(log n) as we are only traversing down the tree once and the tree is balanced.  Whenever we perform a rotation, all that is shifted is a set of pointers.  When these pointers are shifted, the left and right children may be reassigned.  However, the pointers will be assigned to nodes that already know the cost of their left and right subtrees (as long as no pointers there were changed).  However, whenever pointers are reassigned, if the root of the rotation is assigned a new left subtree, then we can replace the value held in the left subtree sum with the value of the left subtree's left sum + the left subtree's right sum + the left subtrees data.  The same logic applies for the value held in the right subtree.  If we add a new right subtree, then we replace the value held in the new root's right variable with the sum held in the right subtree's left sum + the right subtree's right sum + the right subtree's data.  This arithmetic should be O(1).  Therefore, for a self-balancing tree inserting and a single rotation combine to be O(log n).  We would however have to recurse back up the tree updating the parent values accordingly which would make the entire rotation and reassignment operation become O(log n) as well.  In this way both operations can be O(log n).

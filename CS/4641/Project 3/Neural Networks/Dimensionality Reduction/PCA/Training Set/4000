@@ -1,0 +1,223 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 4000 -V 0 -S 0 -E 20 -H a
+Relation:     vote-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingWithUserConstant-Afirst-last-R2-Fyyyy-MM-dd'T'HH:mm:ss_principal components-weka.filters.unsupervised.attribute.PrincipalComponents-R0.95-A5-M-1
+Instances:    291
+Attributes:   15
+              -0.332el-salvador-aid+0.319mx-missile-0.312physician-fee-freeze+0.311aid-to-nicaraguan-contras+0.298adoption-of-the-budget-resolution...
+              0.433synfuels-corporation-cutback+0.311religious-groups-in-schools+0.295water-project-cost-sharing+0.276immigration+0.268export-administration-act-south-africa...
+              -0.643immigration+0.642water-project-cost-sharing+0.203export-administration-act-south-africa+0.198handicapped-infants-0.138anti-satellite-test-ban...
+              0.666synfuels-corporation-cutback-0.347duty-free-exports-0.294export-administration-act-south-africa-0.279anti-satellite-test-ban-0.205physician-fee-freeze...
+              -0.51immigration-0.436handicapped-infants-0.402water-project-cost-sharing+0.325synfuels-corporation-cutback+0.303duty-free-exports...
+              0.57 handicapped-infants-0.389immigration-0.38export-administration-act-south-africa+0.332education-spending-0.316water-project-cost-sharing...
+              -0.628export-administration-act-south-africa+0.42 duty-free-exports-0.345handicapped-infants+0.32 superfund-right-to-sue+0.208water-project-cost-sharing...
+              0.556superfund-right-to-sue-0.459religious-groups-in-schools-0.394anti-satellite-test-ban+0.344export-administration-act-south-africa-0.233el-salvador-aid...
+              -0.747education-spending+0.261crime+0.26 adoption-of-the-budget-resolution+0.241superfund-right-to-sue+0.233duty-free-exports...
+              -0.609duty-free-exports+0.363aid-to-nicaraguan-contras+0.277religious-groups-in-schools-0.275handicapped-infants+0.264superfund-right-to-sue...
+              0.632crime-0.401adoption-of-the-budget-resolution-0.285superfund-right-to-sue+0.249synfuels-corporation-cutback-0.236religious-groups-in-schools...
+              0.673physician-fee-freeze-0.397crime+0.263synfuels-corporation-cutback+0.257aid-to-nicaraguan-contras-0.253mx-missile...
+              0.541aid-to-nicaraguan-contras-0.473anti-satellite-test-ban+0.422religious-groups-in-schools-0.313adoption-of-the-budget-resolution-0.287el-salvador-aid...
+              -0.64adoption-of-the-budget-resolution+0.32 anti-satellite-test-ban-0.319crime+0.276mx-missile+0.255religious-groups-in-schools...
+              Class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -3.704072325429359
+    Node 2    6.716237364377466
+    Node 3    -8.89574156238632
+    Node 4    1.786804334376583
+    Node 5    4.237141983213596
+    Node 6    3.9554695824383086
+    Node 7    1.0328000652697933
+    Node 8    9.811805596528744
+    Node 9    9.708805812570061
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    3.7285333741300604
+    Node 2    -6.71063549872471
+    Node 3    8.881570702308267
+    Node 4    -1.8493034242411481
+    Node 5    -4.234375150749034
+    Node 6    -3.9550777770528
+    Node 7    -1.0127164177426415
+    Node 8    -9.817038906775483
+    Node 9    -9.716201200489184
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    1.6167674717767495
+    Attrib -0.332el-salvador-aid+0.319mx-missile-0.312physician-fee-freeze+0.311aid-to-nicaraguan-contras+0.298adoption-of-the-budget-resolution...    2.9068202644574863
+    Attrib 0.433synfuels-corporation-cutback+0.311religious-groups-in-schools+0.295water-project-cost-sharing+0.276immigration+0.268export-administration-act-south-africa...    4.764077082672071
+    Attrib -0.643immigration+0.642water-project-cost-sharing+0.203export-administration-act-south-africa+0.198handicapped-infants-0.138anti-satellite-test-ban...    1.0598498257660869
+    Attrib 0.666synfuels-corporation-cutback-0.347duty-free-exports-0.294export-administration-act-south-africa-0.279anti-satellite-test-ban-0.205physician-fee-freeze...    3.765183493300153
+    Attrib -0.51immigration-0.436handicapped-infants-0.402water-project-cost-sharing+0.325synfuels-corporation-cutback+0.303duty-free-exports...    1.3610737022324506
+    Attrib 0.57 handicapped-infants-0.389immigration-0.38export-administration-act-south-africa+0.332education-spending-0.316water-project-cost-sharing...    1.3943763017119204
+    Attrib -0.628export-administration-act-south-africa+0.42 duty-free-exports-0.345handicapped-infants+0.32 superfund-right-to-sue+0.208water-project-cost-sharing...    -0.35511519030465827
+    Attrib 0.556superfund-right-to-sue-0.459religious-groups-in-schools-0.394anti-satellite-test-ban+0.344export-administration-act-south-africa-0.233el-salvador-aid...    1.047080518794073
+    Attrib -0.747education-spending+0.261crime+0.26 adoption-of-the-budget-resolution+0.241superfund-right-to-sue+0.233duty-free-exports...    5.389327893648508
+    Attrib -0.609duty-free-exports+0.363aid-to-nicaraguan-contras+0.277religious-groups-in-schools-0.275handicapped-infants+0.264superfund-right-to-sue...    1.0364166260576027
+    Attrib 0.632crime-0.401adoption-of-the-budget-resolution-0.285superfund-right-to-sue+0.249synfuels-corporation-cutback-0.236religious-groups-in-schools...    -0.45389516914485944
+    Attrib 0.673physician-fee-freeze-0.397crime+0.263synfuels-corporation-cutback+0.257aid-to-nicaraguan-contras-0.253mx-missile...    -1.2200243299532483
+    Attrib 0.541aid-to-nicaraguan-contras-0.473anti-satellite-test-ban+0.422religious-groups-in-schools-0.313adoption-of-the-budget-resolution-0.287el-salvador-aid...    0.7050734338474431
+    Attrib -0.64adoption-of-the-budget-resolution+0.32 anti-satellite-test-ban-0.319crime+0.276mx-missile+0.255religious-groups-in-schools...    1.6480899497798738
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    3.2893124937547342
+    Attrib -0.332el-salvador-aid+0.319mx-missile-0.312physician-fee-freeze+0.311aid-to-nicaraguan-contras+0.298adoption-of-the-budget-resolution...    1.5890248528901612
+    Attrib 0.433synfuels-corporation-cutback+0.311religious-groups-in-schools+0.295water-project-cost-sharing+0.276immigration+0.268export-administration-act-south-africa...    -4.569244219717726
+    Attrib -0.643immigration+0.642water-project-cost-sharing+0.203export-administration-act-south-africa+0.198handicapped-infants-0.138anti-satellite-test-ban...    -1.8584428266007422
+    Attrib 0.666synfuels-corporation-cutback-0.347duty-free-exports-0.294export-administration-act-south-africa-0.279anti-satellite-test-ban-0.205physician-fee-freeze...    -4.389190261590425
+    Attrib -0.51immigration-0.436handicapped-infants-0.402water-project-cost-sharing+0.325synfuels-corporation-cutback+0.303duty-free-exports...    0.10742383130251157
+    Attrib 0.57 handicapped-infants-0.389immigration-0.38export-administration-act-south-africa+0.332education-spending-0.316water-project-cost-sharing...    0.27751336103917645
+    Attrib -0.628export-administration-act-south-africa+0.42 duty-free-exports-0.345handicapped-infants+0.32 superfund-right-to-sue+0.208water-project-cost-sharing...    2.4829284234301388
+    Attrib 0.556superfund-right-to-sue-0.459religious-groups-in-schools-0.394anti-satellite-test-ban+0.344export-administration-act-south-africa-0.233el-salvador-aid...    1.9392083707239196
+    Attrib -0.747education-spending+0.261crime+0.26 adoption-of-the-budget-resolution+0.241superfund-right-to-sue+0.233duty-free-exports...    -3.871628349044109
+    Attrib -0.609duty-free-exports+0.363aid-to-nicaraguan-contras+0.277religious-groups-in-schools-0.275handicapped-infants+0.264superfund-right-to-sue...    4.669548445978997
+    Attrib 0.632crime-0.401adoption-of-the-budget-resolution-0.285superfund-right-to-sue+0.249synfuels-corporation-cutback-0.236religious-groups-in-schools...    -1.1385099785580923
+    Attrib 0.673physician-fee-freeze-0.397crime+0.263synfuels-corporation-cutback+0.257aid-to-nicaraguan-contras-0.253mx-missile...    -3.986335278792523
+    Attrib 0.541aid-to-nicaraguan-contras-0.473anti-satellite-test-ban+0.422religious-groups-in-schools-0.313adoption-of-the-budget-resolution-0.287el-salvador-aid...    -2.7645195232678574
+    Attrib -0.64adoption-of-the-budget-resolution+0.32 anti-satellite-test-ban-0.319crime+0.276mx-missile+0.255religious-groups-in-schools...    3.397738750806856
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.4621979795745891
+    Attrib -0.332el-salvador-aid+0.319mx-missile-0.312physician-fee-freeze+0.311aid-to-nicaraguan-contras+0.298adoption-of-the-budget-resolution...    0.6917316538221547
+    Attrib 0.433synfuels-corporation-cutback+0.311religious-groups-in-schools+0.295water-project-cost-sharing+0.276immigration+0.268export-administration-act-south-africa...    0.7020375664633131
+    Attrib -0.643immigration+0.642water-project-cost-sharing+0.203export-administration-act-south-africa+0.198handicapped-infants-0.138anti-satellite-test-ban...    0.31582885032836205
+    Attrib 0.666synfuels-corporation-cutback-0.347duty-free-exports-0.294export-administration-act-south-africa-0.279anti-satellite-test-ban-0.205physician-fee-freeze...    0.7636449579426429
+    Attrib -0.51immigration-0.436handicapped-infants-0.402water-project-cost-sharing+0.325synfuels-corporation-cutback+0.303duty-free-exports...    -0.08589358523118495
+    Attrib 0.57 handicapped-infants-0.389immigration-0.38export-administration-act-south-africa+0.332education-spending-0.316water-project-cost-sharing...    0.13756267297612185
+    Attrib -0.628export-administration-act-south-africa+0.42 duty-free-exports-0.345handicapped-infants+0.32 superfund-right-to-sue+0.208water-project-cost-sharing...    -0.6617836025723152
+    Attrib 0.556superfund-right-to-sue-0.459religious-groups-in-schools-0.394anti-satellite-test-ban+0.344export-administration-act-south-africa-0.233el-salvador-aid...    -0.5926449422493124
+    Attrib -0.747education-spending+0.261crime+0.26 adoption-of-the-budget-resolution+0.241superfund-right-to-sue+0.233duty-free-exports...    0.12273045024330437
+    Attrib -0.609duty-free-exports+0.363aid-to-nicaraguan-contras+0.277religious-groups-in-schools-0.275handicapped-infants+0.264superfund-right-to-sue...    -1.1251737778985682
+    Attrib 0.632crime-0.401adoption-of-the-budget-resolution-0.285superfund-right-to-sue+0.249synfuels-corporation-cutback-0.236religious-groups-in-schools...    0.012125637174592523
+    Attrib 0.673physician-fee-freeze-0.397crime+0.263synfuels-corporation-cutback+0.257aid-to-nicaraguan-contras-0.253mx-missile...    0.785643124914585
+    Attrib 0.541aid-to-nicaraguan-contras-0.473anti-satellite-test-ban+0.422religious-groups-in-schools-0.313adoption-of-the-budget-resolution-0.287el-salvador-aid...    0.5638302763988866
+    Attrib -0.64adoption-of-the-budget-resolution+0.32 anti-satellite-test-ban-0.319crime+0.276mx-missile+0.255religious-groups-in-schools...    -1.048142158142224
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    0.4045147733936856
+    Attrib -0.332el-salvador-aid+0.319mx-missile-0.312physician-fee-freeze+0.311aid-to-nicaraguan-contras+0.298adoption-of-the-budget-resolution...    3.9640438955924817
+    Attrib 0.433synfuels-corporation-cutback+0.311religious-groups-in-schools+0.295water-project-cost-sharing+0.276immigration+0.268export-administration-act-south-africa...    -0.7704757193605267
+    Attrib -0.643immigration+0.642water-project-cost-sharing+0.203export-administration-act-south-africa+0.198handicapped-infants-0.138anti-satellite-test-ban...    0.1199415221232063
+    Attrib 0.666synfuels-corporation-cutback-0.347duty-free-exports-0.294export-administration-act-south-africa-0.279anti-satellite-test-ban-0.205physician-fee-freeze...    1.7854893028657048
+    Attrib -0.51immigration-0.436handicapped-infants-0.402water-project-cost-sharing+0.325synfuels-corporation-cutback+0.303duty-free-exports...    3.1584420335746644
+    Attrib 0.57 handicapped-infants-0.389immigration-0.38export-administration-act-south-africa+0.332education-spending-0.316water-project-cost-sharing...    -1.2514955873236648
+    Attrib -0.628export-administration-act-south-africa+0.42 duty-free-exports-0.345handicapped-infants+0.32 superfund-right-to-sue+0.208water-project-cost-sharing...    -0.1711041056734622
+    Attrib 0.556superfund-right-to-sue-0.459religious-groups-in-schools-0.394anti-satellite-test-ban+0.344export-administration-act-south-africa-0.233el-salvador-aid...    1.6164552468140032
+    Attrib -0.747education-spending+0.261crime+0.26 adoption-of-the-budget-resolution+0.241superfund-right-to-sue+0.233duty-free-exports...    -1.1461939744869658
+    Attrib -0.609duty-free-exports+0.363aid-to-nicaraguan-contras+0.277religious-groups-in-schools-0.275handicapped-infants+0.264superfund-right-to-sue...    0.5014449405534194
+    Attrib 0.632crime-0.401adoption-of-the-budget-resolution-0.285superfund-right-to-sue+0.249synfuels-corporation-cutback-0.236religious-groups-in-schools...    -1.138353027130439
+    Attrib 0.673physician-fee-freeze-0.397crime+0.263synfuels-corporation-cutback+0.257aid-to-nicaraguan-contras-0.253mx-missile...    -2.5289692000652937
+    Attrib 0.541aid-to-nicaraguan-contras-0.473anti-satellite-test-ban+0.422religious-groups-in-schools-0.313adoption-of-the-budget-resolution-0.287el-salvador-aid...    -0.6326756437638388
+    Attrib -0.64adoption-of-the-budget-resolution+0.32 anti-satellite-test-ban-0.319crime+0.276mx-missile+0.255religious-groups-in-schools...    0.9224972177888995
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    0.7194130073069165
+    Attrib -0.332el-salvador-aid+0.319mx-missile-0.312physician-fee-freeze+0.311aid-to-nicaraguan-contras+0.298adoption-of-the-budget-resolution...    3.906447286697286
+    Attrib 0.433synfuels-corporation-cutback+0.311religious-groups-in-schools+0.295water-project-cost-sharing+0.276immigration+0.268export-administration-act-south-africa...    -1.082235286099451
+    Attrib -0.643immigration+0.642water-project-cost-sharing+0.203export-administration-act-south-africa+0.198handicapped-infants-0.138anti-satellite-test-ban...    0.4801810451245175
+    Attrib 0.666synfuels-corporation-cutback-0.347duty-free-exports-0.294export-administration-act-south-africa-0.279anti-satellite-test-ban-0.205physician-fee-freeze...    2.060222719510027
+    Attrib -0.51immigration-0.436handicapped-infants-0.402water-project-cost-sharing+0.325synfuels-corporation-cutback+0.303duty-free-exports...    2.9447530207952726
+    Attrib 0.57 handicapped-infants-0.389immigration-0.38export-administration-act-south-africa+0.332education-spending-0.316water-project-cost-sharing...    -0.7153917974540281
+    Attrib -0.628export-administration-act-south-africa+0.42 duty-free-exports-0.345handicapped-infants+0.32 superfund-right-to-sue+0.208water-project-cost-sharing...    0.399531189064694
+    Attrib 0.556superfund-right-to-sue-0.459religious-groups-in-schools-0.394anti-satellite-test-ban+0.344export-administration-act-south-africa-0.233el-salvador-aid...    1.8438084161828558
+    Attrib -0.747education-spending+0.261crime+0.26 adoption-of-the-budget-resolution+0.241superfund-right-to-sue+0.233duty-free-exports...    -0.2074307318651493
+    Attrib -0.609duty-free-exports+0.363aid-to-nicaraguan-contras+0.277religious-groups-in-schools-0.275handicapped-infants+0.264superfund-right-to-sue...    0.7421538816616151
+    Attrib 0.632crime-0.401adoption-of-the-budget-resolution-0.285superfund-right-to-sue+0.249synfuels-corporation-cutback-0.236religious-groups-in-schools...    -1.4018388780159914
+    Attrib 0.673physician-fee-freeze-0.397crime+0.263synfuels-corporation-cutback+0.257aid-to-nicaraguan-contras-0.253mx-missile...    -2.1197128670060046
+    Attrib 0.541aid-to-nicaraguan-contras-0.473anti-satellite-test-ban+0.422religious-groups-in-schools-0.313adoption-of-the-budget-resolution-0.287el-salvador-aid...    -0.07836600949191076
+    Attrib -0.64adoption-of-the-budget-resolution+0.32 anti-satellite-test-ban-0.319crime+0.276mx-missile+0.255religious-groups-in-schools...    1.118725166429881
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.29449974386904876
+    Attrib -0.332el-salvador-aid+0.319mx-missile-0.312physician-fee-freeze+0.311aid-to-nicaraguan-contras+0.298adoption-of-the-budget-resolution...    0.48490648454584867
+    Attrib 0.433synfuels-corporation-cutback+0.311religious-groups-in-schools+0.295water-project-cost-sharing+0.276immigration+0.268export-administration-act-south-africa...    0.4575470919619652
+    Attrib -0.643immigration+0.642water-project-cost-sharing+0.203export-administration-act-south-africa+0.198handicapped-infants-0.138anti-satellite-test-ban...    0.252054492256488
+    Attrib 0.666synfuels-corporation-cutback-0.347duty-free-exports-0.294export-administration-act-south-africa-0.279anti-satellite-test-ban-0.205physician-fee-freeze...    0.37819419868728354
+    Attrib -0.51immigration-0.436handicapped-infants-0.402water-project-cost-sharing+0.325synfuels-corporation-cutback+0.303duty-free-exports...    -0.07934438001459536
+    Attrib 0.57 handicapped-infants-0.389immigration-0.38export-administration-act-south-africa+0.332education-spending-0.316water-project-cost-sharing...    0.05407235844579341
+    Attrib -0.628export-administration-act-south-africa+0.42 duty-free-exports-0.345handicapped-infants+0.32 superfund-right-to-sue+0.208water-project-cost-sharing...    -0.22767669704629392
+    Attrib 0.556superfund-right-to-sue-0.459religious-groups-in-schools-0.394anti-satellite-test-ban+0.344export-administration-act-south-africa-0.233el-salvador-aid...    -0.3569899178011896
+    Attrib -0.747education-spending+0.261crime+0.26 adoption-of-the-budget-resolution+0.241superfund-right-to-sue+0.233duty-free-exports...    0.13571869204462994
+    Attrib -0.609duty-free-exports+0.363aid-to-nicaraguan-contras+0.277religious-groups-in-schools-0.275handicapped-infants+0.264superfund-right-to-sue...    -0.5921563424885061
+    Attrib 0.632crime-0.401adoption-of-the-budget-resolution-0.285superfund-right-to-sue+0.249synfuels-corporation-cutback-0.236religious-groups-in-schools...    -0.014753548111016267
+    Attrib 0.673physician-fee-freeze-0.397crime+0.263synfuels-corporation-cutback+0.257aid-to-nicaraguan-contras-0.253mx-missile...    0.45109410772218356
+    Attrib 0.541aid-to-nicaraguan-contras-0.473anti-satellite-test-ban+0.422religious-groups-in-schools-0.313adoption-of-the-budget-resolution-0.287el-salvador-aid...    0.2477513844335695
+    Attrib -0.64adoption-of-the-budget-resolution+0.32 anti-satellite-test-ban-0.319crime+0.276mx-missile+0.255religious-groups-in-schools...    -0.6533680003486345
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    1.0887777843316095
+    Attrib -0.332el-salvador-aid+0.319mx-missile-0.312physician-fee-freeze+0.311aid-to-nicaraguan-contras+0.298adoption-of-the-budget-resolution...    5.959197293613033
+    Attrib 0.433synfuels-corporation-cutback+0.311religious-groups-in-schools+0.295water-project-cost-sharing+0.276immigration+0.268export-administration-act-south-africa...    -0.8529374392259969
+    Attrib -0.643immigration+0.642water-project-cost-sharing+0.203export-administration-act-south-africa+0.198handicapped-infants-0.138anti-satellite-test-ban...    0.9328395835108823
+    Attrib 0.666synfuels-corporation-cutback-0.347duty-free-exports-0.294export-administration-act-south-africa-0.279anti-satellite-test-ban-0.205physician-fee-freeze...    2.4176829089582683
+    Attrib -0.51immigration-0.436handicapped-infants-0.402water-project-cost-sharing+0.325synfuels-corporation-cutback+0.303duty-free-exports...    5.690035176319651
+    Attrib 0.57 handicapped-infants-0.389immigration-0.38export-administration-act-south-africa+0.332education-spending-0.316water-project-cost-sharing...    -3.383677410181521
+    Attrib -0.628export-administration-act-south-africa+0.42 duty-free-exports-0.345handicapped-infants+0.32 superfund-right-to-sue+0.208water-project-cost-sharing...    0.7331112346736215
+    Attrib 0.556superfund-right-to-sue-0.459religious-groups-in-schools-0.394anti-satellite-test-ban+0.344export-administration-act-south-africa-0.233el-salvador-aid...    5.594425943705331
+    Attrib -0.747education-spending+0.261crime+0.26 adoption-of-the-budget-resolution+0.241superfund-right-to-sue+0.233duty-free-exports...    -1.0471008490119076
+    Attrib -0.609duty-free-exports+0.363aid-to-nicaraguan-contras+0.277religious-groups-in-schools-0.275handicapped-infants+0.264superfund-right-to-sue...    3.8071283606038193
+    Attrib 0.632crime-0.401adoption-of-the-budget-resolution-0.285superfund-right-to-sue+0.249synfuels-corporation-cutback-0.236religious-groups-in-schools...    -5.000452290711067
+    Attrib 0.673physician-fee-freeze-0.397crime+0.263synfuels-corporation-cutback+0.257aid-to-nicaraguan-contras-0.253mx-missile...    -2.708509209724673
+    Attrib 0.541aid-to-nicaraguan-contras-0.473anti-satellite-test-ban+0.422religious-groups-in-schools-0.313adoption-of-the-budget-resolution-0.287el-salvador-aid...    -0.9964724435470174
+    Attrib -0.64adoption-of-the-budget-resolution+0.32 anti-satellite-test-ban-0.319crime+0.276mx-missile+0.255religious-groups-in-schools...    2.6076006358402046
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    2.7474959440961473
+    Attrib -0.332el-salvador-aid+0.319mx-missile-0.312physician-fee-freeze+0.311aid-to-nicaraguan-contras+0.298adoption-of-the-budget-resolution...    7.077048709839513
+    Attrib 0.433synfuels-corporation-cutback+0.311religious-groups-in-schools+0.295water-project-cost-sharing+0.276immigration+0.268export-administration-act-south-africa...    0.37765476917893054
+    Attrib -0.643immigration+0.642water-project-cost-sharing+0.203export-administration-act-south-africa+0.198handicapped-infants-0.138anti-satellite-test-ban...    2.3430229213291494
+    Attrib 0.666synfuels-corporation-cutback-0.347duty-free-exports-0.294export-administration-act-south-africa-0.279anti-satellite-test-ban-0.205physician-fee-freeze...    6.439684710495604
+    Attrib -0.51immigration-0.436handicapped-infants-0.402water-project-cost-sharing+0.325synfuels-corporation-cutback+0.303duty-free-exports...    6.7193644550681615
+    Attrib 0.57 handicapped-infants-0.389immigration-0.38export-administration-act-south-africa+0.332education-spending-0.316water-project-cost-sharing...    -1.320239863190549
+    Attrib -0.628export-administration-act-south-africa+0.42 duty-free-exports-0.345handicapped-infants+0.32 superfund-right-to-sue+0.208water-project-cost-sharing...    -0.10189517479742115
+    Attrib 0.556superfund-right-to-sue-0.459religious-groups-in-schools-0.394anti-satellite-test-ban+0.344export-administration-act-south-africa-0.233el-salvador-aid...    3.9706565139129077
+    Attrib -0.747education-spending+0.261crime+0.26 adoption-of-the-budget-resolution+0.241superfund-right-to-sue+0.233duty-free-exports...    4.762546571642148
+    Attrib -0.609duty-free-exports+0.363aid-to-nicaraguan-contras+0.277religious-groups-in-schools-0.275handicapped-infants+0.264superfund-right-to-sue...    3.834573923100766
+    Attrib 0.632crime-0.401adoption-of-the-budget-resolution-0.285superfund-right-to-sue+0.249synfuels-corporation-cutback-0.236religious-groups-in-schools...    -2.519258735205254
+    Attrib 0.673physician-fee-freeze-0.397crime+0.263synfuels-corporation-cutback+0.257aid-to-nicaraguan-contras-0.253mx-missile...    -3.2632173673527323
+    Attrib 0.541aid-to-nicaraguan-contras-0.473anti-satellite-test-ban+0.422religious-groups-in-schools-0.313adoption-of-the-budget-resolution-0.287el-salvador-aid...    -0.6456469824258817
+    Attrib -0.64adoption-of-the-budget-resolution+0.32 anti-satellite-test-ban-0.319crime+0.276mx-missile+0.255religious-groups-in-schools...    2.912102503412153
+Class democrat
+    Input
+    Node 0
+Class republican
+    Input
+    Node 1
+
+
+Time taken to build model: 3.49 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         291              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0012
+Root mean squared error                  0.0043
+Relative absolute error                  0.2478 %
+Root relative squared error              0.8861 %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      50      %
+Total Number of Instances              291     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     democrat
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     republican
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 180   0 |   a = democrat
+   0 111 |   b = republican
+

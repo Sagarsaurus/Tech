@@ -1,0 +1,9 @@
+Sagar Laud, Oliver Goldbart
+We worked on this assignment alone using only this semester's course material
+slaud3@gatech.edu
+
+Project Write-up
+
+1) Our movie is about two robots coming to Earth in search of powerful beings to capture.  Unfortunately they run into two warriors locked in battle, far stronger than they could ever imagine.  The main special effects we used were the split-screen effect of the robot conversation and the animated, hand tracking power-blast effect.  In addition to this however, we also used the seeingRed function in order to have the effect of the robot looking through his scouter.  We also used the screenShake in order to emphasize how powerful the being really were.
+
+2) Our one deviation was making the film slightly more actor-centered, as we thought utilizing animated tracking in our video was an interesting and complex enough use of python for us to be able to showcase it.  The animation tracking was done by sharpie-ing colored circles on our hands, having the robot go through each picture, find the average coordinates of colored pixels that were on our hands, and draw a growing, semi-transparent orb in between our hands.  We tried to do this with the robots having colored dots, but it didn't work very well.

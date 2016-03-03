@@ -1,0 +1,101 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 6 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     vote-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingWithUserConstant-Afirst-last-R2-Fyyyy-MM-dd'T'HH:mm:ss_ICA-weka.filters.unsupervised.attribute.IndependentComponents-W-A17-N200-T1.0E-4
+Instances:    435
+Attributes:   17
+              Source_0
+              Source_1
+              Source_2
+              Source_3
+              Source_4
+              Source_5
+              Source_6
+              Source_7
+              Source_8
+              Source_9
+              Source_10
+              Source_11
+              Source_12
+              Source_13
+              Source_14
+              Source_15
+Ignored:
+              Class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 13
+Within cluster sum of squared errors: 111.69942170672076
+
+Initial starting points (random):
+
+Cluster 0: -0.057723,0.013345,0.06157,-0.107237,-0.003399,0.084972,-0.143443,-0.186808,-0.024829,0.101031,-0.002962,-0.017182,-0.094606,0.195336,-0.13278,0.017952
+Cluster 1: 0.039764,-0.018315,-0.074401,-0.137021,0.020331,0.031431,-0.02241,-0.141464,-0.07125,0.005004,0.0041,-0.015882,-0.008791,0.153441,-0.111525,0.027195
+Cluster 2: 0.001247,0.070189,0.044612,-0.031212,-0.068538,0.09899,0.012702,-0.137794,-0.110873,0.012608,-0.038213,-0.056772,0.015732,0.165548,0.017602,0.051215
+Cluster 3: 0.014259,0.005064,0.034307,-0.055506,0.0128,0.073122,-0.014498,-0.059208,-0.004642,0.070725,0.017224,-0.052209,0.000677,0.161111,-0.037744,-0.079711
+Cluster 4: 0.029226,-0.042096,0.017235,-0.307515,-0.114228,0.060504,-0.081939,-0.235739,-0.102928,0.115923,0.047239,-0.196746,0.013956,0.140041,-0.065384,0.03376
+Cluster 5: -0.001175,0.048927,0.055238,-0.119623,-0.087881,0.19933,-0.078067,-0.134192,-0.014743,0.129143,0.060219,-0.128213,0.055802,0.282096,0.059933,-0.089191
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                         Cluster#
+Attribute    Full Data          0          1          2          3          4          5
+               (435.0)     (26.0)    (154.0)     (72.0)    (115.0)     (10.0)     (58.0)
+========================================================================================
+Source_0       -0.0108    -0.0826    -0.0174    -0.0149     0.0145    -0.0001    -0.0082
+Source_1       -0.0026     0.0175    -0.0308     0.0242     0.0084     -0.026     0.0121
+Source_2        0.0308     0.1091     -0.019     0.0467     0.0285     0.1326     0.0955
+Source_3       -0.0491     -0.125     0.0323    -0.0715    -0.0674    -0.2155    -0.1386
+Source_4       -0.0045    -0.0003    -0.0136    -0.0075     0.0054    -0.0538     0.0107
+Source_5        0.0476     0.0763    -0.0245      0.077     0.0673     0.0749     0.1456
+Source_6       -0.0427    -0.0487    -0.0094    -0.0463    -0.0511    -0.0905     -0.099
+Source_7       -0.0647    -0.1254      0.031    -0.0907    -0.0911    -0.1868    -0.1858
+Source_8       -0.0201     0.0145     0.0067    -0.0211    -0.0295    -0.1316    -0.0678
+Source_9        0.0526     0.1152    -0.0243     0.0582     0.0812     0.1063     0.1557
+Source_10       0.0032     0.0012    -0.0069    -0.0245     0.0192      0.026       0.03
+Source_11      -0.0363    -0.0592     0.0133    -0.0577    -0.0472    -0.1363    -0.0924
+Source_12       0.0053     0.0191    -0.0136     0.0144     0.0134     0.0295     0.0181
+Source_13       0.0925     0.1723    -0.0271     0.1223     0.1184     0.2065     0.2665
+Source_14       0.0009     0.0054     0.0057     0.0038    -0.0058    -0.0501     0.0047
+Source_15      -0.0124    -0.0245     0.0072     0.0281    -0.0461      -0.02    -0.0412
+
+
+
+
+Time taken to build model (full training data) : 0.02 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       26 (  6%)
+1      154 ( 35%)
+2       72 ( 17%)
+3      115 ( 26%)
+4       10 (  2%)
+5       58 ( 13%)
+
+
+Class attribute: Class
+Classes to Clusters:
+
+   0   1   2   3   4   5  <-- assigned to cluster
+  22  18  56 103  10  58 | democrat
+   4 136  16  12   0   0 | republican
+
+Cluster 0 <-- No class
+Cluster 1 <-- republican
+Cluster 2 <-- No class
+Cluster 3 <-- democrat
+Cluster 4 <-- No class
+Cluster 5 <-- No class
+
+Incorrectly clustered instances :	196.0	 45.0575 %
+

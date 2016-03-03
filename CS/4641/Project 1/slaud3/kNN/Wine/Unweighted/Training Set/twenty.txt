@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 20 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     winequality-red-weka.filters.unsupervised.instance.RemovePercentage-P34.0
+Instances:    1055
+Attributes:   12
+              fixed_acidity
+              volatile_acidity
+              citric_acid
+              residual_sugar
+              chlorides
+              free_sulfur_dioxide
+              total_sulfur_dioxide
+              density
+              pH
+              sulphates
+              alcohol
+              class
+Test mode:evaluate on training data
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 20 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+=== Summary ===
+
+Correctly Classified Instances         667               63.2227 %
+Incorrectly Classified Instances       388               36.7773 %
+Kappa statistic                          0.4045
+Mean absolute error                      0.1648
+Root mean squared error                  0.2835
+Relative absolute error                 76.2654 %
+Root relative squared error             86.3243 %
+Total Number of Instances             1055     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.982    3
+                 0         0.002      0         0         0          0.898    4
+                 0.742     0.25       0.668     0.742     0.703      0.839    5
+                 0.666     0.309      0.604     0.666     0.633      0.747    6
+                 0.438     0.041      0.612     0.438     0.511      0.895    7
+                 0         0          0         0         0          0.952    8
+Weighted Avg.    0.632     0.234      0.599     0.632     0.613      0.813
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+   0   1   7   0   0   0 |   a = 3
+   0   0  18  17   2   0 |   b = 4
+   0   1 316 101   8   0 |   c = 5
+   0   0 120 291  26   0 |   d = 6
+   0   0  12  65  60   0 |   e = 7
+   0   0   0   8   2   0 |   f = 8
+

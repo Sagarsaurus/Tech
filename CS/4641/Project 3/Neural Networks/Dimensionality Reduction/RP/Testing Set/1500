@@ -1,0 +1,157 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 1500 -V 0 -S 0 -E 20 -H a
+Relation:     vote-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingWithUserConstant-Afirst-last-R2-Fyyyy-MM-dd'T'HH:mm:ss-weka.filters.unsupervised.attribute.RandomProjection-N10-R42-DSparse1
+Instances:    435
+Attributes:   11
+              K1
+              K2
+              K3
+              K4
+              K5
+              K6
+              K7
+              K8
+              K9
+              K10
+              Class
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -6.075963171886231
+    Node 2    -17.344685513958165
+    Node 3    2.73501974070893
+    Node 4    5.780819468391228
+    Node 5    10.049828373431993
+    Node 6    17.29906739913352
+    Node 7    1.8434350473614527
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    6.074133110312739
+    Node 2    17.341178407375477
+    Node 3    -2.7358980911681514
+    Node 4    -5.7680731072212685
+    Node 5    -10.046744758394722
+    Node 6    -17.29359331582774
+    Node 7    -1.8541064507683043
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.1825344748063575
+    Attrib K1    3.285247070467066
+    Attrib K2    -1.840622978695733
+    Attrib K3    0.31196384774503866
+    Attrib K4    -11.815879297302626
+    Attrib K5    -1.0432791521531972
+    Attrib K6    -4.824957437500377
+    Attrib K7    -0.7323985085814873
+    Attrib K8    -0.7834444839759538
+    Attrib K9    6.4048139653251885
+    Attrib K10    10.791517309805476
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -1.6503230114102831
+    Attrib K1    -4.234648274793761
+    Attrib K2    2.0559536984396196
+    Attrib K3    -3.109634283022
+    Attrib K4    8.827137499947435
+    Attrib K5    -0.8901294002070946
+    Attrib K6    2.7901786954614205
+    Attrib K7    2.2568916174082334
+    Attrib K8    -9.448182198637054
+    Attrib K9    1.5456812706926721
+    Attrib K10    -1.7712563853872278
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.922525766888575
+    Attrib K1    -6.452365609820159
+    Attrib K2    4.2255674542703385
+    Attrib K3    -4.301138481621379
+    Attrib K4    10.838640867418308
+    Attrib K5    2.5554925557928
+    Attrib K6    0.2267488576523973
+    Attrib K7    2.767285324374355
+    Attrib K8    -9.323533849693137
+    Attrib K9    2.5528953591641446
+    Attrib K10    -3.282607440842553
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -5.813589543965189
+    Attrib K1    -7.14444430312425
+    Attrib K2    5.375458790334812
+    Attrib K3    -5.311533944165908
+    Attrib K4    -0.015782185946435507
+    Attrib K5    3.2137925756320453
+    Attrib K6    -9.1824944827056
+    Attrib K7    4.6819390356610935
+    Attrib K8    -11.61059171642633
+    Attrib K9    -2.485936890840206
+    Attrib K10    -9.362471574155949
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    4.8414408005312355
+    Attrib K1    14.41934866197762
+    Attrib K2    -6.706053789217732
+    Attrib K3    -4.421915842243349
+    Attrib K4    -12.571168702961113
+    Attrib K5    3.6107862147538192
+    Attrib K6    6.896279750336288
+    Attrib K7    2.9872666698142996
+    Attrib K8    -4.510961914835241
+    Attrib K9    4.045798491395165
+    Attrib K10    -4.903420949117302
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -1.4064132015533692
+    Attrib K1    -5.520221486334708
+    Attrib K2    2.5177786858641875
+    Attrib K3    -3.8830311079197006
+    Attrib K4    7.422369644460594
+    Attrib K5    3.62994709702928
+    Attrib K6    -0.9657425566451687
+    Attrib K7    1.9552306575985092
+    Attrib K8    -7.059073595150965
+    Attrib K9    1.2018779023697603
+    Attrib K10    -1.7014446328273267
+Class democrat
+    Input
+    Node 0
+Class republican
+    Input
+    Node 1
+
+
+Time taken to build model: 1.32 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         138               93.2432 %
+Incorrectly Classified Instances        10                6.7568 %
+Kappa statistic                          0.8612
+Mean absolute error                      0.0678
+Root mean squared error                  0.2412
+Relative absolute error                 14.1582 %
+Root relative squared error             48.6581 %
+Coverage of cases (0.95 level)          95.9459 %
+Mean rel. region size (0.95 level)      52.7027 %
+Total Number of Instances              148     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.942    0.081    0.942      0.942    0.942      0.861    0.978     0.987     democrat
+                 0.919    0.058    0.919      0.919    0.919      0.861    0.978     0.959     republican
+Weighted Avg.    0.932    0.071    0.932      0.932    0.932      0.861    0.978     0.975     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 81  5 |  a = democrat
+  5 57 |  b = republican
+

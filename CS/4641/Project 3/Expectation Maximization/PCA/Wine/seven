@@ -1,0 +1,110 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N 7 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     winequality-red-weka.filters.unsupervised.instance.RemovePercentage-P34.0-V_principal components-weka.filters.unsupervised.attribute.PrincipalComponents-R0.95-A5-M-1
+Instances:    1599
+Attributes:   10
+              -0.489fixed_acidity-0.464citric_acid+0.439pH-0.395density-0.243sulphates...
+              -0.569total_sulfur_dioxide-0.514free_sulfur_dioxide+0.386alcohol-0.275volatile_acidity-0.272residual_sugar...
+              -0.472alcohol+0.45 volatile_acidity-0.429free_sulfur_dioxide+0.339density-0.322total_sulfur_dioxide...
+              0.666chlorides+0.551sulphates-0.373residual_sugar-0.23fixed_acidity-0.174density...
+              -0.732residual_sugar-0.351alcohol-0.268pH-0.247chlorides-0.226sulphates...
+              0.522pH-0.411volatile_acidity+0.391density+0.381sulphates-0.362alcohol...
+              -0.534volatile_acidity-0.447sulphates+0.37 chlorides-0.35fixed_acidity-0.328alcohol...
+              0.561pH+0.378citric_acid-0.375sulphates+0.357chlorides-0.3residual_sugar...
+              0.635free_sulfur_dioxide-0.592total_sulfur_dioxide-0.381citric_acid+0.194fixed_acidity-0.168pH...
+Ignored:
+              class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters: 7
+Number of iterations performed: 51
+
+
+                                                                                                                Cluster
+Attribute                                                                                                             0       1       2       3       4       5       6
+                                                                                                                 (0.11)  (0.09)  (0.09)   (0.2)  (0.08)  (0.26)  (0.16)
+========================================================================================================================================================================
+-0.489fixed_acidity-0.464citric_acid+0.439pH-0.395density-0.243sulphates...
+  mean                                                                                                           -2.2586  0.7296  0.0666 -0.0252  0.2946  1.0397 -0.7631
+  std. dev.                                                                                                        1.071  1.6069  0.7963  1.6828  0.8609  0.7946  2.3642
+
+-0.569total_sulfur_dioxide-0.514free_sulfur_dioxide+0.386alcohol-0.275volatile_acidity-0.272residual_sugar...
+  mean                                                                                                            0.5748 -0.5482  -1.668  1.5842 -0.7475  0.1173  -0.887
+  std. dev.                                                                                                        0.832  0.9459  0.7239  0.6507  0.6533  0.5802  1.7967
+
+-0.472alcohol+0.45 volatile_acidity-0.429free_sulfur_dioxide+0.339density-0.322total_sulfur_dioxide...
+  mean                                                                                                            0.6237 -1.0239 -0.0389 -0.7681 -0.3112  1.0467 -0.4034
+  std. dev.                                                                                                       0.7378  1.1399  0.6346  0.7871  0.8386  0.7043  1.6599
+
+0.666chlorides+0.551sulphates-0.373residual_sugar-0.23fixed_acidity-0.174density...
+  mean                                                                                                           -0.7291  0.1474 -0.2089 -0.0568 -0.1448  0.1198  0.4847
+  std. dev.                                                                                                       0.4158  0.4285  0.4115  0.4338  0.2863  0.4294  2.4593
+
+-0.732residual_sugar-0.351alcohol-0.268pH-0.247chlorides-0.226sulphates...
+  mean                                                                                                             0.518  0.1079  0.9732 -0.1839  0.5894  0.0001 -1.0662
+  std. dev.                                                                                                       0.5285  0.4918  0.4826  0.6532  0.4452  0.6222  1.4776
+
+0.522pH-0.411volatile_acidity+0.391density+0.381sulphates-0.362alcohol...
+  mean                                                                                                           -0.0159  0.1011 -0.5356 -0.0356  0.7317  0.1193 -0.2792
+  std. dev.                                                                                                       0.5492  0.7337  0.4084  0.8289  0.4122   0.728  1.0681
+
+-0.534volatile_acidity-0.447sulphates+0.37 chlorides-0.35fixed_acidity-0.328alcohol...
+  mean                                                                                                           -0.1651 -0.6064   0.105  0.0789  0.4229  0.0667 -0.0213
+  std. dev.                                                                                                       0.6055  0.4999  0.4062  0.5627  0.4295  0.5777  1.3334
+
+0.561pH+0.378citric_acid-0.375sulphates+0.357chlorides-0.3residual_sugar...
+  mean                                                                                                            0.1938  0.1841 -0.1211 -0.0047  0.4404 -0.1997 -0.0692
+  std. dev.                                                                                                       0.5172  0.5297  0.4131   0.526  0.3399  0.4311  1.1267
+
+0.635free_sulfur_dioxide-0.592total_sulfur_dioxide-0.381citric_acid+0.194fixed_acidity-0.168pH...
+  mean                                                                                                            0.1036  0.7196 -0.4413 -0.0718 -0.1488  0.0934 -0.2275
+  std. dev.                                                                                                       0.3333   0.446  0.8067  0.2623  0.5478  0.3197  0.8195
+
+
+
+Time taken to build model (full training data) : 0.97 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       168 ( 11%)
+1       146 (  9%)
+2       152 ( 10%)
+3       319 ( 20%)
+4       133 (  8%)
+5       434 ( 27%)
+6       247 ( 15%)
+
+
+Log likelihood: -10.81757
+
+
+Class attribute: class
+Classes to Clusters:
+
+   0   1   2   3   4   5   6  <-- assigned to cluster
+   1   1   0   0   0   2   6 | 3
+   4   3   2   4   2  26  12 | 4
+  64  36 127  41  72 230 111 | 5
+  79  87  23 162  56 158  73 | 6
+  17  17   0 105   3  18  39 | 7
+   3   2   0   7   0   0   6 | 8
+
+Cluster 0 <-- 4
+Cluster 1 <-- 8
+Cluster 2 <-- No class
+Cluster 3 <-- 6
+Cluster 4 <-- No class
+Cluster 5 <-- 5
+Cluster 6 <-- 7
+
+Incorrectly clustered instances :	1162.0	 72.6704 %
+

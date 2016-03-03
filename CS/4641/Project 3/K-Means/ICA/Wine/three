@@ -1,0 +1,86 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     winequality-red-weka.filters.unsupervised.instance.RemovePercentage-P34.0-V_ICA-weka.filters.unsupervised.attribute.IndependentComponents-W-A12-N200-T1.0E-4
+Instances:    1599
+Attributes:   12
+              Source_0
+              Source_1
+              Source_2
+              Source_3
+              Source_4
+              Source_5
+              Source_6
+              Source_7
+              Source_8
+              Source_9
+              Source_10
+Ignored:
+              class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 66
+Within cluster sum of squared errors: 173.25048525832955
+
+Initial starting points (random):
+
+Cluster 0: 0.065294,-0.028598,-0.011291,0.155007,0.019012,-0.05658,0.026932,-0.062939,-0.137822,-0.08388,0.072611
+Cluster 1: 0.106507,-0.04134,-0.07015,0.224258,-0.088748,-0.101276,0.02045,-0.03486,-0.163993,-0.163328,0.082168
+Cluster 2: 0.101356,-0.022771,-0.061342,0.170402,-0.056894,-0.006684,0.056293,-0.031543,-0.205754,-0.13094,0.06896
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                         Cluster#
+Attribute    Full Data          0          1          2
+              (1599.0)    (670.0)    (444.0)    (485.0)
+=======================================================
+Source_0        0.0561     0.0516     0.0734     0.0466
+Source_1       -0.0207     -0.017    -0.0246    -0.0223
+Source_2       -0.0085     0.0032    -0.0006     -0.032
+Source_3        0.1767     0.1602     0.2001     0.1779
+Source_4        0.0193     0.0259      0.001     0.0268
+Source_5       -0.0504    -0.0475    -0.0626    -0.0431
+Source_6        0.0323     0.0249     0.0449      0.031
+Source_7       -0.0576    -0.0652     -0.056    -0.0485
+Source_8       -0.1537    -0.1476    -0.1691     -0.148
+Source_9       -0.1152    -0.1075    -0.1356    -0.1071
+Source_10       0.0783     0.0744     0.0899     0.0732
+
+
+
+
+Time taken to build model (full training data) : 0.09 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       670 ( 42%)
+1       444 ( 28%)
+2       485 ( 30%)
+
+
+Class attribute: class
+Classes to Clusters:
+
+   0   1   2  <-- assigned to cluster
+   5   3   2 | 3
+  26  17  10 | 4
+ 303  73 305 | 5
+ 270 223 145 | 6
+  61 115  23 | 7
+   5  13   0 | 8
+
+Cluster 0 <-- 6
+Cluster 1 <-- 7
+Cluster 2 <-- 5
+
+Incorrectly clustered instances :	909.0	 56.848  %
+

@@ -1,0 +1,262 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 2500 -V 0 -S 0 -E 20 -H a
+Relation:     vote-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingWithUserConstant-Afirst-last-R2-Fyyyy-MM-dd'T'HH:mm:ss_ICA-weka.filters.unsupervised.attribute.IndependentComponents-W-A17-N200-T1.0E-4
+Instances:    435
+Attributes:   17
+              Source_0
+              Source_1
+              Source_2
+              Source_3
+              Source_4
+              Source_5
+              Source_6
+              Source_7
+              Source_8
+              Source_9
+              Source_10
+              Source_11
+              Source_12
+              Source_13
+              Source_14
+              Source_15
+              Class
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -1.705236623551378
+    Node 2    0.14983209041585407
+    Node 3    14.001878706046806
+    Node 4    7.256621565940133
+    Node 5    7.148035270133863
+    Node 6    -10.133624437638368
+    Node 7    2.5103342104272266
+    Node 8    1.2095434378550143
+    Node 9    7.886907910625054
+    Node 10    -6.013193661455429
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    1.7107099896776914
+    Node 2    -0.11559163475541602
+    Node 3    -13.994203540575992
+    Node 4    -7.268145196866671
+    Node 5    -7.134020984534038
+    Node 6    10.126339445908254
+    Node 7    -2.540890992721458
+    Node 8    -1.1796432043153526
+    Node 9    -7.898438525681046
+    Node 10    6.014630754997466
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.5243228297006269
+    Attrib Source_0    -0.01957734327028752
+    Attrib Source_1    -0.2529958197337096
+    Attrib Source_2    0.13336156513005581
+    Attrib Source_3    0.18916220829663952
+    Attrib Source_4    -0.2193273837632502
+    Attrib Source_5    -0.31023345241726025
+    Attrib Source_6    0.13840090359830143
+    Attrib Source_7    -0.1360377248243198
+    Attrib Source_8    0.20076316310930925
+    Attrib Source_9    0.1061792268596591
+    Attrib Source_10    -0.23889601843658934
+    Attrib Source_11    -0.18192568534334044
+    Attrib Source_12    0.17844949181281528
+    Attrib Source_13    -0.05489670064851827
+    Attrib Source_14    -0.2895728222155324
+    Attrib Source_15    -0.12164473425344947
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -2.7131100701003854
+    Attrib Source_0    -3.7329876198459955
+    Attrib Source_1    3.0257416735286577
+    Attrib Source_2    4.501388020511857
+    Attrib Source_3    -1.109205382567169
+    Attrib Source_4    -0.42239556977854853
+    Attrib Source_5    -5.198697984786416
+    Attrib Source_6    3.6929518344229733
+    Attrib Source_7    -3.7429397222318466
+    Attrib Source_8    -1.0756165625832086
+    Attrib Source_9    3.0192185690638778
+    Attrib Source_10    -1.028619455793598
+    Attrib Source_11    -0.7163206646542091
+    Attrib Source_12    3.7528471180995973
+    Attrib Source_13    -10.79642246782674
+    Attrib Source_14    2.3245446336052997
+    Attrib Source_15    8.85494698507595
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -2.165171446678093
+    Attrib Source_0    -1.4605202386025262
+    Attrib Source_1    1.3057391628057522
+    Attrib Source_2    -0.7873454789516636
+    Attrib Source_3    -0.6256739356373986
+    Attrib Source_4    -1.2278611742081362
+    Attrib Source_5    -1.0906509661116304
+    Attrib Source_6    -0.5942008477575722
+    Attrib Source_7    -4.328304787422678
+    Attrib Source_8    -1.4211623209731163
+    Attrib Source_9    3.181899697714575
+    Attrib Source_10    1.8419512257898847
+    Attrib Source_11    -0.3690259549496085
+    Attrib Source_12    4.250795634271605
+    Attrib Source_13    -5.7109913074729475
+    Attrib Source_14    -0.34676448141487515
+    Attrib Source_15    6.047717424605714
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -2.255322888546526
+    Attrib Source_0    -0.9590055456287331
+    Attrib Source_1    3.6812849438468516
+    Attrib Source_2    -5.780231313407142
+    Attrib Source_3    -0.536260355040768
+    Attrib Source_4    -0.2179035077168296
+    Attrib Source_5    -1.2539253406735806
+    Attrib Source_6    0.5989544506378855
+    Attrib Source_7    -5.839939180239354
+    Attrib Source_8    0.6285286231045464
+    Attrib Source_9    -2.119036903408882
+    Attrib Source_10    0.7511797147490641
+    Attrib Source_11    -2.1495289496824075
+    Attrib Source_12    4.399017337867983
+    Attrib Source_13    -3.973442462575229
+    Attrib Source_14    -1.4368203962297499
+    Attrib Source_15    3.019981946684211
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    7.010836650204774
+    Attrib Source_0    -0.7821274787950485
+    Attrib Source_1    -0.8871991901066395
+    Attrib Source_2    8.053528443495916
+    Attrib Source_3    -2.0818343207772125
+    Attrib Source_4    1.5036157166513013
+    Attrib Source_5    -0.21464560066296007
+    Attrib Source_6    -3.5548387300345876
+    Attrib Source_7    0.8963314927624065
+    Attrib Source_8    2.1895683798310737
+    Attrib Source_9    4.7261558764185185
+    Attrib Source_10    -5.334470521946723
+    Attrib Source_11    4.326027377508425
+    Attrib Source_12    1.6461274637050807
+    Attrib Source_13    2.4536194837714644
+    Attrib Source_14    4.110199592628307
+    Attrib Source_15    -3.6741080257540215
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    0.17550122980543603
+    Attrib Source_0    -1.4806894764826415
+    Attrib Source_1    0.15860330164438072
+    Attrib Source_2    -0.7777913948887634
+    Attrib Source_3    -0.2885470615688498
+    Attrib Source_4    0.46474676700105183
+    Attrib Source_5    -0.2601248133633524
+    Attrib Source_6    0.6694034298019234
+    Attrib Source_7    -2.3051826943772324
+    Attrib Source_8    -0.1820013011798543
+    Attrib Source_9    0.985737893266987
+    Attrib Source_10    1.4791868216049846
+    Attrib Source_11    -0.5429164797571038
+    Attrib Source_12    1.373563590649032
+    Attrib Source_13    -1.235089436573502
+    Attrib Source_14    -0.6026753078003827
+    Attrib Source_15    1.6608315471714072
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.3395326685034446
+    Attrib Source_0    -0.5501857515704864
+    Attrib Source_1    -0.10616585387254145
+    Attrib Source_2    -0.008800029636987668
+    Attrib Source_3    0.2206719480693485
+    Attrib Source_4    -0.12112236439927705
+    Attrib Source_5    -0.4675903769398756
+    Attrib Source_6    -0.08722053421647469
+    Attrib Source_7    -1.1560984141595823
+    Attrib Source_8    0.26223742095430863
+    Attrib Source_9    0.25719407335566163
+    Attrib Source_10    0.28028826437382326
+    Attrib Source_11    -0.14816718320314406
+    Attrib Source_12    0.8434329502001437
+    Attrib Source_13    -0.7191061642906983
+    Attrib Source_14    -0.5624265049328578
+    Attrib Source_15    0.6441390895786168
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -0.7748431530730212
+    Attrib Source_0    -2.3551057491758143
+    Attrib Source_1    2.4193737816681318
+    Attrib Source_2    -2.388018161519815
+    Attrib Source_3    6.008296225179389
+    Attrib Source_4    0.09497322921027414
+    Attrib Source_5    -2.878514147289353
+    Attrib Source_6    4.603715833953521
+    Attrib Source_7    3.224106931890609
+    Attrib Source_8    3.1899689888255582
+    Attrib Source_9    1.1191648125802123
+    Attrib Source_10    1.4303996055131836
+    Attrib Source_11    -4.782166947007416
+    Attrib Source_12    0.7251311392395066
+    Attrib Source_13    -2.7956727450545724
+    Attrib Source_14    -3.7477595517238442
+    Attrib Source_15    3.703309745686194
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    4.094008079418122
+    Attrib Source_0    -1.050550423241094
+    Attrib Source_1    -1.3445544310723325
+    Attrib Source_2    2.9947483870685527
+    Attrib Source_3    -1.3686255778958762
+    Attrib Source_4    -0.20618882303243438
+    Attrib Source_5    1.0193352865762022
+    Attrib Source_6    -3.3357540249591873
+    Attrib Source_7    0.11007988554531409
+    Attrib Source_8    1.4996932148861177
+    Attrib Source_9    3.88854714255178
+    Attrib Source_10    -4.124147975598326
+    Attrib Source_11    2.6466864644891976
+    Attrib Source_12    1.2647204733494757
+    Attrib Source_13    1.7084068119918046
+    Attrib Source_14    2.27379756697859
+    Attrib Source_15    -2.67494050675642
+Class democrat
+    Input
+    Node 0
+Class republican
+    Input
+    Node 1
+
+
+Time taken to build model: 3.88 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         143               96.6216 %
+Incorrectly Classified Instances         5                3.3784 %
+Kappa statistic                          0.9311
+Mean absolute error                      0.0334
+Root mean squared error                  0.1748
+Relative absolute error                  6.9762 %
+Root relative squared error             35.2563 %
+Coverage of cases (0.95 level)          97.2973 %
+Mean rel. region size (0.95 level)      50.6757 %
+Total Number of Instances              148     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.953    0.016    0.988      0.953    0.970      0.932    0.984     0.992     democrat
+                 0.984    0.047    0.938      0.984    0.961      0.932    0.984     0.968     republican
+Weighted Avg.    0.966    0.029    0.967      0.966    0.966      0.932    0.984     0.982     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 82  4 |  a = democrat
+  1 61 |  b = republican
+

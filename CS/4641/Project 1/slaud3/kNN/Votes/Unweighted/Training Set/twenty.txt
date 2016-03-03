@@ -1,0 +1,58 @@
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 20 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     vote
+Instances:    291
+Attributes:   17
+              handicapped-infants
+              water-project-cost-sharing
+              adoption-of-the-budget-resolution
+              physician-fee-freeze
+              el-salvador-aid
+              religious-groups-in-schools
+              anti-satellite-test-ban
+              aid-to-nicaraguan-contras
+              mx-missile
+              immigration
+              synfuels-corporation-cutback
+              education-spending
+              superfund-right-to-sue
+              crime
+              duty-free-exports
+              export-administration-act-south-africa
+              Class
+Test mode:evaluate on training data
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 20 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+=== Summary ===
+
+Correctly Classified Instances         267               91.7526 %
+Incorrectly Classified Instances        24                8.2474 %
+Kappa statistic                          0.8288
+Mean absolute error                      0.0916
+Root mean squared error                  0.2286
+Relative absolute error                 19.4079 %
+Root relative squared error             47.0575 %
+Total Number of Instances              291     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.9       0.054      0.964     0.9       0.931      0.988    democrat
+                 0.946     0.1        0.854     0.946     0.897      0.988    republican
+Weighted Avg.    0.918     0.072      0.922     0.918     0.918      0.988
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 162  18 |   a = democrat
+   6 105 |   b = republican
+

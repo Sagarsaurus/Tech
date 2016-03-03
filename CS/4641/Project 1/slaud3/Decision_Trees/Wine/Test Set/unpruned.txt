@@ -1,0 +1,400 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -U -M 2
+Relation:     winequality-red-weka.filters.unsupervised.instance.RemovePercentage-P34.0
+Instances:    1055
+Attributes:   12
+              fixed_acidity
+              volatile_acidity
+              citric_acid
+              residual_sugar
+              chlorides
+              free_sulfur_dioxide
+              total_sulfur_dioxide
+              density
+              pH
+              sulphates
+              alcohol
+              class
+Test mode:user supplied test set: size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+J48 unpruned tree
+------------------
+
+alcohol <= 10.5
+|   total_sulfur_dioxide <= 98
+|   |   sulphates <= 0.55
+|   |   |   volatile_acidity <= 0.785
+|   |   |   |   alcohol <= 9.6
+|   |   |   |   |   total_sulfur_dioxide <= 42
+|   |   |   |   |   |   alcohol <= 9.3
+|   |   |   |   |   |   |   chlorides <= 0.069: 4 (2.0/1.0)
+|   |   |   |   |   |   |   chlorides > 0.069: 5 (6.0/1.0)
+|   |   |   |   |   |   alcohol > 9.3
+|   |   |   |   |   |   |   volatile_acidity <= 0.725: 5 (33.0)
+|   |   |   |   |   |   |   volatile_acidity > 0.725
+|   |   |   |   |   |   |   |   free_sulfur_dioxide <= 8: 5 (3.0)
+|   |   |   |   |   |   |   |   free_sulfur_dioxide > 8: 4 (2.0)
+|   |   |   |   |   total_sulfur_dioxide > 42
+|   |   |   |   |   |   alcohol <= 9.4: 5 (25.0/2.0)
+|   |   |   |   |   |   alcohol > 9.4
+|   |   |   |   |   |   |   citric_acid <= 0.09: 5 (8.0)
+|   |   |   |   |   |   |   citric_acid > 0.09
+|   |   |   |   |   |   |   |   sulphates <= 0.51: 5 (6.0/1.0)
+|   |   |   |   |   |   |   |   sulphates > 0.51
+|   |   |   |   |   |   |   |   |   alcohol <= 9.566667: 6 (6.0)
+|   |   |   |   |   |   |   |   |   alcohol > 9.566667: 5 (3.0/1.0)
+|   |   |   |   alcohol > 9.6
+|   |   |   |   |   total_sulfur_dioxide <= 14
+|   |   |   |   |   |   pH <= 3.16: 6 (3.0)
+|   |   |   |   |   |   pH > 3.16
+|   |   |   |   |   |   |   chlorides <= 0.077: 5 (6.0/1.0)
+|   |   |   |   |   |   |   chlorides > 0.077: 4 (3.0)
+|   |   |   |   |   total_sulfur_dioxide > 14
+|   |   |   |   |   |   volatile_acidity <= 0.51
+|   |   |   |   |   |   |   pH <= 3.41
+|   |   |   |   |   |   |   |   free_sulfur_dioxide <= 8
+|   |   |   |   |   |   |   |   |   pH <= 3.23: 6 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   pH > 3.23: 5 (4.0)
+|   |   |   |   |   |   |   |   free_sulfur_dioxide > 8
+|   |   |   |   |   |   |   |   |   free_sulfur_dioxide <= 26: 6 (15.0/1.0)
+|   |   |   |   |   |   |   |   |   free_sulfur_dioxide > 26: 5 (3.0/1.0)
+|   |   |   |   |   |   |   pH > 3.41: 4 (2.0/1.0)
+|   |   |   |   |   |   volatile_acidity > 0.51
+|   |   |   |   |   |   |   density <= 0.99647: 5 (20.0/1.0)
+|   |   |   |   |   |   |   density > 0.99647
+|   |   |   |   |   |   |   |   pH <= 3.22: 6 (4.0)
+|   |   |   |   |   |   |   |   pH > 3.22
+|   |   |   |   |   |   |   |   |   citric_acid <= 0.02: 6 (3.0)
+|   |   |   |   |   |   |   |   |   citric_acid > 0.02: 5 (9.0/1.0)
+|   |   |   volatile_acidity > 0.785
+|   |   |   |   chlorides <= 0.063: 3 (2.0/1.0)
+|   |   |   |   chlorides > 0.063
+|   |   |   |   |   fixed_acidity <= 7.1: 3 (3.0/1.0)
+|   |   |   |   |   fixed_acidity > 7.1
+|   |   |   |   |   |   citric_acid <= 0.26: 5 (22.0/1.0)
+|   |   |   |   |   |   citric_acid > 0.26: 4 (3.0/1.0)
+|   |   sulphates > 0.55
+|   |   |   chlorides <= 0.062
+|   |   |   |   residual_sugar <= 2.05: 6 (10.0/2.0)
+|   |   |   |   residual_sugar > 2.05
+|   |   |   |   |   pH <= 3.35: 7 (3.0)
+|   |   |   |   |   pH > 3.35: 6 (5.0/1.0)
+|   |   |   chlorides > 0.062
+|   |   |   |   residual_sugar <= 1.5
+|   |   |   |   |   sulphates <= 0.63
+|   |   |   |   |   |   free_sulfur_dioxide <= 4: 5 (2.0)
+|   |   |   |   |   |   free_sulfur_dioxide > 4
+|   |   |   |   |   |   |   alcohol <= 9.8: 5 (2.0)
+|   |   |   |   |   |   |   alcohol > 9.8: 4 (2.0)
+|   |   |   |   |   sulphates > 0.63
+|   |   |   |   |   |   free_sulfur_dioxide <= 13: 6 (8.0)
+|   |   |   |   |   |   free_sulfur_dioxide > 13
+|   |   |   |   |   |   |   chlorides <= 0.12: 7 (4.0)
+|   |   |   |   |   |   |   chlorides > 0.12: 3 (2.0/1.0)
+|   |   |   |   residual_sugar > 1.5
+|   |   |   |   |   pH <= 3.54
+|   |   |   |   |   |   fixed_acidity <= 11.4
+|   |   |   |   |   |   |   citric_acid <= 0.43
+|   |   |   |   |   |   |   |   chlorides <= 0.171
+|   |   |   |   |   |   |   |   |   volatile_acidity <= 0.655
+|   |   |   |   |   |   |   |   |   |   alcohol <= 9.6
+|   |   |   |   |   |   |   |   |   |   |   alcohol <= 9.05: 5 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   alcohol > 9.05
+|   |   |   |   |   |   |   |   |   |   |   |   chlorides <= 0.098
+|   |   |   |   |   |   |   |   |   |   |   |   |   alcohol <= 9.4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   fixed_acidity <= 7.7: 5 (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   fixed_acidity > 7.7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   density <= 0.9986: 6 (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   density > 0.9986: 5 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   alcohol > 9.4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   alcohol <= 9.55
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide <= 20
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide <= 17
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   fixed_acidity <= 6.6: 5 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   fixed_acidity > 6.6: 6 (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide > 17: 5 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide > 20: 6 (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   alcohol > 9.55: 6 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   chlorides > 0.098
+|   |   |   |   |   |   |   |   |   |   |   |   |   sulphates <= 0.88: 5 (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   sulphates > 0.88: 6 (2.0)
+|   |   |   |   |   |   |   |   |   |   alcohol > 9.6
+|   |   |   |   |   |   |   |   |   |   |   total_sulfur_dioxide <= 19
+|   |   |   |   |   |   |   |   |   |   |   |   chlorides <= 0.086: 6 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   chlorides > 0.086: 7 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   total_sulfur_dioxide > 19
+|   |   |   |   |   |   |   |   |   |   |   |   pH <= 3.39
+|   |   |   |   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide <= 13
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   fixed_acidity <= 9.7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   density <= 0.99655: 6 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   density > 0.99655: 5 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   fixed_acidity > 9.7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sulphates <= 0.77
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   volatile_acidity <= 0.5: 7 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   volatile_acidity > 0.5: 6 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sulphates > 0.77: 5 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide > 13
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   alcohol <= 10.033333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide <= 23
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   citric_acid <= 0.1: 5 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   citric_acid > 0.1: 6 (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide > 23: 5 (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   alcohol > 10.033333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   chlorides <= 0.076
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sulphates <= 0.72: 5 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sulphates > 0.72: 6 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   chlorides > 0.076: 6 (14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   pH > 3.39
+|   |   |   |   |   |   |   |   |   |   |   |   |   residual_sugar <= 2.1: 5 (17.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   residual_sugar > 2.1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   chlorides <= 0.079: 5 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   chlorides > 0.079: 6 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   volatile_acidity > 0.655
+|   |   |   |   |   |   |   |   |   |   alcohol <= 9.2: 5 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   alcohol > 9.2
+|   |   |   |   |   |   |   |   |   |   |   chlorides <= 0.114
+|   |   |   |   |   |   |   |   |   |   |   |   volatile_acidity <= 0.675: 5 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   volatile_acidity > 0.675
+|   |   |   |   |   |   |   |   |   |   |   |   |   sulphates <= 0.68
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide <= 8: 6 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide > 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sulphates <= 0.6
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   total_sulfur_dioxide <= 29: 5 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   total_sulfur_dioxide > 29
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   density <= 0.99842: 6 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   density > 0.99842: 5 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sulphates > 0.6: 5 (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   sulphates > 0.68: 6 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   chlorides > 0.114: 5 (6.0/1.0)
+|   |   |   |   |   |   |   |   chlorides > 0.171: 6 (9.0)
+|   |   |   |   |   |   |   citric_acid > 0.43
+|   |   |   |   |   |   |   |   pH <= 2.94: 6 (3.0)
+|   |   |   |   |   |   |   |   pH > 2.94
+|   |   |   |   |   |   |   |   |   fixed_acidity <= 8
+|   |   |   |   |   |   |   |   |   |   pH <= 3.31: 6 (3.0)
+|   |   |   |   |   |   |   |   |   |   pH > 3.31: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   fixed_acidity > 8
+|   |   |   |   |   |   |   |   |   |   citric_acid <= 0.49
+|   |   |   |   |   |   |   |   |   |   |   fixed_acidity <= 10.3: 5 (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   fixed_acidity > 10.3: 4 (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   citric_acid > 0.49: 5 (19.0)
+|   |   |   |   |   |   fixed_acidity > 11.4
+|   |   |   |   |   |   |   chlorides <= 0.087: 6 (11.0/1.0)
+|   |   |   |   |   |   |   chlorides > 0.087: 4 (2.0/1.0)
+|   |   |   |   |   pH > 3.54
+|   |   |   |   |   |   density <= 0.9968
+|   |   |   |   |   |   |   volatile_acidity <= 0.55: 6 (2.0)
+|   |   |   |   |   |   |   volatile_acidity > 0.55: 5 (4.0/1.0)
+|   |   |   |   |   |   density > 0.9968: 5 (13.0)
+|   total_sulfur_dioxide > 98
+|   |   alcohol <= 10.1: 5 (50.0)
+|   |   alcohol > 10.1
+|   |   |   density <= 0.99818: 6 (3.0)
+|   |   |   density > 0.99818: 5 (2.0)
+alcohol > 10.5
+|   volatile_acidity <= 0.595
+|   |   alcohol <= 11.5
+|   |   |   pH <= 3.49
+|   |   |   |   chlorides <= 0.075
+|   |   |   |   |   sulphates <= 0.92
+|   |   |   |   |   |   fixed_acidity <= 6.9
+|   |   |   |   |   |   |   density <= 0.9956: 6 (17.0/1.0)
+|   |   |   |   |   |   |   density > 0.9956: 7 (3.0/1.0)
+|   |   |   |   |   |   fixed_acidity > 6.9
+|   |   |   |   |   |   |   pH <= 3.39
+|   |   |   |   |   |   |   |   citric_acid <= 0.45
+|   |   |   |   |   |   |   |   |   citric_acid <= 0.28
+|   |   |   |   |   |   |   |   |   |   residual_sugar <= 2.15: 6 (4.0)
+|   |   |   |   |   |   |   |   |   |   residual_sugar > 2.15: 5 (3.0)
+|   |   |   |   |   |   |   |   |   citric_acid > 0.28
+|   |   |   |   |   |   |   |   |   |   pH <= 3.28
+|   |   |   |   |   |   |   |   |   |   |   alcohol <= 10.9
+|   |   |   |   |   |   |   |   |   |   |   |   pH <= 3.22: 6 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   pH > 3.22: 7 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   alcohol > 10.9
+|   |   |   |   |   |   |   |   |   |   |   |   citric_acid <= 0.31: 8 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   citric_acid > 0.31
+|   |   |   |   |   |   |   |   |   |   |   |   |   citric_acid <= 0.39: 7 (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   citric_acid > 0.39
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   density <= 0.99488: 5 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   density > 0.99488: 7 (3.0)
+|   |   |   |   |   |   |   |   |   |   pH > 3.28
+|   |   |   |   |   |   |   |   |   |   |   alcohol <= 10.9: 5 (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   alcohol > 10.9
+|   |   |   |   |   |   |   |   |   |   |   |   pH <= 3.3: 6 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   pH > 3.3
+|   |   |   |   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide <= 17: 7 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide > 17: 6 (2.0)
+|   |   |   |   |   |   |   |   citric_acid > 0.45
+|   |   |   |   |   |   |   |   |   chlorides <= 0.061: 7 (3.0)
+|   |   |   |   |   |   |   |   |   chlorides > 0.061: 6 (13.0)
+|   |   |   |   |   |   |   pH > 3.39
+|   |   |   |   |   |   |   |   citric_acid <= 0.08: 4 (2.0/1.0)
+|   |   |   |   |   |   |   |   citric_acid > 0.08: 7 (10.0)
+|   |   |   |   |   sulphates > 0.92
+|   |   |   |   |   |   residual_sugar <= 3.7: 5 (3.0)
+|   |   |   |   |   |   residual_sugar > 3.7: 6 (2.0)
+|   |   |   |   chlorides > 0.075
+|   |   |   |   |   residual_sugar <= 2.4
+|   |   |   |   |   |   chlorides <= 0.084: 6 (31.0/1.0)
+|   |   |   |   |   |   chlorides > 0.084
+|   |   |   |   |   |   |   fixed_acidity <= 7.4: 7 (4.0/1.0)
+|   |   |   |   |   |   |   fixed_acidity > 7.4
+|   |   |   |   |   |   |   |   alcohol <= 11: 5 (4.0/2.0)
+|   |   |   |   |   |   |   |   alcohol > 11: 6 (16.0/1.0)
+|   |   |   |   |   residual_sugar > 2.4
+|   |   |   |   |   |   sulphates <= 0.71
+|   |   |   |   |   |   |   alcohol <= 11.1
+|   |   |   |   |   |   |   |   density <= 0.9986
+|   |   |   |   |   |   |   |   |   volatile_acidity <= 0.48: 5 (9.0)
+|   |   |   |   |   |   |   |   |   volatile_acidity > 0.48
+|   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide <= 16: 6 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide > 16: 5 (2.0)
+|   |   |   |   |   |   |   |   density > 0.9986: 6 (3.0)
+|   |   |   |   |   |   |   alcohol > 11.1: 5 (2.0/1.0)
+|   |   |   |   |   |   sulphates > 0.71
+|   |   |   |   |   |   |   volatile_acidity <= 0.35: 7 (3.0)
+|   |   |   |   |   |   |   volatile_acidity > 0.35: 6 (5.0)
+|   |   |   pH > 3.49
+|   |   |   |   residual_sugar <= 2: 5 (8.0)
+|   |   |   |   residual_sugar > 2
+|   |   |   |   |   free_sulfur_dioxide <= 5.5: 4 (2.0/1.0)
+|   |   |   |   |   free_sulfur_dioxide > 5.5: 6 (9.0/1.0)
+|   |   alcohol > 11.5
+|   |   |   residual_sugar <= 4.6
+|   |   |   |   sulphates <= 0.68
+|   |   |   |   |   volatile_acidity <= 0.565
+|   |   |   |   |   |   total_sulfur_dioxide <= 15
+|   |   |   |   |   |   |   sulphates <= 0.54: 6 (6.0)
+|   |   |   |   |   |   |   sulphates > 0.54
+|   |   |   |   |   |   |   |   free_sulfur_dioxide <= 5
+|   |   |   |   |   |   |   |   |   residual_sugar <= 3.9
+|   |   |   |   |   |   |   |   |   |   pH <= 3.34: 6 (4.0)
+|   |   |   |   |   |   |   |   |   |   pH > 3.34: 7 (2.0)
+|   |   |   |   |   |   |   |   |   residual_sugar > 3.9: 7 (3.0)
+|   |   |   |   |   |   |   |   free_sulfur_dioxide > 5: 7 (6.0)
+|   |   |   |   |   |   total_sulfur_dioxide > 15
+|   |   |   |   |   |   |   sulphates <= 0.4: 7 (2.0)
+|   |   |   |   |   |   |   sulphates > 0.4
+|   |   |   |   |   |   |   |   sulphates <= 0.58: 6 (21.0)
+|   |   |   |   |   |   |   |   sulphates > 0.58
+|   |   |   |   |   |   |   |   |   chlorides <= 0.078: 6 (19.0/1.0)
+|   |   |   |   |   |   |   |   |   chlorides > 0.078
+|   |   |   |   |   |   |   |   |   |   density <= 0.99512: 7 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   density > 0.99512: 6 (4.0)
+|   |   |   |   |   volatile_acidity > 0.565
+|   |   |   |   |   |   residual_sugar <= 2.25: 5 (2.0)
+|   |   |   |   |   |   residual_sugar > 2.25: 6 (3.0)
+|   |   |   |   sulphates > 0.68
+|   |   |   |   |   alcohol <= 12.4
+|   |   |   |   |   |   sulphates <= 0.69
+|   |   |   |   |   |   |   fixed_acidity <= 9.4: 5 (2.0/1.0)
+|   |   |   |   |   |   |   fixed_acidity > 9.4: 6 (2.0/1.0)
+|   |   |   |   |   |   sulphates > 0.69
+|   |   |   |   |   |   |   free_sulfur_dioxide <= 13
+|   |   |   |   |   |   |   |   free_sulfur_dioxide <= 9
+|   |   |   |   |   |   |   |   |   free_sulfur_dioxide <= 5.5: 6 (3.0)
+|   |   |   |   |   |   |   |   |   free_sulfur_dioxide > 5.5
+|   |   |   |   |   |   |   |   |   |   citric_acid <= 0.41: 7 (3.0)
+|   |   |   |   |   |   |   |   |   |   citric_acid > 0.41: 6 (3.0/1.0)
+|   |   |   |   |   |   |   |   free_sulfur_dioxide > 9: 7 (15.0)
+|   |   |   |   |   |   |   free_sulfur_dioxide > 13
+|   |   |   |   |   |   |   |   pH <= 3.36
+|   |   |   |   |   |   |   |   |   chlorides <= 0.071: 7 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   chlorides > 0.071
+|   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide <= 27: 6 (4.0)
+|   |   |   |   |   |   |   |   |   |   free_sulfur_dioxide > 27: 7 (3.0/1.0)
+|   |   |   |   |   |   |   |   pH > 3.36: 6 (7.0)
+|   |   |   |   |   alcohol > 12.4
+|   |   |   |   |   |   free_sulfur_dioxide <= 24
+|   |   |   |   |   |   |   pH <= 3.24: 8 (3.0/1.0)
+|   |   |   |   |   |   |   pH > 3.24: 7 (18.0/1.0)
+|   |   |   |   |   |   free_sulfur_dioxide > 24: 6 (4.0/2.0)
+|   |   |   residual_sugar > 4.6
+|   |   |   |   volatile_acidity <= 0.35: 7 (5.0)
+|   |   |   |   volatile_acidity > 0.35
+|   |   |   |   |   volatile_acidity <= 0.4: 4 (2.0/1.0)
+|   |   |   |   |   volatile_acidity > 0.4: 7 (2.0)
+|   volatile_acidity > 0.595
+|   |   volatile_acidity <= 1.01
+|   |   |   fixed_acidity <= 8.6
+|   |   |   |   free_sulfur_dioxide <= 6
+|   |   |   |   |   alcohol <= 12.4
+|   |   |   |   |   |   free_sulfur_dioxide <= 5.5
+|   |   |   |   |   |   |   alcohol <= 11.5
+|   |   |   |   |   |   |   |   total_sulfur_dioxide <= 14: 4 (4.0)
+|   |   |   |   |   |   |   |   total_sulfur_dioxide > 14: 5 (3.0)
+|   |   |   |   |   |   |   alcohol > 11.5: 6 (2.0)
+|   |   |   |   |   |   free_sulfur_dioxide > 5.5: 5 (6.0/1.0)
+|   |   |   |   |   alcohol > 12.4: 7 (4.0/1.0)
+|   |   |   |   free_sulfur_dioxide > 6
+|   |   |   |   |   residual_sugar <= 3.8
+|   |   |   |   |   |   density <= 0.99728
+|   |   |   |   |   |   |   citric_acid <= 0.04
+|   |   |   |   |   |   |   |   citric_acid <= 0: 6 (19.0/5.0)
+|   |   |   |   |   |   |   |   citric_acid > 0
+|   |   |   |   |   |   |   |   |   residual_sugar <= 2.35: 6 (17.0)
+|   |   |   |   |   |   |   |   |   residual_sugar > 2.35
+|   |   |   |   |   |   |   |   |   |   fixed_acidity <= 7.2: 6 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   fixed_acidity > 7.2: 5 (2.0/1.0)
+|   |   |   |   |   |   |   citric_acid > 0.04
+|   |   |   |   |   |   |   |   free_sulfur_dioxide <= 14: 5 (9.0/1.0)
+|   |   |   |   |   |   |   |   free_sulfur_dioxide > 14
+|   |   |   |   |   |   |   |   |   citric_acid <= 0.06: 5 (2.0)
+|   |   |   |   |   |   |   |   |   citric_acid > 0.06
+|   |   |   |   |   |   |   |   |   |   residual_sugar <= 2.3: 6 (11.0)
+|   |   |   |   |   |   |   |   |   |   residual_sugar > 2.3
+|   |   |   |   |   |   |   |   |   |   |   sulphates <= 0.61: 6 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   sulphates > 0.61: 5 (3.0/1.0)
+|   |   |   |   |   |   density > 0.99728: 7 (3.0/1.0)
+|   |   |   |   |   residual_sugar > 3.8
+|   |   |   |   |   |   density <= 0.99599: 4 (4.0/1.0)
+|   |   |   |   |   |   density > 0.99599: 6 (4.0)
+|   |   |   fixed_acidity > 8.6: 5 (9.0/1.0)
+|   |   volatile_acidity > 1.01
+|   |   |   sulphates <= 0.54: 3 (3.0)
+|   |   |   sulphates > 0.54: 4 (4.0/1.0)
+
+Number of Leaves  : 	168
+
+Size of the tree : 	335
+
+
+Time taken to build model: 0.03 seconds
+
+=== Evaluation on test set ===
+=== Summary ===
+
+Correctly Classified Instances         243               44.6691 %
+Incorrectly Classified Instances       301               55.3309 %
+Kappa statistic                          0.1076
+Mean absolute error                      0.1831
+Root mean squared error                  0.4049
+Relative absolute error                 85.4804 %
+Root relative squared error            124.3476 %
+Total Number of Instances              544     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0.011      0         0         0          0.494    3
+                 0         0.059      0         0         0          0.505    4
+                 0.573     0.408      0.553     0.573     0.563      0.606    5
+                 0.403     0.385      0.38      0.403     0.391      0.514    6
+                 0.258     0.027      0.552     0.258     0.352      0.7      7
+                 0         0.002      0         0         0          0.544    8
+Weighted Avg.    0.447     0.338      0.463     0.447     0.448      0.579
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+   0   1   0   1   0   0 |   a = 3
+   4   0   6   6   0   0 |   b = 4
+   2  11 146  91   5   0 |   c = 5
+   0  17  97  81   6   0 |   d = 6
+   0   2  13  30  16   1 |   e = 7
+   0   0   2   4   2   0 |   f = 8
+

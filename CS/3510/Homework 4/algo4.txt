@@ -1,0 +1,29 @@
+Sagar Laud
+Homework 4
+Collaborators: Piero Capelleti, Peter Aquila, Patrick Connor, Stanley Ayzenberg, Tim Kerr
+
+
+1) We will start with using DFS to traverse a graph.  When we reach a node, we color it with color alpha and all neighbors are subsequently colored color beta.  This algorithm will continue to execute.  That being said, if we reach a node and any of its neighbors are already colored and are the same color as the current node, then we return false indicating that the graph isn't bipartite because it cannot be colored with two distinct colors.  If the algorithm does not fail then we can divide up the graph into the two sets, Vl and Vr where Vl is color alpha and Vr is color beta.  DFS by definition is O(V+E) which makes this algorithm O(V+E).
+
+2) This algorithm is based on DFS.  We start by running DFS on the graph which in turn will call DFS-VISIT on the graph.  DFS-VISIT will mark nodes grey for a certain amount of time.  When we run the algorithm, if we encounter any grey nodes then the algorithm has detected a cycle.  DFS will work in O(V) time in this particular case.  In this case, if we have an undirected graph with a cycle, then the algorithm will terminate early with all vertices being visited and not all edges being visited.  In the case that we have an acyclic graph, then E<V will always be true and therefore the graph will run in O(V) time. 
+
+3) We will modify DFS and use it on this DAG.  Whenever a node is a terminal node which essentially means it has no directed edges pointing from it to another node, we will label turn on a boolean flag to signify that it is "true."  Then, any nodes that point to a terminal node (a node labelled as "true") will be designated as "false."  Finally, all nodes which have all edges pointing to a false node, we designate these as "true" nodes.  So, player 1 will want to go towards any node that is true.  If he is forced to go to a false node, he will lose assuming player 2 also shares the same strategy.  The table that is returned maps a vertex to a set of all vertices that are adjacent and are designated with "true" values.  Nodes that are "true" will of course map to an empty set.
+
+4) We modify Bellman-Ford to determine when anything has been changed during the course of the algorithm.  We will modify the Bellman-Ford algorithm from the book (and as taught in class)  If any x.d (for x in V) values have not been changed for after one set of calls to Relax (after the inner for loop has finished execution for one iteration of the outer for loop), we know that we can terminate the algorithm.  Therefore, we run the algorithm as usual but whenever we find that an x.d has not changed after one set of calls to Relax, we terminate the algorithm.
+
+5) A graph where Dijkstra's algorithm will fail is:      A---B---C
+														  \     /
+														   \   /
+														   	---
+														   
+
+														   	 AB = 10
+														   	 BC = -20
+														   	 AC = -5
+
+(I apologize if the formatting does not go through properly.  There is an edge between nodes A and B, a node between nodes B and C, and an edge between A and C that does not pass through B)
+
+
+Negative weights will break Dijkstra's algorithm simply because this algorithm assumes that if we have starting point x and endpoint y, then the path from x to a node n on the shortest path from x to y is shorter than the path directly from x to y.  This is not necessarily true if we allow negative weights.
+
+6) There is a rather elegant algorithm that we can devise to perform this function.  We start by checking the values for our starting vertex s.  We check to make sure that s.d = 0 and s.pi = null.  If either of these isn't the case we terminate with a failure.  Then we run standard DFS starting at node s.  For each node we visit, we check to make sure that the node's d value = n.pi.d + the weight of the edge between n.pi and n.  If for any node n this is not the case, then we return failure.  Our last check is to check for values of n.d that are infinite or values of n.pi that do not exist.  If n.pi does not exist then we check to see if n.d = infinity.  If it does then it is valid.  If it does not then we return failure.  We then check the converse.  If n.d = infinity then we verify that n.pi = null.  If either of these conditions does not hold then we return failure.  This entire process is O(V+E).  Our work is not complete however as we still must relax all edges.  We run Bellman-Ford only once (in that all edges are relaxed only once).  Though Bellman-Ford is usually O(V*E), this is because we run an O(E) operation V times.  We are actually only running the O(E) once so this portion is simply O(E).   Finally we just iterate through all nodes and ensure that the values for d have not changed at all due to relaxation.  We can do this one of two ways.  If we have a set of vertices V, we can just run an O(V) iteration to do this.  If not, we can run DFS once more to verify that no d values have changed.  This will be O(V+E) but that will still not be a problem.  The sum of the operations if we have a list of vertices is O(V+E) + O(E) + O(V) = O(V+E).  If we do not have a list of vertices, the sum of time complexities is O(V+E) + O(E) + O(V+E) = O(V+E) also.  Either way, this algorithm is O(V+E).

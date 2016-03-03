@@ -1,0 +1,110 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N 2 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     winequality-red-weka.filters.unsupervised.instance.RemovePercentage-P34.0-V_ICA-weka.filters.unsupervised.attribute.IndependentComponents-W-A12-N200-T1.0E-4
+Instances:    1599
+Attributes:   12
+              Source_0
+              Source_1
+              Source_2
+              Source_3
+              Source_4
+              Source_5
+              Source_6
+              Source_7
+              Source_8
+              Source_9
+              Source_10
+Ignored:
+              class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters: 2
+Number of iterations performed: 38
+
+
+            Cluster
+Attribute         0       1
+             (0.77)  (0.23)
+============================
+Source_0
+  mean       -0.1169 -0.1401
+  std. dev.   0.0244  0.0257
+
+Source_1
+  mean       -0.0104 -0.0026
+  std. dev.   0.0229  0.0295
+
+Source_2
+  mean        0.1463  0.1899
+  std. dev.   0.0233  0.0311
+
+Source_3
+  mean       -0.0439 -0.0483
+  std. dev.   0.0246  0.0246
+
+Source_4
+  mean       -0.0325 -0.0448
+  std. dev.   0.0229   0.031
+
+Source_5
+  mean       -0.0433 -0.0405
+  std. dev.   0.0236  0.0268
+
+Source_6
+  mean         0.002 -0.0142
+  std. dev.   0.0226  0.0286
+
+Source_7
+  mean       -0.0606 -0.0658
+  std. dev.   0.0264  0.0188
+
+Source_8
+  mean        0.1676   0.197
+  std. dev.    0.025  0.0213
+
+Source_9
+  mean         0.045  0.0634
+  std. dev.   0.0255  0.0209
+
+Source_10
+  mean       -0.0658 -0.0519
+  std. dev.   0.0211  0.0205
+
+
+
+Time taken to build model (full training data) : 0.26 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      1247 ( 78%)
+1       352 ( 22%)
+
+
+Log likelihood: 25.02835
+
+
+Class attribute: class
+Classes to Clusters:
+
+   0   1  <-- assigned to cluster
+   7   3 | 3
+  35  18 | 4
+ 615  66 | 5
+ 477 161 | 6
+ 105  94 | 7
+   8  10 | 8
+
+Cluster 0 <-- 5
+Cluster 1 <-- 6
+
+Incorrectly clustered instances :	823.0	 51.4697 %
+

@@ -1,0 +1,69 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.4 -M 2
+Relation:     vote
+Instances:    291
+Attributes:   17
+              handicapped-infants
+              water-project-cost-sharing
+              adoption-of-the-budget-resolution
+              physician-fee-freeze
+              el-salvador-aid
+              religious-groups-in-schools
+              anti-satellite-test-ban
+              aid-to-nicaraguan-contras
+              mx-missile
+              immigration
+              synfuels-corporation-cutback
+              education-spending
+              superfund-right-to-sue
+              crime
+              duty-free-exports
+              export-administration-act-south-africa
+              Class
+Test mode:evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+physician-fee-freeze = n: democrat (175.62/3.21)
+physician-fee-freeze = y
+|   adoption-of-the-budget-resolution = n: republican (99.08/2.54)
+|   adoption-of-the-budget-resolution = y
+|   |   anti-satellite-test-ban = n: democrat (5.74/1.18)
+|   |   anti-satellite-test-ban = y: republican (10.56/0.49)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+=== Summary ===
+
+Correctly Classified Instances         284               97.5945 %
+Incorrectly Classified Instances         7                2.4055 %
+Kappa statistic                          0.9488
+Mean absolute error                      0.0483
+Root mean squared error                  0.1413
+Relative absolute error                 10.2303 %
+Root relative squared error             29.0971 %
+Total Number of Instances              291     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.989     0.045      0.973     0.989     0.981      0.987    democrat
+                 0.955     0.011      0.981     0.955     0.968      0.987    republican
+Weighted Avg.    0.976     0.032      0.976     0.976     0.976      0.987
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 178   2 |   a = democrat
+   5 106 |   b = republican
+

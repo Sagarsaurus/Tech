@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 10 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     winequality-red-weka.filters.unsupervised.instance.RemovePercentage-P34.0
+Instances:    1055
+Attributes:   12
+              fixed_acidity
+              volatile_acidity
+              citric_acid
+              residual_sugar
+              chlorides
+              free_sulfur_dioxide
+              total_sulfur_dioxide
+              density
+              pH
+              sulphates
+              alcohol
+              class
+Test mode:user supplied test set: size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 10 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+=== Summary ===
+
+Correctly Classified Instances         268               49.2647 %
+Incorrectly Classified Instances       276               50.7353 %
+Kappa statistic                          0.14  
+Mean absolute error                      0.1833
+Root mean squared error                  0.3268
+Relative absolute error                 85.5561 %
+Root relative squared error            100.3686 %
+Total Number of Instances              544     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0.002      0         0         0          0.568    3
+                 0         0.006      0         0         0          0.564    4
+                 0.667     0.426      0.58      0.667     0.62       0.682    5
+                 0.458     0.388      0.409     0.458     0.432      0.561    6
+                 0.097     0.033      0.273     0.097     0.143      0.753    7
+                 0         0          0         0         0          0.574    8
+Weighted Avg.    0.493     0.347      0.454     0.493     0.467      0.64 
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+   0   0   1   1   0   0 |   a = 3
+   0   0  13   3   0   0 |   b = 4
+   1   3 170  78   3   0 |   c = 5
+   0   0  99  92  10   0 |   d = 6
+   0   0   8  48   6   0 |   e = 7
+   0   0   2   3   3   0 |   f = 8
+

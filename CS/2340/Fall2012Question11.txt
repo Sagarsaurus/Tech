@@ -1,0 +1,23 @@
+This is in class InvoicePrinter.
+
+public String prepareInvoiceFor(Customer cust) {
+
+     String result = "Invoice for: " + cust.getName() + "\n";
+     result += "Procedures performed:\n";
+     switch(cust.getType()) {
+         case SIMPLE_OWNER:
+               int total = 0;
+               for (Procedure p : cust.getProcedures()) {
+                        total  += p.getAmount();
+                        result += "  " + p.getName() + " " + p.getAmount();
+               }
+               result += "Total Owed: " + total;
+               break;
+         case PARTNER_OWNER:
+               List<Customer> partners = cust.getPets().getPartners();
+               /** more code here **/
+               break;
+         case /*more stuff here */
+    } 
+    return result;
+}

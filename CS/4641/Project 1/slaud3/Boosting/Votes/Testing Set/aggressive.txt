@@ -1,0 +1,315 @@
+=== Run information ===
+
+Scheme:weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.J48 -- -C 0.1 -M 2
+Relation:     vote
+Instances:    291
+Attributes:   17
+              handicapped-infants
+              water-project-cost-sharing
+              adoption-of-the-budget-resolution
+              physician-fee-freeze
+              el-salvador-aid
+              religious-groups-in-schools
+              anti-satellite-test-ban
+              aid-to-nicaraguan-contras
+              mx-missile
+              immigration
+              synfuels-corporation-cutback
+              education-spending
+              superfund-right-to-sue
+              crime
+              duty-free-exports
+              export-administration-act-south-africa
+              Class
+Test mode:user supplied test set: size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+J48 pruned tree
+------------------
+
+physician-fee-freeze = n: democrat (175.62/3.21)
+physician-fee-freeze = y
+|   adoption-of-the-budget-resolution = n: republican (99.08/2.54)
+|   adoption-of-the-budget-resolution = y
+|   |   anti-satellite-test-ban = n: democrat (5.74/1.18)
+|   |   anti-satellite-test-ban = y: republican (10.56/0.49)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+Weight: 3.7
+
+J48 pruned tree
+------------------
+
+crime = n: democrat (65.93/5.57)
+crime = y
+|   synfuels-corporation-cutback = n
+|   |   duty-free-exports = n
+|   |   |   physician-fee-freeze = n
+|   |   |   |   adoption-of-the-budget-resolution = n: republican (26.65/1.5)
+|   |   |   |   adoption-of-the-budget-resolution = y: democrat (5.44/0.89)
+|   |   |   physician-fee-freeze = y: republican (79.58/0.42)
+|   |   duty-free-exports = y
+|   |   |   water-project-cost-sharing = n
+|   |   |   |   mx-missile = n: republican (28.22/0.2)
+|   |   |   |   mx-missile = y: democrat (4.9/1.5)
+|   |   |   water-project-cost-sharing = y: democrat (27.98/4.93)
+|   synfuels-corporation-cutback = y: democrat (52.3/13.02)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Weight: 3.68
+
+J48 pruned tree
+------------------
+
+physician-fee-freeze = n
+|   adoption-of-the-budget-resolution = n
+|   |   religious-groups-in-schools = n: republican (12.36/0.8)
+|   |   religious-groups-in-schools = y
+|   |   |   duty-free-exports = n: democrat (33.81/2.48)
+|   |   |   duty-free-exports = y
+|   |   |   |   handicapped-infants = n: republican (12.21/0.54)
+|   |   |   |   handicapped-infants = y: democrat (3.41/0.12)
+|   adoption-of-the-budget-resolution = y: democrat (46.67/3.42)
+physician-fee-freeze = y
+|   education-spending = n
+|   |   superfund-right-to-sue = n
+|   |   |   immigration = n: democrat (7.93/0.84)
+|   |   |   immigration = y: republican (34.81/0.03)
+|   |   superfund-right-to-sue = y
+|   |   |   mx-missile = n
+|   |   |   |   synfuels-corporation-cutback = n: democrat (4.97/1.4)
+|   |   |   |   synfuels-corporation-cutback = y: republican (4.46/0.43)
+|   |   |   mx-missile = y: democrat (12.13/1.41)
+|   education-spending = y
+|   |   mx-missile = n: republican (108.68/0.26)
+|   |   mx-missile = y: democrat (9.55/2.27)
+
+Number of Leaves  : 	12
+
+Size of the tree : 	23
+
+
+Weight: 4.05
+
+J48 pruned tree
+------------------
+
+physician-fee-freeze = n
+|   synfuels-corporation-cutback = n
+|   |   superfund-right-to-sue = n
+|   |   |   adoption-of-the-budget-resolution = n
+|   |   |   |   export-administration-act-south-africa = n: democrat (7.3/0.27)
+|   |   |   |   export-administration-act-south-africa = y
+|   |   |   |   |   mx-missile = n: republican (5.63)
+|   |   |   |   |   mx-missile = y
+|   |   |   |   |   |   religious-groups-in-schools = n: republican (5.63/0.0)
+|   |   |   |   |   |   religious-groups-in-schools = y: democrat (3.69/0.14)
+|   |   |   adoption-of-the-budget-resolution = y: democrat (10.23/0.38)
+|   |   superfund-right-to-sue = y: democrat (24.16/0.9)
+|   synfuels-corporation-cutback = y: democrat (37.8/1.41)
+physician-fee-freeze = y
+|   export-administration-act-south-africa = n
+|   |   adoption-of-the-budget-resolution = n
+|   |   |   mx-missile = n: republican (16.7)
+|   |   |   mx-missile = y: democrat (3.21/0.12)
+|   |   adoption-of-the-budget-resolution = y: democrat (19.75/2.28)
+|   export-administration-act-south-africa = y
+|   |   duty-free-exports = n: republican (129.77/3.12)
+|   |   duty-free-exports = y
+|   |   |   anti-satellite-test-ban = n: democrat (14.28/2.63)
+|   |   |   anti-satellite-test-ban = y: republican (12.84/0.02)
+
+Number of Leaves  : 	13
+
+Size of the tree : 	25
+
+
+Weight: 3.92
+
+J48 pruned tree
+------------------
+
+el-salvador-aid = n
+|   physician-fee-freeze = n: democrat (131.31/5.26)
+|   physician-fee-freeze = y
+|   |   religious-groups-in-schools = n: republican (9.59/0.11)
+|   |   religious-groups-in-schools = y
+|   |   |   education-spending = n: democrat (43.22/0.82)
+|   |   |   education-spending = y: republican (4.03/0.05)
+el-salvador-aid = y
+|   physician-fee-freeze = n
+|   |   superfund-right-to-sue = n
+|   |   |   handicapped-infants = n: republican (3.07/0.22)
+|   |   |   handicapped-infants = y: democrat (3.16/0.03)
+|   |   superfund-right-to-sue = y: democrat (8.46/0.16)
+|   physician-fee-freeze = y
+|   |   anti-satellite-test-ban = n
+|   |   |   adoption-of-the-budget-resolution = n
+|   |   |   |   duty-free-exports = n: republican (35.07/2.27)
+|   |   |   |   duty-free-exports = y: democrat (3.56/0.75)
+|   |   |   adoption-of-the-budget-resolution = y
+|   |   |   |   superfund-right-to-sue = n: republican (2.85/0.03)
+|   |   |   |   superfund-right-to-sue = y: democrat (16.07/0.33)
+|   |   anti-satellite-test-ban = y: republican (30.61/0.36)
+
+Number of Leaves  : 	12
+
+Size of the tree : 	23
+
+
+Weight: 3.21
+
+J48 pruned tree
+------------------
+
+religious-groups-in-schools = n
+|   duty-free-exports = n: republican (60.09/1.9)
+|   duty-free-exports = y: democrat (14.05/4.9)
+religious-groups-in-schools = y
+|   education-spending = n
+|   |   mx-missile = n: republican (22.39/7.03)
+|   |   mx-missile = y: democrat (139.86/34.33)
+|   education-spending = y
+|   |   handicapped-infants = n
+|   |   |   physician-fee-freeze = n: democrat (5.84/2.05)
+|   |   |   physician-fee-freeze = y: republican (34.52/4.02)
+|   |   handicapped-infants = y
+|   |   |   mx-missile = n: republican (3.8/0.16)
+|   |   |   mx-missile = y: democrat (10.44/1.28)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Weight: 2.99
+
+J48 pruned tree
+------------------
+
+water-project-cost-sharing = n
+|   physician-fee-freeze = n
+|   |   adoption-of-the-budget-resolution = n
+|   |   |   religious-groups-in-schools = n: republican (22.84/1.14)
+|   |   |   religious-groups-in-schools = y: democrat (9.7/2.01)
+|   |   adoption-of-the-budget-resolution = y: democrat (22.19/2.86)
+|   physician-fee-freeze = y: republican (33.1/4.33)
+water-project-cost-sharing = y
+|   adoption-of-the-budget-resolution = n
+|   |   education-spending = n: democrat (33.44/7.07)
+|   |   education-spending = y: republican (10.22/2.41)
+|   adoption-of-the-budget-resolution = y: democrat (159.52/22.92)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Weight: 1.66
+
+J48 pruned tree
+------------------
+
+synfuels-corporation-cutback = n
+|   crime = n: democrat (5.39/1.09)
+|   crime = y: republican (128.04/33.74)
+synfuels-corporation-cutback = y
+|   adoption-of-the-budget-resolution = n
+|   |   handicapped-infants = n: republican (13.17/2.11)
+|   |   handicapped-infants = y: democrat (5.85/1.62)
+|   adoption-of-the-budget-resolution = y
+|   |   religious-groups-in-schools = n: republican (7.31/2.04)
+|   |   religious-groups-in-schools = y: democrat (131.24/53.57)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+
+
+Weight: 1.57
+
+J48 pruned tree
+------------------
+
+superfund-right-to-sue = n
+|   immigration = n: democrat (49.82/14.01)
+|   immigration = y: republican (31.46/7.51)
+superfund-right-to-sue = y: democrat (209.72/64.83)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Weight: 0.74
+
+J48 pruned tree
+------------------
+
+physician-fee-freeze = n
+|   adoption-of-the-budget-resolution = n
+|   |   superfund-right-to-sue = n
+|   |   |   synfuels-corporation-cutback = n: republican (16.39/2.98)
+|   |   |   synfuels-corporation-cutback = y: democrat (7.8/2.96)
+|   |   superfund-right-to-sue = y: democrat (43.53/16.5)
+|   adoption-of-the-budget-resolution = y: democrat (64.36/24.4)
+physician-fee-freeze = y
+|   water-project-cost-sharing = n: republican (21.75/3.74)
+|   water-project-cost-sharing = y
+|   |   duty-free-exports = n
+|   |   |   adoption-of-the-budget-resolution = n
+|   |   |   |   mx-missile = n: republican (18.55)
+|   |   |   |   mx-missile = y: democrat (18.35/7.55)
+|   |   |   adoption-of-the-budget-resolution = y
+|   |   |   |   synfuels-corporation-cutback = n: republican (10.83/2.6)
+|   |   |   |   synfuels-corporation-cutback = y: democrat (46.54/18.68)
+|   |   duty-free-exports = y: democrat (42.9/17.94)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+
+
+Weight: 4.12
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+=== Summary ===
+
+Correctly Classified Instances         138               95.8333 %
+Incorrectly Classified Instances         6                4.1667 %
+Kappa statistic                          0.9139
+Mean absolute error                      0.0457
+Root mean squared error                  0.1979
+Relative absolute error                  9.6098 %
+Root relative squared error             40.4451 %
+Total Number of Instances              144     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.943     0.018      0.988     0.943     0.965      0.987    democrat
+                 0.982     0.057      0.918     0.982     0.949      0.987    republican
+Weighted Avg.    0.958     0.033      0.96      0.958     0.959      0.987
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 82  5 |  a = democrat
+  1 56 |  b = republican
+

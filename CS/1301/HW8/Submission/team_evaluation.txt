@@ -1,0 +1,7 @@
+Sagar Laud, Oliver Goldbart
+We worked on this assignment alone using only this semester's course material
+slaud3@gatech.edu
+
+1: Sagar Laud and Oliver Goldbart
+2: For the purpose of this project, I did a lot of the planning.  I came up with the idea of a DragonballZ theme as well as the idea of a Kamehameha wave.  I helped to write the programs.  Oliver and I divided the work evenly.  More specifically, he worked a lot with the special effect programs while I worked to convert all the images and audio to a final movie file.
+3: We both did an equal amount of work and therefore each did 50% of the work.

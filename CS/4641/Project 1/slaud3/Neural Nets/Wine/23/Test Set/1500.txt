@@ -1,0 +1,255 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.2 -M 0.3 -N 1500 -V 0 -S 0 -E 20 -H a
+Relation:     winequality-red-weka.filters.unsupervised.instance.RemovePercentage-P34.0
+Instances:    1055
+Attributes:   12
+              fixed_acidity
+              volatile_acidity
+              citric_acid
+              residual_sugar
+              chlorides
+              free_sulfur_dioxide
+              total_sulfur_dioxide
+              density
+              pH
+              sulphates
+              alcohol
+              class
+Test mode:user supplied test set: size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -6.376203193640631
+    Node 6    -3.155225382313544
+    Node 7    -2.2632373801648082
+    Node 8    -4.770299710558606
+    Node 9    0.20623535013806618
+    Node 10    -1.8766725054755453
+    Node 11    -1.241558316639901
+    Node 12    -0.7045954685367486
+    Node 13    6.674098558793051
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -9.079932327162808
+    Node 6    1.636891773894134
+    Node 7    0.5244624582373628
+    Node 8    -1.3111613439331131
+    Node 9    -0.5839910279368631
+    Node 10    -3.557136916389884
+    Node 11    -1.3591792707670372
+    Node 12    -4.680926140057033
+    Node 13    8.152415919598722
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.322643942957656
+    Node 6    -0.4594386429257158
+    Node 7    -2.331338525907479
+    Node 8    1.6276864134481122
+    Node 9    -5.150562406070175
+    Node 10    -10.478894097634857
+    Node 11    4.948066838939971
+    Node 12    3.5403750283909683
+    Node 13    1.6289869910824044
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -1.2075497323804094
+    Node 6    2.4801991939158357
+    Node 7    2.063674505102857
+    Node 8    0.6768259009449358
+    Node 9    3.9709578027832997
+    Node 10    -2.5525359885192227
+    Node 11    -4.4498059042817015
+    Node 12    -2.8259207229364547
+    Node 13    -2.092745592529269
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.1987884917975151
+    Node 6    -2.3544697543123876
+    Node 7    0.1084118234069857
+    Node 8    -2.576902860763496
+    Node 9    -9.492027904691717
+    Node 10    2.583400028742303
+    Node 11    1.1837418565953486
+    Node 12    -12.62101555463818
+    Node 13    -1.5117813909281623
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -4.410886890741661
+    Node 6    -3.92889813916483
+    Node 7    1.060695212067218
+    Node 8    -4.687127592056106
+    Node 9    5.809221432866565
+    Node 10    0.31847924467173605
+    Node 11    -2.397964657363121
+    Node 12    -6.93152029852746
+    Node 13    -2.621568463870834
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    0.34522254591209073
+    Attrib fixed_acidity    3.537841620646469
+    Attrib volatile_acidity    3.675462000993004
+    Attrib citric_acid    -5.136988091732549
+    Attrib residual_sugar    -3.7046057402630197
+    Attrib chlorides    -0.6651471255895992
+    Attrib free_sulfur_dioxide    -4.8464497524615755
+    Attrib total_sulfur_dioxide    -2.491799571412691
+    Attrib density    9.172660073149263
+    Attrib pH    -2.6526931508800704
+    Attrib sulphates    24.177598924269947
+    Attrib alcohol    -5.864304311386957
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    14.689319877852581
+    Attrib fixed_acidity    -4.963349853914486
+    Attrib volatile_acidity    7.611192368932645
+    Attrib citric_acid    -0.2511313837261976
+    Attrib residual_sugar    4.47476351832794
+    Attrib chlorides    11.027905692056722
+    Attrib free_sulfur_dioxide    12.693336735726838
+    Attrib total_sulfur_dioxide    -8.752215108853328
+    Attrib density    -13.415603171617693
+    Attrib pH    -8.676791461944992
+    Attrib sulphates    -1.0584212976528478
+    Attrib alcohol    15.33942510772196
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -4.724964432497128
+    Attrib fixed_acidity    -9.011836330180465
+    Attrib volatile_acidity    -3.2993698972361156
+    Attrib citric_acid    6.54081842355468
+    Attrib residual_sugar    -1.6450688124497195
+    Attrib chlorides    5.614291379431899
+    Attrib free_sulfur_dioxide    1.9442894165202145
+    Attrib total_sulfur_dioxide    14.370506471609188
+    Attrib density    -2.6633076482328426
+    Attrib pH    0.3008213652417304
+    Attrib sulphates    -29.744744485600307
+    Attrib alcohol    -0.09461399496358398
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    7.19195461696039
+    Attrib fixed_acidity    -0.3469587439280266
+    Attrib volatile_acidity    16.04072624668315
+    Attrib citric_acid    -7.480333752950118
+    Attrib residual_sugar    5.720211727902254
+    Attrib chlorides    6.808851090420623
+    Attrib free_sulfur_dioxide    19.860699269244922
+    Attrib total_sulfur_dioxide    -6.450486230250042
+    Attrib density    -10.861189610481528
+    Attrib pH    -12.966207111862182
+    Attrib sulphates    6.007827278285304
+    Attrib alcohol    9.708348722546205
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -6.463748615072567
+    Attrib fixed_acidity    7.368941686876333
+    Attrib volatile_acidity    -10.253166095605394
+    Attrib citric_acid    -1.695029278313923
+    Attrib residual_sugar    9.104976759628416
+    Attrib chlorides    -8.716284545764456
+    Attrib free_sulfur_dioxide    2.2507068883650345
+    Attrib total_sulfur_dioxide    -5.918884071593334
+    Attrib density    -10.72029816794662
+    Attrib pH    -6.340796981435592
+    Attrib sulphates    11.120302536640462
+    Attrib alcohol    9.96390016627101
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -3.9117338748229025
+    Attrib fixed_acidity    2.3430837447769335
+    Attrib volatile_acidity    1.8849642578502304
+    Attrib citric_acid    -3.043693697464239
+    Attrib residual_sugar    -6.668687012285292
+    Attrib chlorides    7.527949912200819
+    Attrib free_sulfur_dioxide    9.289401101583838
+    Attrib total_sulfur_dioxide    10.828321134243103
+    Attrib density    8.646400444345707
+    Attrib pH    -12.534035244360979
+    Attrib sulphates    -4.939248926136207
+    Attrib alcohol    -1.299906642191467
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -4.24837152883523
+    Attrib fixed_acidity    -0.16948968634039474
+    Attrib volatile_acidity    14.98292453524579
+    Attrib citric_acid    -4.423333201475881
+    Attrib residual_sugar    -1.5166817239665082
+    Attrib chlorides    -3.2649581508055334
+    Attrib free_sulfur_dioxide    11.948763903203444
+    Attrib total_sulfur_dioxide    -6.933145279804988
+    Attrib density    -10.059578318508613
+    Attrib pH    -9.681399633019593
+    Attrib sulphates    14.777717563921094
+    Attrib alcohol    -14.069725359644881
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -20.97203076990222
+    Attrib fixed_acidity    8.267073600583958
+    Attrib volatile_acidity    15.961015056963742
+    Attrib citric_acid    1.34389420816921
+    Attrib residual_sugar    -8.823062566240429
+    Attrib chlorides    -4.7451762144612095
+    Attrib free_sulfur_dioxide    -1.968122958561208
+    Attrib total_sulfur_dioxide    -1.1224118159240883
+    Attrib density    -2.016407305531642
+    Attrib pH    16.889571250750734
+    Attrib sulphates    -29.11973378513786
+    Attrib alcohol    -2.554223777721959
+Class 3
+    Input
+    Node 0
+Class 4
+    Input
+    Node 1
+Class 5
+    Input
+    Node 2
+Class 6
+    Input
+    Node 3
+Class 7
+    Input
+    Node 4
+Class 8
+    Input
+    Node 5
+
+
+Time taken to build model: 7 seconds
+
+=== Evaluation on test set ===
+=== Summary ===
+
+Correctly Classified Instances         307               56.4338 %
+Incorrectly Classified Instances       237               43.5662 %
+Kappa statistic                          0.2701
+Mean absolute error                      0.1677
+Root mean squared error                  0.3145
+Relative absolute error                 78.2639 %
+Root relative squared error             96.5668 %
+Total Number of Instances              544     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.489    3
+                 0         0.004      0         0         0          0.685    4
+                 0.729     0.339      0.655     0.729     0.69       0.758    5
+                 0.537     0.332      0.486     0.537     0.511      0.646    6
+                 0.21      0.048      0.361     0.21      0.265      0.801    7
+                 0         0          0         0         0          0.936    8
+Weighted Avg.    0.564     0.287      0.528     0.564     0.542      0.721
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+   0   0   1   1   0   0 |   a = 3
+   0   0  14   2   0   0 |   b = 4
+   0   2 186  65   2   0 |   c = 5
+   0   0  78 108  15   0 |   d = 6
+   0   0   5  44  13   0 |   e = 7
+   0   0   0   2   6   0 |   f = 8
+

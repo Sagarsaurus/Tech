@@ -1,0 +1,128 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 4.0"
+Relation:     vote
+Instances:    291
+Attributes:   17
+              handicapped-infants
+              water-project-cost-sharing
+              adoption-of-the-budget-resolution
+              physician-fee-freeze
+              el-salvador-aid
+              religious-groups-in-schools
+              anti-satellite-test-ban
+              aid-to-nicaraguan-contras
+              mx-missile
+              immigration
+              synfuels-corporation-cutback
+              education-spending
+              superfund-right-to-sue
+              crime
+              duty-free-exports
+              export-administration-act-south-africa
+              Class
+Test mode:evaluate on training data
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Poly Kernel: K(x,y) = <x,y>^4.0
+
+Classifier for classes: democrat, republican
+
+BinarySMO
+
+      0      * <1 0 1 1 1 1 1 1 0 1 1 1 0 1 1 1 > * X]
+ +       0.0003 * <0 1 0 1 1 1 0 0 0 0 0 1 0 1 0 1 > * X]
+ +       0.0005 * <0 1 0 1 1 1 0 0 0 0 1 0 1 1 0 1 > * X]
+ +       0.0008 * <0 0 1 1 0 0 1 1 1 1 0 0 0 1 1 1 > * X]
+ -       0      * <0 1 0 0 1 1 0 0 0 0 0 1 1 1 1 1 > * X]
+ +       0      * <0 0 0 1 0 1 1 1 1 0 0 1 1 1 0 1 > * X]
+ +       0.0002 * <0 1 0 1 1 1 0 0 0 1 1 1 1 0 0 1 > * X]
+ -       0.0018 * <0 1 0 1 1 1 0 0 0 0 0 0 0 1 1 1 > * X]
+ +       0      * <0 0 0 1 1 1 1 1 1 1 0 1 1 1 0 1 > * X]
+ -       0      * <1 1 1 0 0 0 1 1 0 0 0 0 0 1 0 1 > * X]
+ -       0.0018 * <0 0 0 0 0 1 1 1 1 1 0 0 0 1 0 1 > * X]
+ +       0.0008 * <0 1 0 1 1 0 0 0 0 0 0 0 1 1 0 0 > * X]
+ -       0.0052 * <0 0 1 0 0 0 1 1 1 0 0 0 0 1 0 1 > * X]
+ -       0.0007 * <0 1 1 0 0 1 1 1 1 0 0 0 0 0 0 1 > * X]
+ +       0.0008 * <0 0 1 1 1 1 0 0 0 1 0 0 0 1 0 1 > * X]
+ +       0.008  * <0 0 1 0 0 1 1 1 1 0 0 0 0 1 0 1 > * X]
+ +       0.0007 * <0 1 0 1 1 1 0 0 0 0 0 0 1 1 0 0 > * X]
+ +       0.0001 * <1 0 1 1 1 1 1 1 0 0 0 0 0 1 0 1 > * X]
+ +       0      * <0 0 0 1 0 0 1 1 1 1 0 0 1 1 0 1 > * X]
+ -       0.0003 * <1 0 0 0 1 1 1 0 0 1 1 0 0 1 0 1 > * X]
+ -       0.001  * <1 0 1 0 1 1 0 0 0 0 0 0 0 0 0 1 > * X]
+ +       1      * <0 0 1 0 0 1 1 1 1 0 0 0 0 1 0 1 > * X]
+ +       0.0001 * <0 1 1 1 1 1 1 0 1 1 0 1 1 1 0 1 > * X]
+ -       0.0005 * <0 1 1 0 0 1 0 0 0 0 1 0 1 0 0 1 > * X]
+ -       0.0019 * <1 0 1 0 0 1 1 1 1 0 0 0 0 1 0 1 > * X]
+ +       0      * <0 0 1 1 1 1 1 0 0 0 0 1 1 1 0 1 > * X]
+ -       0.0018 * <0 0 1 0 1 1 0 0 0 0 0 0 1 1 0 0 > * X]
+ +       0.0001 * <0 1 0 1 1 1 0 0 0 0 0 0 1 1 0 1 > * X]
+ +       0.0026 * <1 0 0 0 0 0 1 1 1 1 0 0 0 1 0 1 > * X]
+ -       0      * <1 1 1 0 0 0 1 1 0 1 1 0 0 1 1 1 > * X]
+ +       0.0023 * <0 0 0 0 1 1 1 0 0 0 0 0 0 1 1 1 > * X]
+ +       0.0002 * <1 1 1 1 0 0 1 1 1 1 1 0 0 1 0 1 > * X]
+ +       0.0003 * <1 0 0 1 1 1 0 0 0 1 0 0 1 1 0 0 > * X]
+ -       0      * <1 0 1 0 0 0 1 0 1 1 1 0 0 0 1 1 > * X]
+ -       1      * <0 0 1 0 0 1 1 1 1 0 0 0 0 1 0 1 > * X]
+ -       0.0001 * <1 0 1 0 0 0 1 1 1 1 0 0 0 1 1 1 > * X]
+ +       0.0035 * <0 0 0 1 1 0 0 0 0 0 0 1 0 1 0 0 > * X]
+ -       0.0002 * <0 0 1 0 0 1 0 1 1 1 0 0 0 1 0 1 > * X]
+ -       0.0005 * <0 1 1 1 1 1 0 0 0 1 1 0 1 1 0 0 > * X]
+ -       0.0008 * <1 0 0 0 1 1 1 0 1 0 0 0 0 1 0 0 > * X]
+ -       0.0008 * <0 0 1 0 0 1 1 1 1 1 0 0 0 1 0 1 > * X]
+ +       0      * <0 0 0 1 1 1 1 1 1 1 0 1 1 1 0 1 > * X]
+ -       0.0012 * <0 0 0 0 1 1 1 0 0 0 0 1 1 1 0 1 > * X]
+ -       0.0002 * <1 0 0 0 1 1 0 0 0 0 1 1 0 1 0 1 > * X]
+ -       0.0007 * <0 0 1 0 0 1 1 1 1 1 0 0 0 1 0 1 > * X]
+ -       0.0008 * <0 0 1 0 0 1 1 1 1 0 0 0 0 0 1 1 > * X]
+ -       0.0004 * <0 0 0 0 0 1 1 1 1 0 1 0 0 1 1 1 > * X]
+ -       0      * <0 0 1 0 0 1 1 1 0 1 0 0 0 0 1 1 > * X]
+ -       0.0001 * <1 0 1 0 0 0 0 1 1 1 0 0 0 0 1 1 > * X]
+ +       0.0003 * <0 0 0 1 1 1 0 0 0 0 0 1 1 1 1 0 > * X]
+ -       0.0001 * <0 1 1 1 1 1 0 1 1 1 1 1 1 1 0 1 > * X]
+ +       0.0001 * <0 0 0 1 1 1 0 0 0 1 0 0 1 1 0 1 > * X]
+ -       0.0002 * <0 0 1 0 0 1 1 1 1 0 1 0 0 1 1 1 > * X]
+ +       0.0002 * <1 1 0 1 1 1 0 0 0 0 0 0 1 1 0 1 > * X]
+ -       0.0001 * <0 0 0 0 0 0 1 1 1 1 0 1 1 1 1 1 > * X]
+ -       0.0001 * <0 1 1 0 0 1 0 1 1 0 1 0 0 1 0 1 > * X]
+ -       0.0003 * <0 0 1 1 1 1 0 0 1 0 0 0 1 1 1 1 > * X]
+ -       0.063 
+
+Number of support vectors: 57
+
+Number of kernel evaluations: 27239 (88.256% cached)
+
+
+
+Time taken to build model: 0.03 seconds
+
+=== Evaluation on training set ===
+=== Summary ===
+
+Correctly Classified Instances         290               99.6564 %
+Incorrectly Classified Instances         1                0.3436 %
+Kappa statistic                          0.9927
+Mean absolute error                      0.0034
+Root mean squared error                  0.0586
+Relative absolute error                  0.7279 %
+Root relative squared error             12.0684 %
+Total Number of Instances              291     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.994     0          1         0.994     0.997      0.997    democrat
+                 1         0.006      0.991     1         0.996      0.997    republican
+Weighted Avg.    0.997     0.002      0.997     0.997     0.997      0.997
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 179   1 |   a = democrat
+   0 111 |   b = republican
+

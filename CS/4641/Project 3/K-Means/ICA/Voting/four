@@ -1,0 +1,95 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 4 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     vote-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingWithUserConstant-Afirst-last-R2-Fyyyy-MM-dd'T'HH:mm:ss_ICA-weka.filters.unsupervised.attribute.IndependentComponents-W-A17-N200-T1.0E-4
+Instances:    435
+Attributes:   17
+              Source_0
+              Source_1
+              Source_2
+              Source_3
+              Source_4
+              Source_5
+              Source_6
+              Source_7
+              Source_8
+              Source_9
+              Source_10
+              Source_11
+              Source_12
+              Source_13
+              Source_14
+              Source_15
+Ignored:
+              Class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 7
+Within cluster sum of squared errors: 115.99042786643025
+
+Initial starting points (random):
+
+Cluster 0: -0.057723,0.013345,0.06157,-0.107237,-0.003399,0.084972,-0.143443,-0.186808,-0.024829,0.101031,-0.002962,-0.017182,-0.094606,0.195336,-0.13278,0.017952
+Cluster 1: 0.039764,-0.018315,-0.074401,-0.137021,0.020331,0.031431,-0.02241,-0.141464,-0.07125,0.005004,0.0041,-0.015882,-0.008791,0.153441,-0.111525,0.027195
+Cluster 2: 0.001247,0.070189,0.044612,-0.031212,-0.068538,0.09899,0.012702,-0.137794,-0.110873,0.012608,-0.038213,-0.056772,0.015732,0.165548,0.017602,0.051215
+Cluster 3: 0.014259,0.005064,0.034307,-0.055506,0.0128,0.073122,-0.014498,-0.059208,-0.004642,0.070725,0.017224,-0.052209,0.000677,0.161111,-0.037744,-0.079711
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                         Cluster#
+Attribute    Full Data          0          1          2          3
+               (435.0)     (77.0)    (153.0)     (85.0)    (120.0)
+==================================================================
+Source_0       -0.0108    -0.0169    -0.0174    -0.0237     0.0105
+Source_1       -0.0026      0.008    -0.0315     0.0235      0.009
+Source_2        0.0308     0.1017    -0.0196      0.054     0.0332
+Source_3       -0.0491    -0.1539     0.0327     -0.077    -0.0665
+Source_4       -0.0045     0.0027    -0.0122    -0.0112     0.0056
+Source_5        0.0476     0.1331    -0.0246     0.0734     0.0663
+Source_6       -0.0427    -0.0975    -0.0093    -0.0405    -0.0517
+Source_7       -0.0647    -0.1824     0.0315    -0.0962    -0.0894
+Source_8       -0.0201    -0.0659     0.0069    -0.0197    -0.0254
+Source_9        0.0526     0.1505    -0.0246     0.0604     0.0827
+Source_10       0.0032     0.0271    -0.0072    -0.0216     0.0188
+Source_11      -0.0363    -0.0985     0.0125    -0.0538    -0.0462
+Source_12       0.0053     0.0229    -0.0127     0.0084     0.0149
+Source_13       0.0925     0.2528     -0.028     0.1278     0.1184
+Source_14       0.0009    -0.0007     0.0061     0.0024    -0.0057
+Source_15      -0.0124    -0.0346     0.0072     0.0223    -0.0477
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       77 ( 18%)
+1      153 ( 35%)
+2       85 ( 20%)
+3      120 ( 28%)
+
+
+Class attribute: Class
+Classes to Clusters:
+
+   0   1   2   3  <-- assigned to cluster
+  77  17  67 106 | democrat
+   0 136  18  14 | republican
+
+Cluster 0 <-- No class
+Cluster 1 <-- republican
+Cluster 2 <-- No class
+Cluster 3 <-- democrat
+
+Incorrectly clustered instances :	193.0	 44.3678 %
+

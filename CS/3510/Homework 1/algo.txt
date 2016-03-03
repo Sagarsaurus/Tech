@@ -1,0 +1,189 @@
+Sagar Laud
+CS 3510
+Homework 1
+
+Collaborators: Tim Kerr, John Dugan, Rahul Singh, Peter Aquila
+
+1) 
+	a) f(n) = o(g(n)). This can be shown in two ways.  We can take the limit of the quotient of the functions as n approaches infinity.  This results in the limit as n approaches infinity of log(n)^3/(n^2).  As long as n > 100, log(n)^3 < n.  So, we can convert the limit to be n / n^2 for substantially large n = 1 / n so as n approaches infinity, the limit apporaches zero.  n^2 is substantially larger than log(n)^3 for sufficiently sized n's so this limit = 0.  Another way to look at it is to just test things out.  
+
+	b) f(n) = big-Theta(g(n)). Let us use the change of base formula in order to solve this.  lg(n) = log(n) / log(2).  Both of these logs must be the same base.  Now let us use this on ln(n).  So, ln(n) = log(n)/log(e) (again these bases must be the same).  In order to compare all of these, the bases must all be the same.  So, we have effectively shown that lg(n) = log(n) * 1/log(2) and ln(n) = log(n) * 1/log(e).  So, to show that f(n) = big-Theta(g(n)), we have to show that f(n) = O(g(n)) and that g(n) = O(f(n)).  Let us start with the first case.  lg(n) <= c1 * ln(n).  So for what c1 does this case hold?  We can show this by using the change of base formula. lg(n) <= c1 * ln(n) = log(n) / log(2) <= c1 * log(n) / log(e).  So, c1 >=log(e) / log(2).  Let us choose c1 to be 2.  This inequality now holds for all n > 1.  We have proven therefore that f(n) = O(g(n)).  Now let us prove the converse in a similar fashion.  Again using the change of base formula, we can show that g(n) = O(f(n)) = ln(n) <= c2 * lg(n) = log(n) / log(e) = c2 * log(n) / log(2).  So, c2 >= log(2) / log(e).  We can let c2 = 1 and as long as n > 1, this inequality will hold.  We have shown that f(n) = O(g(n)) and have also shown that g(n) = O(f(n)).  Therefore, f(n) = big-Omega(g(n)).
+
+	c)  I would make the argument that g(n) = o(f(n)) asymptotically (after a threshold of around 118,000).  Therefore, for moderate values, f(n) = o(g(n))  For all values of c > 0, there exists an n0 such that for all n greater than n0, g(n) < c*f(n).  We can start off by finding a threshold, 1.01^n > n^100 when n = approximately 118,000 and c = 1.  For all values greater than this, this inequality will hold.  Now we can try to find a threshold for all c > 0.  As c decreases, naturally the threshold for n will increase.  However, we have shown that the exponential will grow at a quicker rate than the value raised to 100.  This inequality will always hold.
+   
+
+	d) none of the above.  We can look at this case by case.  f(n) cannot be o(g(n)).  This is not possible simply because we have cases where g(n) = n.  As a result, we cannot say that f(n) is strictly less than g(n) for all values of c.  For example, if c <= to 1, the inequality will not hold.  Now let us examine big-Theta.  g(n) cannot be big-Theta of f(n).  In order for this to be true, g(n) must be O(f(n)) and must also be big-Omega(f(n)).  g(n) cannot be O(f(n)).  This is because of the n^2 term.  n^2 cannot possibly be O(n).  As this inequality will break down eventually, f(n) cannot be big-Theta(g(n)).  g(n) cannot be o(f(n)) simply because g(n) cannot be O(n).  This logic allows us to disprove the third option leaving us with none of the above.
+
+
+
+2)
+	a) (2,1), (3,1), (8,1), (6,1), (8,6)
+
+	b) The array that has all elements sorted in decreasing order will have the most inversions.  In this case, we can essentially pick any two elements and they will be an inversion.  So, the most simple way to count the number is simply to take n and determine how many subsets of size 2 we can find.  This is n choose 2.
+
+	c) If we assume that we are sorting the list in ascending order, a greater number of inversions will cause the running time to increase.  This is simply because we will need to insert and shift the entire array for each and every element.  Insertion sort will only be able to remove one inversion at a time.  So every time an inversion is added, the running time will increase without fail.  There is no way around this.  If we look at the insertion sort algorithm that we have been provided on page 18 of the book, we see that there is a while loop that executes the shift.  One of these shifts will need to be performed for each and every inversion.  This will undoubtedly increase the running time.
+
+	d) Let us take the helpful hint that we have been given and go ahead and modify Merge Sort to perform this function.  Now, it is obvious that inversions will be eliminated as we "put things back together" after splitting them into individual arrays.  Essentially, this functionality will be performed simply by the Merge portion of our algorithm.
+
+   Let us look at Merge Sort (Merge is on page 31 and Merge-Sort is on page 34)
+
+   We have to devise a way to utilize merge in such a way that it gives us a count of the number of inversions.  The logic again, will be implemented as we merge elements together.  The best way to implement this logic is simply that, every time we must add a value from the right subarray before adding an element from the left subarray we will have an inversion.
+
+   Merge-Sort(A, p, r):
+      if p < r:
+         q = floor(p+r/2)
+         left = Merge-Sort(A, p, q)
+         right = Merge-Sort(A, q, r)
+         mergeInversionCount = Merge(A, p, q, r)
+
+         return left + right + mergeInversionCount 
+
+         //merge is what actually counts the inversions for the current array.  left and right are counting inversions for the sub-arrays
+      else:
+         return 0
+
+   //now this is where we must count the results
+   Merge(A, p, q, r):
+      n1 = q-p+1
+      n2 = r-q
+      //now we can define our left and right arrays
+      L[1...n1+1]
+      R[1...n2+1] 
+      for i = 1 to n1:
+         L[i] = A[p+i-1]
+      for j = 1 to n2:
+         R[i] = A[q+j]
+
+      L[n1+1] = infinity
+      L[n2+1] = infinity
+      i = j = 1
+      inversions = 0
+
+      for k = p to r:
+         if L[i] <= R[j]:
+            A[k] = L[i]
+            i++
+         else:
+            A[k] = R[j]
+            j++
+            l = l+(n1-i) //here, for every element left in the left array, we have an inversion.
+
+
+
+
+
+
+3)    a)T(n) = T(n-4) + lg(n) 
+      = T(n-8) + log(n-4) + log(n)
+      = log(n) + log(n-4) + log(n-8)...+log(c)
+      c = 1, 2, 3, or 4
+
+      There are roughly n/4 terms.  Let us find an upper bound here.  If we assume that there are n/4 of these terms and the upper bound for any of them is log(n), T(n) <= log(n) + log(n) + log(n)+...+log(n), with there being n/4 of these terms.  This ends up being n/4 * log n = O(n log n).  This is an upper bound
+
+      T(n) <= 1/4 n log n
+
+      Now for half of the summation, the value within the log is greater than n/2.  So, T(n) >= log(n/2) + log(n/2) + log(n/2)+...log(n/2), and there are n/8 of these terms.  Let us assume that the second half of these values are equal to approximately zero, so we will just throw zeroes in there.  So, T(n) >= n/8 * log(n/2) = n/8 * (log(n)-1) = n/8 * (log(n)) - n/8 >= n/16 * log n for n >= N
+
+      So, 1/16 n log n <= T(n)
+      <=1/4 n log n for all n >= N
+
+      So, T(n) is also big-Omega(n log n).
+
+      Therefore, because T(n) = O(n log n) and big Omega(n log n), it is big-Theta(n log n)
+
+      We are assuming that this is log base 2 in this situation
+   
+   b) T(n) = 5 * T(n-3)
+      T(n-3) = 5 * T(n-6)
+      T(n) = 5 * 5T(n-6)
+      =5^3 * T(n-9)
+      =5^4 * T(n-12)
+      =5^k * T(n-3k)
+      =5^floor(n/3) * T(c) (this is the only time that c will be 1, 2, or 3...and therefore 5 must be raised to the floor of (n/3))
+      =a * 5^floor(n/3) = big-Theta(5^(n/3))
+
+   c) work out tree
+
+   T(root n) <= n^(1/4) * T(n^1/4) + theta(root n)
+
+   T(n^1/4) <= n^1/8 * T(n^1/8) + theta(n^1/4)
+
+   So, T(n^((1/2^k) = n^((1/(2^k+1)) * T(n^((1/(2^k+1)) + theta(n^((1/2^k))
+
+   T(n) <= root n * T(root n) + cn
+
+   substitute T(root n)
+
+   = root n * (n^(1/4) * T(n^1/4) + c * root n) + cn
+
+   <= n^(3/4) * T(n^(1/4)) + cn + cn
+
+   <= n^(3/4) * (n^1/8 * T(n^1/8) + c*n^1/4) + cn + cn
+   = n^(7/8) * T(n^1/8) + cn + cn + cn
+   <= n^(1-e) * T(n^e) + cn + cn + ... + cn
+
+   So for what k is n^((1/2)*k) = a?
+
+   take a log
+
+   1/(2^k) lg n = lg a
+
+   take a log again
+
+   2^k = lg n/lg a
+
+   so k = lg lg n - lg lg a
+
+   Therefore, the big-Theta = k * cn
+   which in this case = T(n) <= c n * lg lg n - lg lg a = cn lg lg n - c'n = big-Theta(n lg lg n)
+
+   This logic can also be used to show a lower bound
+
+	
+4) a) This can be solved with a rather naive (but simple approach).  Let us assume that ACME's claim is true and that it really does do what it says it will do in O(n) time.  If this is the case, then we can simply keep calling PSort on subarrays till the overall array is sorted.  We will first call it on the entire array.  Then call it on the remaining 9/10.  Then call it on the remaining 9/10, and so on and so forth until the entire array is sorted.  This is the best solution for this situation simply because it will not be called unnecessarily and will in fact sort the entire array. 
+
+   b) The recurrence for this situation will be T(n) = T(9n/10) + n.  Now given this case, we can solve this with the master theorem.  Using case 3 of the master theorem, we find that this algorithm is big-theta of n.  This in turn tells us that the worst case runtime is also O(n).
+
+   c) Impossible.  This leads us to a O(n) comparison based sort which is not possible.  This claim cannot possibly be true because it is not possible to sort an array of elements using a comparison based sort in O(n) time.  This can only be done with sorts such as Counting or Radix Sort.  ACME's claim cannot be true.
+
+
+
+5)
+	a) The fact that an array with a single element lends itself nicely to finding the dominant element is what allows this to be an effective divide and conquer algorithm.  If we break this down all the way to the base level (using an algorithm very similar to merge sort).  An array with a single element has a dominant element, namely the only element itself.  As we merge our way back up, if we find any element anywhere that occurs enough times to be dominant we have found our dominant element as we work back up.  The key property is that in order to be the dominant element in the array formed by two arrays, it must be the dominant element in one of the two arrays that join to form it.
+
+
+	b) getMajority(A[1...n]):
+         if n == 1:
+            return a[n]
+         
+         leftArray = A[1...(n/2)]
+         rightArray = A[(n/2)+1...n]
+         
+         leftMajority = getMajority(leftArray)
+         rightMajority = getMajority(rightArray)
+         
+         if(leftMajority == no_majority && rightMajority == no_majority):
+            return no_majority
+
+         if(leftMajority == rightMajority):
+            return rightMajority
+
+         leftFrequency = 0
+         rightFrequency = 0
+
+         for(i = 1; i < n+1; i++):
+            if(A[i]==leftMajority:
+               leftFrequency++
+            if(A[i]==rightMajority:
+               rightFrequency++
+
+         if(leftFrequency > (n/2)):
+            return leftMajority
+
+         else if(rightFrequency > (n/2)):
+            return rightMajority
+
+         else:
+            return no_majority
+
+   c) So, we can use the master theorem here.  T(n) = 2 * T(n/2) + 2n.  Here, we can use the master theorem to determine that this algorithm is big-Theta(n log n)

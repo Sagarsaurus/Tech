@@ -1,0 +1,137 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N 5 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     vote-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingWithUserConstant-Afirst-last-R2-Fyyyy-MM-dd'T'HH:mm:ss
+Instances:    435
+Attributes:   17
+              handicapped-infants
+              water-project-cost-sharing
+              adoption-of-the-budget-resolution
+              physician-fee-freeze
+              el-salvador-aid
+              religious-groups-in-schools
+              anti-satellite-test-ban
+              aid-to-nicaraguan-contras
+              mx-missile
+              immigration
+              synfuels-corporation-cutback
+              education-spending
+              superfund-right-to-sue
+              crime
+              duty-free-exports
+              export-administration-act-south-africa
+Ignored:
+              Class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters: 5
+Number of iterations performed: 1
+
+
+                                         Cluster
+Attribute                                      0       1       2       3       4
+                                          (0.22)  (0.23)  (0.34)  (0.17)  (0.04)
+=================================================================================
+handicapped-infants
+  mean                                     0.7356   0.622  0.1511  0.5727  0.7457
+  std. dev.                                0.5096  0.5203  0.3582  0.5512  0.8499
+
+water-project-cost-sharing
+  mean                                     1.1895       0  0.6852  0.7305  1.2495
+  std. dev.                                0.4411  0.0005  0.6392  0.5962  0.7459
+
+adoption-of-the-budget-resolution
+  mean                                     0.9343  0.9515  0.0604  0.8559   0.971
+  std. dev.                                0.2874  0.2567  0.2383  0.4817  0.7511
+
+physician-fee-freeze
+  mean                                     0.0699  0.0256  0.9553  0.3835  1.1528
+  std. dev.                                0.2996  0.1578  0.2067  0.5581  0.7655
+
+el-salvador-aid
+  mean                                     0.0009  0.0015       1  1.0737  0.8174
+  std. dev.                                0.0306  0.0386       0  0.4898   0.695
+
+religious-groups-in-schools
+  mean                                     0.3364  0.3075  0.9413  0.9632   1.158
+  std. dev.                                0.5314  0.4615  0.2352  0.3783  0.5181
+
+anti-satellite-test-ban
+  mean                                     0.9259  0.9965  0.1401  0.5246  1.0469
+  std. dev.                                0.3148  0.2068  0.3662  0.5879  0.7752
+
+aid-to-nicaraguan-contras
+  mean                                          1       1  0.0863  0.4879   1.494
+  std. dev.                                0.5513   0.141  0.3414  0.5516  0.5119
+
+mx-missile
+  mean                                     0.9778   0.992  0.0345  0.4954  0.8926
+  std. dev.                                 0.413  0.2982  0.1825  0.6383  0.7979
+
+immigration
+  mean                                     0.4323  0.6215  0.5048  0.5301  0.7055
+  std. dev.                                0.5164  0.5243     0.5  0.4997  0.7998
+
+synfuels-corporation-cutback
+  mean                                     0.5368  0.3682  0.2399  0.6184  1.2316
+  std. dev.                                0.5769  0.4824  0.4868  0.5695  0.8761
+
+education-spending
+  mean                                     0.1244  0.2092  0.9767  0.4667  1.2086
+  std. dev.                                0.4436  0.5149  0.3529  0.6282  0.8464
+
+superfund-right-to-sue
+  mean                                     0.2812  0.1595  0.9484  0.6465  1.5779
+  std. dev.                                0.5319  0.4427  0.3305   0.525  0.6152
+
+crime
+  mean                                     0.2043  0.2861   1.013  0.7781   1.486
+  std. dev.                                0.4516   0.452  0.1242  0.4989  0.6108
+
+duty-free-exports
+  mean                                     0.8041   0.787  0.1494  0.3887  1.2848
+  std. dev.                                0.5143     0.5  0.4511  0.5646  0.8585
+
+export-administration-act-south-africa
+  mean                                     1.3055  1.2452  0.7386  1.1829  1.7044
+  std. dev.                                0.4831  0.4331  0.6348  0.5852  0.4564
+
+
+
+Time taken to build model (full training data) : 0.1 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       97 ( 22%)
+1       98 ( 23%)
+2      155 ( 36%)
+3       68 ( 16%)
+4       17 (  4%)
+
+
+Log likelihood: -2.2567
+
+
+Class attribute: Class
+Classes to Clusters:
+
+   0   1   2   3   4  <-- assigned to cluster
+  95  96  19  49   8 | democrat
+   2   2 136  19   9 | republican
+
+Cluster 0 <-- No class
+Cluster 1 <-- democrat
+Cluster 2 <-- republican
+Cluster 3 <-- No class
+Cluster 4 <-- No class
+
+Incorrectly clustered instances :	203.0	 46.6667 %
+

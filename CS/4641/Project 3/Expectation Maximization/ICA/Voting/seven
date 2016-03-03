@@ -1,0 +1,141 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N 7 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     vote-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingWithUserConstant-Afirst-last-R2-Fyyyy-MM-dd'T'HH:mm:ss_ICA-weka.filters.unsupervised.attribute.IndependentComponents-W-A17-N200-T1.0E-4
+Instances:    435
+Attributes:   17
+              Source_0
+              Source_1
+              Source_2
+              Source_3
+              Source_4
+              Source_5
+              Source_6
+              Source_7
+              Source_8
+              Source_9
+              Source_10
+              Source_11
+              Source_12
+              Source_13
+              Source_14
+              Source_15
+Ignored:
+              Class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters: 7
+Number of iterations performed: 45
+
+
+            Cluster
+Attribute         0       1       2       3       4       5       6
+             (0.14)  (0.08)  (0.29)  (0.09)  (0.08)  (0.21)  (0.11)
+====================================================================
+Source_0
+  mean        0.1627  0.1913  0.0918 -0.0843  0.0063 -0.0099  0.0857
+  std. dev.   0.0727  0.0156  0.0454   0.019  0.0218  0.0695  0.0201
+
+Source_1
+  mean       -0.0267 -0.0442 -0.0153  0.0311  0.0118  0.0212 -0.0289
+  std. dev.    0.079  0.0317  0.0479  0.0172  0.0176  0.0397  0.0161
+
+Source_2
+  mean        0.0019 -0.0727 -0.0255  0.0232  0.0066  0.0071 -0.0468
+  std. dev.   0.0633  0.0323  0.0433  0.0275  0.0262   0.055  0.0265
+
+Source_3
+  mean        0.0023  0.0524  0.0062  0.0143  0.0392  0.0109  0.0311
+  std. dev.   0.0691  0.0149  0.0467   0.011  0.0101  0.0428  0.0141
+
+Source_4
+  mean        0.0332  0.0704  0.0113 -0.0407 -0.0264 -0.0061  0.0505
+  std. dev.   0.0534  0.0396  0.0458  0.0214  0.0225  0.0515  0.0365
+
+Source_5
+  mean        0.0027   0.018  0.0191  -0.022 -0.0071 -0.0178  0.0187
+  std. dev.   0.0655  0.0301  0.0485  0.0366  0.0369  0.0458  0.0283
+
+Source_6
+  mean        0.0886  0.0733  0.0298 -0.0396  0.0027  0.0185  0.0241
+  std. dev.   0.0602  0.0379   0.051  0.0203  0.0184  0.0492  0.0286
+
+Source_7
+  mean         0.199  0.2532  0.1129 -0.1119  0.0147   0.011  0.1387
+  std. dev.   0.0649   0.015  0.0306  0.0126  0.0145  0.0746  0.0183
+
+Source_8
+  mean       -0.0495  -0.022 -0.0208  0.0262  0.0014 -0.0054 -0.0183
+  std. dev.   0.0708  0.0372   0.047  0.0293   0.033  0.0517  0.0301
+
+Source_9
+  mean        0.1506  0.1856  0.0885 -0.0839  0.0129  0.0079  0.0857
+  std. dev.   0.0779  0.0405  0.0495  0.0264  0.0261  0.0654  0.0302
+
+Source_10
+  mean        0.0262  0.0578  0.0049 -0.0233 -0.0074  0.0146  0.0204
+  std. dev.   0.0684  0.0182  0.0515  0.0178  0.0163  0.0572  0.0166
+
+Source_11
+  mean       -0.0666 -0.0811 -0.0381   0.064  0.0258 -0.0073 -0.0567
+  std. dev.   0.0689  0.0329  0.0475   0.017  0.0156  0.0605  0.0226
+
+Source_12
+  mean        0.0592  0.0469  0.0112 -0.0302 -0.0026  0.0011  0.0133
+  std. dev.   0.0674  0.0397   0.042  0.0291  0.0285  0.0557  0.0286
+
+Source_13
+  mean       -0.0694 -0.0517 -0.0401  0.0193 -0.0189 -0.0034 -0.0032
+  std. dev.   0.0709  0.0245  0.0528  0.0066  0.0056  0.0526  0.0094
+
+Source_14
+  mean        0.1747  0.2017  0.1164 -0.0969 -0.0058 -0.0213  0.0953
+  std. dev.   0.0727  0.0222  0.0489  0.0133  0.0162  0.0632  0.0114
+
+Source_15
+  mean       -0.0336 -0.0351 -0.0117   0.037  0.0371  0.0139 -0.0251
+  std. dev.   0.0694  0.0266  0.0467  0.0152  0.0136  0.0441  0.0259
+
+
+
+Time taken to build model (full training data) : 0.32 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       60 ( 14%)
+1       35 (  8%)
+2      126 ( 29%)
+3       39 (  9%)
+4       37 (  9%)
+5       91 ( 21%)
+6       47 ( 11%)
+
+
+Log likelihood: 27.85736
+
+
+Class attribute: Class
+Classes to Clusters:
+
+   0   1   2   3   4   5   6  <-- assigned to cluster
+  50  35 113   1   0  21  47 | democrat
+  10   0  13  38  37  70   0 | republican
+
+Cluster 0 <-- No class
+Cluster 1 <-- No class
+Cluster 2 <-- democrat
+Cluster 3 <-- No class
+Cluster 4 <-- No class
+Cluster 5 <-- republican
+Cluster 6 <-- No class
+
+Incorrectly clustered instances :	252.0	 57.931  %
+
